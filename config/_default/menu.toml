@@ -10,15 +10,31 @@
 [[social]]
 identifier = "github"
 name = "GitHub"
-url = "https://github.com/CaiJimmy/hugo-theme-stack"
+url = "https://github.com/zhangxingeng"
 
 [social.params]
 icon = "brand-github"
 
 [[social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com"
+identifier = "x"
+name = "x"
+url = "https://x.com"
 
 [social.params]
-icon = "brand-twitter"
+icon = "brand-x"
+
+[[social]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/shanechang"
+
+[social.params]
+icon = "brand-linkedin"
+
+[[social]]
+identifier = "resume"
+name = "Resume"
+url = "https://shane-zhang-resume-genai.tiiny.site"
+
+[social.params]
+icon = "file-cv"

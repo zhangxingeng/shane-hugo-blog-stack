@@ -1,0 +1,227 @@
+{
+  "author": "Shane Zhang",
+  "description": "Shane Zhang's Resume",
+  "primaryColor": "#54B689",
+  "textPrimaryColor": "#292929",
+  "profile": {
+    "enable": true,
+    "name": "Shane Zhang",
+    "tagline": "AI Lover, Trendsetter and Entrepreneur",
+    "avatar": "avatar.png"
+  },
+  "contact": {
+    "enable": true,
+    "location": "New York",
+    "list": [
+      {
+        "icon": "fas fa-phone-square",
+        "url": "tel:#",
+        "text": "732-491-6378"
+      },
+      {
+        "icon": "fas fa-envelope-square",
+        "url": "mailto:zhangxingeng970221@gmail.com",
+        "text": "zhangxingeng970221@gmail.com"
+      },
+      {
+        "icon": "fas fa-globe",
+        "url": "https://www.shanezhang.com",
+        "text": "www.shanezhang.com"
+      }
+    ]
+  },
+  "skills": {
+    "enable": true,
+    "list": [
+      {
+        "title": "Technical",
+        "items": [
+          {
+            "details": "LLM Fine-Tuning, Langchain / LangGraph, LLM APIs (Google Gemini, OpenAI GPT), Agentic RAG System, Vector Databases, Knowledge graph (RDF, LPG format)"
+          },
+          {
+            "details": "Postgres (pgvector), Neo4j, MySQL, Elasticsearch"
+          },
+          {
+            "details": "Python, JavaScript, Node.js, React, SQL, Cypher, Scala, Java, C++"
+          },
+          {
+            "details": "PyTorch, TensorFlow,Keras, Transformers, HuggingFace, spaCy, NLTK, Streamlit"
+          },
+          {
+            "details": "Feature Engineering, Statistical Modeling, Quantization and Pruning Techniques, Model Evaluation and Performance Analysis, Natural Language Processing (NLP), GAN, Stable Diffusion, Transformers"
+          }
+        ]
+      },
+      {
+        "title": "Professional",
+        "items": [
+          {
+            "details": "Effective communication, Team player, Strong problem solver"
+          },
+          {
+            "details": "Passionate about AI, Ownership mindset, Fast learner"
+          },
+          {
+            "details": "Efficient, multi-tasking, hard-working, committed"
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "enable": true,
+    "list": [
+      {
+        "degree": "M.S. in Computer Science, Machine Learning Direction",
+        "university": "Rutgers, The State University of New Jersey",
+        "dates": "2020 - 2022"
+      },
+      {
+        "degree": "B.S. in Computer Science",
+        "university": "Rutgers, The State University of New Jersey",
+        "dates": "2017 - 2021"
+      }
+    ]
+  },
+  "languages": {
+    "enable": true,
+    "list": [
+      {
+        "name": "English",
+        "level": "Native, preferred"
+      },
+      {
+        "name": "Mandarin",
+        "level": "Native"
+      }
+    ]
+  },
+  "summary": {
+    "enable": true,
+    "text": "Passionate about AI, I aim to master emerging technologies to solve real-world problems and enhance human creativity. My dream is to witness the development of the first AGI. I enjoy SCUBA diving and reading about psychology, sociology, and philosophy. I value wisdom over knowledge and strive to see situations from multiple perspectives. I prioritize harmony and collaborative solutions over conflict and competition, and I am always open to new ideas and improvement."
+  },
+  "experience": {
+    "enable": true,
+    "list": [
+      {
+        "title": "AI / ML Engineer",
+        "dates": "Aug 2024 - Present",
+        "company": "Citigroup Inc. US",
+        "details": "Rutherford, NJ",
+        "items": [
+          {
+            "details": "Built a fast structured data processing pipeline with python, reducing processing time from 10 seconds to under 1 second per document, enhancing document handling efficiency by 90%."
+          },
+          {
+            "details": "Rapid development of front-end with React, Node.js and SQL, Reduced feedback time by 50%."
+          },
+          {
+            "details": "Designed and Accelerated a robust RESTful API with python FastAPI for real-time data ingestion and NLP processing into Postgres SQL database, supporting over 1 million API calls per day, Deployed at scale with OpenShift and spark. Streamlined CI/CD procedure. zero downtime over 120 days."
+          },
+          {
+            "details": "Leveraged advanced Agentic RAG systems and Knowledge Graphs with RDF and LPG formats with python and langchain to improve global retrieval accuracy, increased the F1 score of AI-driven compliance analysis from 0.32 to 0.71."
+          },
+          {
+            "details": "Pipelining evaluation metrics and visualizations, langchain and RAGAS to ensure LLM quality, implemented Ethics AI framework and Reduced hallucination rate by 30% and error investigation time by 60%."
+          },
+          {
+            "details": "Utilized OpenAI GPT, Claude and Google Gemini models and Fine-tuned open source LLM models, to develop customized and scalable Agentic RAG systems with over 200,000 API calls per day."
+          },
+          {
+            "details": "Communicated with stakeholders and collaborated with cross-functional teams weekly on project updates and planning."
+          },
+          {
+            "details": "Developed human-centered evaluation frameworks (RLHF) to assess LLM performance in real-world scenarios, continuously ensuring alignment with user intents and contextual needs, with over 2,000 active users."
+          },
+          {
+            "details": "Processed big data using numpy and pandas for data manipulation and Apache Spark DataFrames for efficient large-scale ETL workflows, reducing data processing time."
+          },
+          {
+            "details": "Deployed scalable AI-driven RAG systems on AWS, using S3, EC2, Glue, lambda, SageMaker and Bedrock for efficient data processing pipeline and LLM integration pipeline."
+          }
+        ]
+      },
+      {
+        "title": "AI / ML Engineer",
+        "dates": "Jan 2023 - Aug 2024",
+        "company": "Robert Wood Johnson University Hospital",
+        "details": "New Brunswick, NJ",
+        "items": [
+          {
+            "details": "Designed, built and deployed a Agentic RAG system using python, numpy, pandas, javascript, SQL and Chroma vector database, automating the parsing and summarization of over 5,000 research documents, increased data accessibility for hundreds of researchers. Utilized AWS SageMaker for model fine-tuning, and served with AWS Bedrock."
+          },
+          {
+            "details": "Engineered an advanced Agentic RAG system with OpenAI, with React framework, Reduced on-boarding time by half."
+          },
+          {
+            "details": "Collaborated with a cross-functional team of 15 academic researchers, integrating over 200 feedback points into the NLP system aligning the platform with current and future research objectives."
+          },
+          {
+            "details": "Aided 10+ staff and Conducted monthly workshops on ML usage, achieved 80% adaptation of ML enhanced workflow."
+          }
+        ]
+      },
+      {
+        "title": "Machine Learning Engineer",
+        "dates": "Jan 2020 - July 2021",
+        "company": "Fiskkit Inc.",
+        "details": "San Francisco, CA",
+        "items": [
+          {
+            "details": "Integrated NLP-driven features into the Node.js backend with python pytorch (C++ CUDA), enabled real-time text generation and summarization functionalities, cutting response times by 70%."
+          },
+          {
+            "details": "Conducted data pre-processing and data exploration using python PySpark, numpy and Pandas, ensuring high-quality data integration and leading to a 20% improvement in model training result (compared to baseline) using pytorch distributed."
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "enable": false,
+    "list": [
+      {
+        "title": "Project Lorem Ipsum",
+        "meta": "Open Source",
+        "tagline": "some tagline"
+      },
+      {
+        "title": "Project Sed Fringilla",
+        "meta": "Open Source",
+        "tagline": "some tagline"
+      }
+    ]
+  },
+  "information": {
+    "enable": true,
+    "list": [
+      {
+        "title": "Papers",
+        "items": [
+          {
+            "details": "2018 · Lorem Ipsum"
+          },
+          {
+            "details": "2016 · Sed Fringilla"
+          }
+        ]
+      }
+    ]
+  },
+  "social": {
+    "enable": true,
+    "list": [
+      {
+        "icon": "fab fa-github-square",
+        "url": "//github.com/zhangxingeng",
+        "title": "GitHub"
+      },
+      {
+        "icon": "fab fa-linkedin",
+        "url": "//linkedin.com/in/zhangxingeng",
+        "title": "LinkedIn"
+      }
+    ]
+  }
+}
