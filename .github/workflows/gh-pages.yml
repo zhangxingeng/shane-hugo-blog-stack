@@ -8,14 +8,13 @@ on:
       - "README.md"
     branches:
       - master
-      - exampleSite
   workflow_dispatch:
     # manual run
     inputs:
       hugoVersion:
         description: "Hugo Version"
         required: false
-        default: "0.125.7"
+        default: "0.145.0"
 
 # Allow one concurrent deployment
 concurrency:
