@@ -47,7 +47,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: exampleSite
+          ref: master
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
