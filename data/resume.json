@@ -5,7 +5,7 @@
     "enable": true,
     "name": "Shane Zhang (张欣耕)",
     "tagline": "AI/ML Engineer, LLM Specialist, RAG Expert",
-    "avatar": "avatar.png"
+    "avatar": "img/avatar.png"
   },
   "contact": {
     "enable": true,
@@ -35,22 +35,46 @@
         "title": "Generative AI",
         "items": [
           {
-            "details": "LLM Fine-Tuning & Parameter-Efficient Fine-Tuning (PEFT)"
+            "details": "LLM Fine-Tuning"
           },
           {
-            "details": "Retrieval-Augmented Generation (RAG) & Agentic RAG Systems"
+            "details": "Parameter-Efficient Fine-Tuning (PEFT)"
           },
           {
-            "details": "Knowledge Graphs (RDF & LPG formats) & GraphRAG"
+            "details": "Retrieval-Augmented Generation (RAG)"
           },
           {
-            "details": "LLM APIs (OpenAI GPT, Google Gemini, Anthropic Claude)"
+            "details": "Agentic RAG Systems"
           },
           {
-            "details": "LangChain & LangGraph"
+            "details": "Knowledge Graphs (RDF)"
           },
           {
-            "details": "Prompt Engineering & RLHF"
+            "details": "Knowledge Graphs (LPG formats)"
+          },
+          {
+            "details": "GraphRAG"
+          },
+          {
+            "details": "OpenAI GPT"
+          },
+          {
+            "details": "Google Gemini"
+          },
+          {
+            "details": "Anthropic Claude"
+          },
+          {
+            "details": "LangChain"
+          },
+          {
+            "details": "LangGraph"
+          },
+          {
+            "details": "Prompt Engineering"
+          },
+          {
+            "details": "RLHF"
           }
         ]
       },
@@ -58,22 +82,55 @@
         "title": "Machine Learning & NLP",
         "items": [
           {
-            "details": "PyTorch, TensorFlow, Keras, Transformers, HuggingFace"
+            "details": "PyTorch"
           },
           {
-            "details": "Natural Language Processing (NLP), spaCy, NLTK"
+            "details": "TensorFlow"
           },
           {
-            "details": "Feature Engineering & Statistical Modeling"
+            "details": "Keras"
           },
           {
-            "details": "Quantization & Pruning Techniques"
+            "details": "Transformers"
           },
           {
-            "details": "Model Evaluation & Performance Analysis"
+            "details": "HuggingFace"
           },
           {
-            "details": "Neural Networks, GANs, Stable Diffusion"
+            "details": "Natural Language Processing (NLP)"
+          },
+          {
+            "details": "spaCy"
+          },
+          {
+            "details": "NLTK"
+          },
+          {
+            "details": "Feature Engineering"
+          },
+          {
+            "details": "Statistical Modeling"
+          },
+          {
+            "details": "Quantization"
+          },
+          {
+            "details": "Pruning Techniques"
+          },
+          {
+            "details": "Model Evaluation"
+          },
+          {
+            "details": "Performance Analysis"
+          },
+          {
+            "details": "Neural Networks"
+          },
+          {
+            "details": "GANs"
+          },
+          {
+            "details": "Stable Diffusion"
           }
         ]
       },
@@ -81,22 +138,55 @@
         "title": "Data Engineering",
         "items": [
           {
-            "details": "Vector Databases (Postgres with pgvector, FAISS, Chroma)"
+            "details": "Postgres with pgvector"
           },
           {
-            "details": "Graph Databases (Neo4j, Cypher)"
+            "details": "FAISS"
           },
           {
-            "details": "SQL (MySQL, PostgreSQL, Oracle)"
+            "details": "Chroma"
           },
           {
-            "details": "Elasticsearch & MongoDB"
+            "details": "Neo4j"
           },
           {
-            "details": "PySpark, Pandas, NumPy, Apache Spark, Hadoop"
+            "details": "Cypher"
           },
           {
-            "details": "ETL Workflows & Data Processing Pipelines"
+            "details": "MySQL"
+          },
+          {
+            "details": "PostgreSQL"
+          },
+          {
+            "details": "Oracle"
+          },
+          {
+            "details": "Elasticsearch"
+          },
+          {
+            "details": "MongoDB"
+          },
+          {
+            "details": "PySpark"
+          },
+          {
+            "details": "Pandas"
+          },
+          {
+            "details": "NumPy"
+          },
+          {
+            "details": "Apache Spark"
+          },
+          {
+            "details": "Hadoop"
+          },
+          {
+            "details": "ETL Workflows"
+          },
+          {
+            "details": "Data Processing Pipelines"
           }
         ]
       },
@@ -104,19 +194,46 @@
         "title": "Programming",
         "items": [
           {
-            "details": "Python (FastAPI, Streamlit, PyTest)"
+            "details": "Python"
           },
           {
-            "details": "JavaScript, Node.js, React"
+            "details": "FastAPI"
           },
           {
-            "details": "Scala, Java, C++"
+            "details": "Streamlit"
           },
           {
-            "details": "REST API Development & gRPC"
+            "details": "PyTest"
           },
           {
-            "details": "JWT & Authentication Systems"
+            "details": "JavaScript"
+          },
+          {
+            "details": "Node.js"
+          },
+          {
+            "details": "React"
+          },
+          {
+            "details": "Scala"
+          },
+          {
+            "details": "Java"
+          },
+          {
+            "details": "C++"
+          },
+          {
+            "details": "REST API Development"
+          },
+          {
+            "details": "gRPC"
+          },
+          {
+            "details": "JWT"
+          },
+          {
+            "details": "Authentication Systems"
           }
         ]
       },
@@ -124,19 +241,46 @@
         "title": "DevOps & MLOps",
         "items": [
           {
-            "details": "Docker, Kubernetes, OpenShift"
+            "details": "Docker"
           },
           {
-            "details": "CI/CD Pipelines & Development Workflows"
+            "details": "Kubernetes"
           },
           {
-            "details": "AWS (SageMaker, Bedrock, S3, EC2, Lambda, Glue)"
+            "details": "OpenShift"
+          },
+          {
+            "details": "CI/CD Pipelines"
+          },
+          {
+            "details": "Development Workflows"
+          },
+          {
+            "details": "AWS SageMaker"
+          },
+          {
+            "details": "AWS Bedrock"
+          },
+          {
+            "details": "AWS S3"
+          },
+          {
+            "details": "AWS EC2"
+          },
+          {
+            "details": "AWS Lambda"
+          },
+          {
+            "details": "AWS Glue"
           },
           {
             "details": "Azure Cloud Services"
           },
           {
-            "details": "Model Versioning & Monitoring (MLflow, RAGAS)"
+            "details": "MLflow"
+          },
+          {
+            "details": "RAGAS"
           }
         ]
       },
@@ -144,19 +288,34 @@
         "title": "Professional & Soft Skills",
         "items": [
           {
-            "details": "Technical Communication & Documentation"
+            "details": "Technical Communication"
           },
           {
-            "details": "Team Collaboration & Cross-functional Leadership"
+            "details": "Documentation"
           },
           {
-            "details": "Stakeholder Management & Client Presentations"
+            "details": "Team Collaboration"
           },
           {
-            "details": "Mentoring & Training"
+            "details": "Cross-functional Leadership"
           },
           {
-            "details": "Agile Methodologies & Project Management"
+            "details": "Stakeholder Management"
+          },
+          {
+            "details": "Client Presentations"
+          },
+          {
+            "details": "Mentoring"
+          },
+          {
+            "details": "Training"
+          },
+          {
+            "details": "Agile Methodologies"
+          },
+          {
+            "details": "Project Management"
           }
         ]
       }
@@ -336,19 +495,38 @@
         "title": "Enterprise-Scale RAG System",
         "meta": "Citigroup",
         "tagline": "Built a comprehensive RAG system for financial document analysis using LangChain, pgvector, and AWS Bedrock",
-        "technologies": ["Python", "FastAPI", "LangChain", "Postgres", "pgvector", "AWS Bedrock"]
+        "technologies": [
+          "Python",
+          "FastAPI",
+          "LangChain",
+          "Postgres",
+          "pgvector",
+          "AWS Bedrock"
+        ]
       },
       {
         "title": "Healthcare Research Assistant",
         "meta": "RWJUH",
         "tagline": "Developed an AI assistant for medical researchers using OpenAI APIs, vector databases, and React",
-        "technologies": ["Python", "React", "OpenAI", "Chroma DB", "AWS SageMaker"]
+        "technologies": [
+          "Python",
+          "React",
+          "OpenAI",
+          "Chroma DB",
+          "AWS SageMaker"
+        ]
       },
       {
         "title": "NLP Text Analysis Platform",
         "meta": "Fiskkit",
         "tagline": "Created an NLP-powered platform for text analysis with Node.js backend and PyTorch models",
-        "technologies": ["Node.js", "Python", "PyTorch", "PySpark", "Neo4j"]
+        "technologies": [
+          "Node.js",
+          "Python",
+          "PyTorch",
+          "PySpark",
+          "Neo4j"
+        ]
       }
     ]
   },
