@@ -2,7 +2,7 @@
 mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
-favicon = "/favicon.png"
+favicon = "/favicon.svg"
 
 [footer]
 since = 2020
@@ -19,7 +19,7 @@ subtitle = "Gain wisdom at dawn; die with no regret at dusk. 朝闻道，夕死�
 [sidebar.avatar]
 enabled = true
 local = true
-src = "img/avatar.png"
+src = "favicon.svg"
 
 [article]
 headingAnchor = false

@@ -15,7 +15,7 @@ tags:
     - Systems Thinking
 ---
 
-# Atomic Habits - How to Build Good Habits and Break Bad Ones
+## Atomic Habits - How to Build Good Habits and Break Bad Ones
 
 ## Fundamentals - Tiny Changes Matter
 

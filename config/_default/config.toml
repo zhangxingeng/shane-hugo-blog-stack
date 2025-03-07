@@ -2,8 +2,9 @@
 baseurl = "https://www.shanechang.com"
 languageCode = "en-us"
 title = "Shane's Blog"
+copyright = "Shane Zhang (张欣耕)"
 theme = "stack"
-
+disableHugoGeneratorInject = true
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
 defaultContentLanguage = "en"
@@ -17,3 +18,5 @@ disqusShortname = "hugo-theme-stack"
 
 [pagination]
 pagerSize = 10
+
+
