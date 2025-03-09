@@ -62,7 +62,7 @@ card = "summary_large_image"
 [defaultImage.opengraph]
 enabled = true
 local = true
-src = "favicon.svg"
+src = "img/logo.png"
 
 [colorScheme]
 toggle = true

@@ -24,7 +24,7 @@ tags:
     - [TAG 2]
     - more tags
 ---
-
+markdown should not contain level 1 headers (h1 or single hashtag # titles sinces its already defined in the front matter)
 [MARKDOWN CONTENT]
 ```
 
