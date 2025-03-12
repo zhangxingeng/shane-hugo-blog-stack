@@ -46,8 +46,6 @@ Note: markdown should not contain level 1 headers (h1 or single hashtag # titles
 
 ```
 
-
-
 ## Cover image prompt
 
 Based on the given blog post front matter, generate me an image as the cover image for the post.
