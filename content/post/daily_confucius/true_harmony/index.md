@@ -175,4 +175,3 @@ The practice isn't about achieving perfect harmony or becoming the perfect "supe
 
 As Confucius might tell us if he were sharing wisdom over coffee today: The goal isn't perfection but direction—moving toward being the kind of person who can disagree openly while respecting deeply.
 
-What relationship in your life might benefit from practicing harmony without requiring conformity?
