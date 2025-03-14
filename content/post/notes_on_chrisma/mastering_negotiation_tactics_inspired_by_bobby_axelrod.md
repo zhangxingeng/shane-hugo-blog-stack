@@ -2,7 +2,8 @@
 title: Mastering Negotiation Tactics Inspired by Bobby Axelrod
 description: An insightful guide on negotiation techniques inspired by the character Bobby Axelrod from the series Billions.
 slug: mastering-negotiation-tactics-inspired-by-bobby-axelrod
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Negotiation Techniques

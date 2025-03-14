@@ -2,7 +2,8 @@
 title: Why Gary Vaynerchuk Gets Away With Interruptions and Offense
 slug: why-gary-vaynerchuk-gets-away-with-interruptions-and-offense
 description: Discover how Gary Vaynerchuk maintains popularity despite his blunt and often interruptive communication style, and learn how you can adopt similar techniques in your own interactions.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

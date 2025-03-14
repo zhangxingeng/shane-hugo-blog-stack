@@ -2,7 +2,8 @@
 title: The Art of Confidence and Power - Learning from Harvey Specter
 slug: the-art-of-confidence-and-power-learning-from-harvey-specter
 description: Explore how the character Harvey Specter from "Suits" embodies confidence and power through strategic use of frames, body language, and mindset.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

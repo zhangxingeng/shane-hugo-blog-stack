@@ -2,7 +2,8 @@
 title: Interview Mastery - Cultivating Confidence and Charisma for Career Success
 description: Discover strategies to enhance your confidence and charisma during interviews, ensuring you leave a lasting impression.
 slug: interview-mastery-cultivating-confidence-and-charisma-for-career-success
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Professional Development

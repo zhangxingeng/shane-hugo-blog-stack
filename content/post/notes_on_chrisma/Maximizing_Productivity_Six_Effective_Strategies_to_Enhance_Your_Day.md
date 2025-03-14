@@ -3,7 +3,8 @@ title: Maximizing Productivity - Six Effective Strategies to Enhance Your Day
 
 slug: maximizing-productivity-six-effective-strategies-to-enhance-your-day
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

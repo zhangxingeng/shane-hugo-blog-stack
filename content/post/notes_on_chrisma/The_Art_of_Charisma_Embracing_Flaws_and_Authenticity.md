@@ -1,7 +1,8 @@
 ---
 title: The Art of Charisma - Embracing Flaws and Authenticity
 slug: the-art-of-charisma-embracing-flaws-and-authenticity
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Self-Improvement

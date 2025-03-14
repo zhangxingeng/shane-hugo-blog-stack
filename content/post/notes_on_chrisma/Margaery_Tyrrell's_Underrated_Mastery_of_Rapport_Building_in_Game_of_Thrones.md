@@ -2,7 +2,8 @@
 title: Margaery Tyrrell's Underrated Mastery of Rapport Building in Game of Thrones
 description: Discover how Margaery Tyrrell's ability to build rapport makes her a real-world charisma expert within the Game of Thrones universe.
 slug: margaery-tyrrell's_underrated_mastery_of_rapport_building_in_game_of_thrones
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Game of Thrones

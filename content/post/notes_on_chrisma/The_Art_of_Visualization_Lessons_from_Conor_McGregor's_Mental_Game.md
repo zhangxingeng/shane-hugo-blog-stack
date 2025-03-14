@@ -2,6 +2,8 @@
 title: The Art of Visualization - Lessons from Conor McGregor's Mental Game
 slug: the-art-of-visualization-lessons-from-conor-mcgregors-mental-game
 description: Learn how Conor McGregor's visualization techniques and mental game contribute to his success in the fighting world.
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Sports Psychology

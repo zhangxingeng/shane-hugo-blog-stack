@@ -2,6 +2,8 @@
 title: From Awkward to Charismatic - Lessons from Elon Musk
 description: Exploring how moments of awkwardness can transform into charisma, with insights from Elon Musk's public appearances.
 slug: from-awkward-to-charismatic-lessons-from-elon-musk
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Public Speaking

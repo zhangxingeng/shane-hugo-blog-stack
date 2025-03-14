@@ -2,7 +2,8 @@
 title: Nine Common Mistakes that Kill Your Charisma (And Their Fixes!)
 description: Discover nine subtle yet impactful mistakes that can harm your charisma and how to rectify them with simple techniques.
 slug: nine-common-mistakes-that-kill-your-charisma-and-their-fixes
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Social Skills

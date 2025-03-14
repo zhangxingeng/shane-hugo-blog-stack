@@ -1,6 +1,8 @@
 ---
 title: Boosting Popularity Through Genuine Humor and Confidence
 slug: boosting-popularity-through-genuine-humor-and-confidence
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

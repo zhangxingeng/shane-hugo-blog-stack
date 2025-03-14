@@ -2,7 +2,8 @@
 title: Learning from Celebrity Interviews - How to Avoid Common Charisma Mistakes
 description: Insights from celebrity interviews reveal how reading negative intent, failing at sarcasm, and more can affect how we are perceived. Learn how to avoid these common mistakes.
 slug: learning-from-celebrity-interviews-how-to-avoid-common-charisma-mistakes
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

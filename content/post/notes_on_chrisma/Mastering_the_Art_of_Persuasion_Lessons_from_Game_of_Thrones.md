@@ -1,7 +1,8 @@
 ---
 title: Mastering the Art of Persuasion - Lessons from Game of Thrones
 slug: mastering-the-art-of-persuasion-lessons-from-game-of-thrones
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

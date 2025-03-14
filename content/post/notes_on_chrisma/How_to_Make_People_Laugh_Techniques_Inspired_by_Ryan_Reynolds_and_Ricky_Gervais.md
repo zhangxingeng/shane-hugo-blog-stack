@@ -2,7 +2,8 @@
 title: How to Make People Laugh - Techniques Inspired by Ryan Reynolds and Ricky Gervais
 description: Explore techniques for humor and wit, inspired by the comedic styles of Ryan Reynolds and Ricky Gervais.
 slug: how-to-make-people-laugh-techniques-inspired-by-ryan-reynolds-and-ricky-gervais
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Comedy

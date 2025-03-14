@@ -2,7 +2,8 @@
 title: Charismatic Confidence - Command Respect Without Raising Your Voice
 description: Explore how to exude confidence and command respect even if you're naturally quiet or shy. Learn simple tricks for becoming charismatic without being loud.
 slug: charismatic-confidence-command-respect-without-raising-your-voice
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Confidence Building

@@ -2,7 +2,8 @@
 title: The Art of Reading People Like Sherlock Holmes
 slug: the-art-of-reading-people-like-sherlock-holmes
 description: Enhance your understanding of human interactions by learning to read body language, emotions, and interest cues, inspired by the iconic detective, Sherlock Holmes.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology

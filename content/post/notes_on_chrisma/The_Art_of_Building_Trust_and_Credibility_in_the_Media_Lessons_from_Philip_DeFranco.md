@@ -2,7 +2,8 @@
 title: The Art of Building Trust and Credibility in the Media - Lessons from Philip DeFranco
 description: Explore how Philip DeFranco has become one of the most trusted news figures by prioritizing transparency, acting against financial self-interest, and adhering to principles.
 slug: the-art-of-building-trust-and-credibility-in-the-media-lessons-from-philip-defranco
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Media Ethics

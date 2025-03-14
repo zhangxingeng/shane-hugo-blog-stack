@@ -2,7 +2,8 @@
 title: Analyzing Charisma in the Presidential Debate
 description: A breakdown of the charisma displayed by presidential candidates during the first presidential debate
 slug: analyzing-charisma-in-the-presidential-debate
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Politics

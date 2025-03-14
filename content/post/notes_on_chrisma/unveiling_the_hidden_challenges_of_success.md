@@ -2,7 +2,8 @@
 title: Unveiling the Hidden Challenges of Success
 slug: unveiling-the-hidden-challenges-of-success
 description: Explore the seldom-discussed difficulties that accompany success, including the habit of comparing oneself to others, the use of success as a social crutch, and the dependency on metrics for happiness.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

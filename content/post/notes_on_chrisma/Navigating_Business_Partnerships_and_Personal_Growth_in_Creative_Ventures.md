@@ -2,7 +2,8 @@
 title: Navigating Business Partnerships and Personal Growth in Creative Ventures
 description: Exploring the challenges and learnings from a partnership fallout in a creative business, understanding personal growth, and the impact on content creation.
 slug: navigating-business-partnerships-and-personal-growth-in-creative-ventures
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Business

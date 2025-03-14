@@ -2,7 +2,8 @@
 title: Embracing Your Nerdy Interests with Confidence
 description: Learn how to talk about your nerdy interests in a way that enhances your appeal and makes you stand out.
 slug: embracing-your-nerdy-interests-with-confidence
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 
 - CoC

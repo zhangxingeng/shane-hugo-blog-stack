@@ -2,7 +2,8 @@
 title: How to Be the Life of the Party - Techniques from Comedy Legends
 description: Discover key comedic strategies to captivate any audience and become the life of any party with insights from comedy icons like Jim Carrey and Bill Burr.
 slug: How-to-be-the-Life-of-the-Party
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Social Skills

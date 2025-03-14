@@ -1,7 +1,8 @@
 ---
 title: Developing True Self-Love Over Traditional Self-Esteem
 slug: developing-true-self-love-over-traditional-self-esteem
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

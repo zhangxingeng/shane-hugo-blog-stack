@@ -2,7 +2,8 @@
 title: How To Build Rapport and Make People Like You
 slug: how-to-build-rapport-and-make-people-like-you
 description: Learn how to effectively build rapport to make people like you using techniques exemplified by Bruce Lee.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

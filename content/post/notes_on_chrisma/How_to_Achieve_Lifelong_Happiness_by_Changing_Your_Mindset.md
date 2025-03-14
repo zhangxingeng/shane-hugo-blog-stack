@@ -2,7 +2,8 @@
 title: How to Achieve Lifelong Happiness by Changing Your Mindset
 description: Explore three common mindsets that lead to unhappiness and discover lessons from stoicism to feel more joy every day.
 slug: how-to-achieve-lifelong-happiness-by-changing-your-mindset
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

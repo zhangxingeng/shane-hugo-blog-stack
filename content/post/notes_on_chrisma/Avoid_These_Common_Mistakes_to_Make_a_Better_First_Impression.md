@@ -2,7 +2,8 @@
 title: Avoid These Common Mistakes to Make a Better First Impression
 description: Discover how to improve your first impressions by reassessing and enhancing commonly misunderstood advice.
 slug: avoid-these-common-mistakes-to-make-a-better-first-impression
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

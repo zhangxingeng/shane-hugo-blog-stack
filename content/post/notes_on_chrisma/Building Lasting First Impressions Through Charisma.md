@@ -5,7 +5,8 @@ description: Strategies for mastering confidence and enhancing your charisma for
 
 slug: building-lasting-first-impressions-through-charisma
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

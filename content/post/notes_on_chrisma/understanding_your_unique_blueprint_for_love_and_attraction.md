@@ -2,7 +2,8 @@
 title: Understanding Your Unique Blueprint for Love and Attraction
 description: Explore the enigmatic reasons behind why we love certain people and not others, and learn how these patterns are deeply rooted in our childhood experiences.
 slug: understanding-your-unique-blueprint-for-love-and-attraction
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology of Attraction

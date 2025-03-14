@@ -2,7 +2,8 @@
 title: The Art of Storytelling - Lessons from Shane Dawson's YouTube Success
 description: Explore the secrets behind Shane Dawson's captivating content and what it reveals about effective storytelling.
 slug: the-art-of-storytelling-lessons-from-shane-dawson-s-youtube-success
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Storytelling

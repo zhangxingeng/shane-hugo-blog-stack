@@ -4,7 +4,8 @@ title: Discovering the Charisma of Dwayne "The Rock" Johnson
 description: A deeper look into the charismatic traits of Dwayne "The Rock" Johnson—what makes him captivating and lessons we can learn.
 slug: Discovering-the-Charisma-of-Dwayne-The-Rock-Johnson
  
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

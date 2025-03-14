@@ -2,7 +2,8 @@
 title: Boost Your Wit and Humor with Improv Techniques
 description: Discover how to enhance your conversational skills and sense of humor by incorporating techniques from improv comedy, ensuring you come off as wittier and more engaging in everyday interactions.
 slug: boost-your-wit-and-humor-with-improv-techniques
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

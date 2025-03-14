@@ -2,6 +2,8 @@
 title: Mastering Effortless Charm - Lessons from George Clooney 
 description: Discover the subtle habits that make George Clooney effortlessly charismatic and learn how you can apply these techniques to enhance your own charm.
 slug: mastering-effortless-charm-lessons-from-george-clooney
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

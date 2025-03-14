@@ -2,7 +2,8 @@
 title: Five Common Phrases Revealing Insecurity and How to Avoid Them
 description: Understand how certain phrases can undermine perceived confidence and learn their positive alternatives.
 slug: five-common-phrases-revealing-insecurity-and-how-to-avoid-them
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

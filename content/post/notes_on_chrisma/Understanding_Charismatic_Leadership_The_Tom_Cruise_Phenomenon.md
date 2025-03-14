@@ -2,7 +2,8 @@
 title: Understanding Charismatic Leadership - The Tom Cruise Phenomenon
 description: An exploration of Tom Cruise's dominant social presence, his charismatic techniques, and the potential downsides of charisma.
 slug: understanding-charismatic-leadership-the-tom-cruise-phenomenon 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Celebrity Analysis

@@ -2,7 +2,8 @@
 title: The Psychology Behind the GameStop Stock Surge and Its Lessons for Investors
 description: Analyzing the psychological factors that led to the GameStop stock phenomenon and the lessons it provides for investors.
 slug: the-psychology-behind-the-gamestop-stock-surge-and-its-lessons-for-investors
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology

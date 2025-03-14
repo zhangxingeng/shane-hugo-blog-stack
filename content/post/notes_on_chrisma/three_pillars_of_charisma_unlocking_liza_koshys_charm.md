@@ -1,6 +1,8 @@
 ---
 title: Three Pillars of Charisma - Unlocking Liza Koshy's Charm
 slug: three-pillars-of-charisma-unlocking-liza-koshys-charm
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

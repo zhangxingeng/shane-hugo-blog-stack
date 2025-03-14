@@ -2,7 +2,8 @@
 title: How to Enhance Your Comedy Skills Using Louis C.K.'s Techniques
 description: Explore the comedic genius of Louis C.K. by analyzing his techniques and how you can apply them to enhance humor in storytelling.
 slug: how-to-enhance-your-comedy-skills-using-louis-cks-techniques
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Comedy

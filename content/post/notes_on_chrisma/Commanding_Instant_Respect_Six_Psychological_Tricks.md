@@ -1,6 +1,8 @@
 ---
 title: Commanding Instant Respect - Six Psychological Tricks
 slug: commanding-instant-respect-six-psychological-tricks
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology

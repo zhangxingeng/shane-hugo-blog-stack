@@ -2,7 +2,8 @@
 title: Five Things to Never Say When Flirting
 slug: five-things-to-never-say-when-flirting
 description: Discover five common phrases that can undermine your flirting efforts and learn how to communicate effectively and confidently.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

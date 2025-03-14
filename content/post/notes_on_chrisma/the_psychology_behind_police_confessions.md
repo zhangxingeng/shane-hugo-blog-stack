@@ -2,7 +2,8 @@
     title: The Psychology Behind Police Confessions
     description: Understanding why individuals often confess to police, the tactics used during interrogations, and the potential for false confessions.
     slug: the_psychology_behind_police_confessions
-    date: 2023-03-06 00:00:00+0000
+    draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 
 - CoC

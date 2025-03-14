@@ -5,7 +5,8 @@ description: Learn how to enhance your charisma and become a better conversation
 
 slug: how-to-be-magnetic-lessons-from-jamie-foxx
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

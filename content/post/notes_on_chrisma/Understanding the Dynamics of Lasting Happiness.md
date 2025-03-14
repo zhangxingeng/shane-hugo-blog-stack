@@ -2,7 +2,8 @@
 title: Understanding the Dynamics of Lasting Happiness
 slug: understanding-the-dynamics-of-lasting-happiness
 description: Exploring the concept of "impact bias" and the five steps on the happiness ladder to cultivate enduring happiness.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

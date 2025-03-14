@@ -2,7 +2,8 @@
 title: Exploring the Inner Child Through Ayahuasca - Rediscovering Joy and Emotional Balance
 description: Discover how ayahuasca can unlock insights into your inner child, leading to increased joy and emotional expression, and learn techniques to achieve these insights independently of ayahuasca.
 slug: exploring-the-inner-child-through-ayahuasca-rediscovering-joy-and-emotional-balance
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

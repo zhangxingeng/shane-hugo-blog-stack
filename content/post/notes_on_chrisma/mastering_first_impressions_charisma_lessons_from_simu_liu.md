@@ -2,7 +2,8 @@
 title: Mastering First Impressions - Charisma Lessons from Simu Liu
 description: Learn six habits to make amazing first impressions with Simu Liu as a case study, from confident entrances to being a captivating listener.
 slug: mastering-first-impressions-charisma-lessons-from-simu-liu
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

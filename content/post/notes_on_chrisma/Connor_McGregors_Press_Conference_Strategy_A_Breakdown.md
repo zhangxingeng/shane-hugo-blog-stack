@@ -4,7 +4,8 @@ title: Connor McGregor's Press Conference Strategy - A Breakdown
 description: An analytical breakdown of Connor McGregor's strategic approach during the press conference with Khabib Nurmagomedov, focusing on financial goals and psychological tactics.
 
 slug: connor-mcgregors-press-conference-strategy-a-breakdown
-
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - MMA

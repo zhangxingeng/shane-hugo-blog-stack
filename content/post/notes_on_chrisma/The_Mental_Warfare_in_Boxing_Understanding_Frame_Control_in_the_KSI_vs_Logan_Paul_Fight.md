@@ -2,7 +2,8 @@
 title: The Mental Warfare in Boxing - Understanding Frame Control in the KSI vs. Logan Paul Fight
 description: A deep dive into the mental strategies and frame control tactics used in the historic KSI vs. Logan Paul boxing match.
 slug: the-mental-warfare-in-boxing-understanding-frame-control-in-the-ksi-vs-logan-paul-fight
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Boxing

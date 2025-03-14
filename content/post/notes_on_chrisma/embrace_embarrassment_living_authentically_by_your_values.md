@@ -2,7 +2,8 @@
 title: Embrace Embarrassment - Living Authentically by Your Values
 description: A guide to overcoming embarrassment by focusing on personal values rather than societal perceptions.
 slug: embrace-embarrassment-living-authentically-by-your-values
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

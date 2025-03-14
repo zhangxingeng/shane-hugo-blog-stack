@@ -2,7 +2,8 @@
 title: Mastering Charismatic Hand Gesticulations for Effective Communication
 description: Exploring the art of charismatic gesticulations and how to effectively use your hands to enhance communication.
 slug: mastering-charismatic-hand-gesticulations-for-effective-communication
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

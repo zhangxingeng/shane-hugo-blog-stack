@@ -2,7 +2,8 @@
 title: Mastering Confidence - Lessons from Tom Holland's Charismatic Communication Skills
 description: Learn how to overcome nerves and exude confidence in conversations by analyzing the charismatic communication techniques of Tom Holland.
 slug: mastering-confidence-lessons-from-tom-hollands-charismatic-communication-skills
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

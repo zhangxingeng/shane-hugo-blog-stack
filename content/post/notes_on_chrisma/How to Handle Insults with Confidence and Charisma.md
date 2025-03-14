@@ -1,7 +1,8 @@
 ---
 title: How to Handle Insults with Confidence and Charisma
 slug: how-to-handle-insults-with-confidence-and-charisma
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

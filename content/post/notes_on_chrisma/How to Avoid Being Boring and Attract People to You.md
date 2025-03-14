@@ -2,7 +2,8 @@
 title: How to Avoid Being Boring and Attract People to You
 slug: how-to-avoid-being-boring-and-attract-people-to-you
 description: Discover five impactful strategies to ensure engaging and lively interactions that attract others while enriching your personal vitality.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

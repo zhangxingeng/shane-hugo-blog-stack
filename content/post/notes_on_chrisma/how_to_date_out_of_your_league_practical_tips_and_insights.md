@@ -1,7 +1,8 @@
 ---
 title: How to Date Out of Your League - Practical Tips and Insights
 slug: how-to-date-out-of-your-league-practical-tips-and-insights
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 description: Discover practical strategies to successfully date individuals you perceive as out of your league, including increasing access, confidence, and genuine connections.
 categories:
 - CoC

@@ -2,7 +2,8 @@
 title: Unlocking the Power of the King Archetype for Unshakable Confidence
 description: Explore the characteristics of the King archetype and how to incorporate its mature energy for enhanced self-confidence and leadership.
 slug: unlocking-the-power-of-the-king-archetype-for-unshakable-confidence
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

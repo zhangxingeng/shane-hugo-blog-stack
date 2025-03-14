@@ -2,7 +2,8 @@
 title: Building Confidence by Embracing Insecurities 
 description: Learn how to use insecurities to your advantage and develop genuine confidence with inspiration from Pete Davidson.
 slug: building-confidence-by-embracing-insecurities 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

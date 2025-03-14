@@ -2,7 +2,8 @@
 title: Recognizing and Addressing Narcissistic Manipulation 
 description: Explore how to identify narcissistic manipulation and protect yourself from it through real-world examples and practical advice.
 slug: recognizing-and-addressing-narcissistic-manipulation
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology

@@ -2,7 +2,8 @@
 title: The Enigmatic Appeal of Rick Sanchez
 slug: The-Enigmatic-Appeal-of-Rick-Sanchez
 description: Explore the intriguing appeal of "Rick and Morty's" Rick Sanchez, a character who marries eccentric brilliance with ethical flaws, offering viewers a complex figure to both admire and scrutinize.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Animation Analysis

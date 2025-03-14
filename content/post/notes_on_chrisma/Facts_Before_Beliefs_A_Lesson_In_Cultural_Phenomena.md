@@ -2,7 +2,8 @@
 title: Facts Before Beliefs - A Lesson In Cultural Phenomena
 description: Unraveling the mindset of understanding through facts before embracing beliefs, using real-world examples and cultural phenomena.
 slug: facts-before-beliefs-a-lesson-in-cultural-phenomena
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 
 - CoC

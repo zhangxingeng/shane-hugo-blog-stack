@@ -2,7 +2,8 @@
 title: Why Loki Remains a Beloved Villain in the Marvel Universe
 description: Unpacking the charm and complexity of Loki, the enthralling Marvel villain we love.
 slug: why-loki-remains-a-beloved-villain-in-the-marvel-universe
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Entertainment

@@ -2,7 +2,8 @@
 title: Understanding The Power of Charismatic Eye Contact
 slug: understanding-the-power-of-charismatic-eye-contact
 description: Explore the secrets of charismatic eye contact with insights from Bill Clinton's public speaking style.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

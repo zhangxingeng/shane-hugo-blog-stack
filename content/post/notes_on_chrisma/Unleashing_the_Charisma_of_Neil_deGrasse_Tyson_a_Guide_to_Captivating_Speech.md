@@ -5,7 +5,8 @@ description: Explore the masterful techniques of Neil deGrasse Tyson's speaking 
 
 slug: unleashing-the-charisma-of-neil-degrasse-tyson-a-guide-to-captivating-speech
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

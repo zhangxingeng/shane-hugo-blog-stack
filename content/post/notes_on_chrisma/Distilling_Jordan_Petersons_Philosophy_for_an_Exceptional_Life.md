@@ -2,7 +2,8 @@
 title: Distilling Jordan Peterson's Philosophy for an Exceptional Life
 description: Uncover the core tenets of Jordan Peterson’s philosophy and learn practical steps to lead an exceptional life by focusing on self-improvement.
 slug: distilling-jordan-peterson's_philosophy_for_an_exceptional_life
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Philosophy

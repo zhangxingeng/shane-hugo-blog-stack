@@ -2,7 +2,8 @@
 title: Recognizing and Responding to Gaslighting in Relationships
 description: Identifying the signs of gaslighting and steps to protect yourself from emotional abuse.
 slug: recognizing-and-responding-to-gaslighting-in-relationships
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Relationships

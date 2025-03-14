@@ -2,7 +2,8 @@
 title: Understanding the True Source of Self-Confidence
 slug: understanding-the-true-source-of-self-confidence
 description: Discover how self-confidence is rooted in self-esteem and learn the key to enhancing both from within.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

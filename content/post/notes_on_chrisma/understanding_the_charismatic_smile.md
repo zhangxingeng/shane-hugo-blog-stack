@@ -2,7 +2,8 @@
 title: Understanding the Charismatic Smile
 slug: understanding-the-charismatic-smile
 description: Explore the nuances of charismatic smiles, focusing on facial musculature and expressions with examples.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

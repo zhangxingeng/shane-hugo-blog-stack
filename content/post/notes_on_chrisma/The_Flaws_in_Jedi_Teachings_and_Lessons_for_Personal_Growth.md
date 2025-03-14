@@ -2,7 +2,8 @@
 title: The Flaws in Jedi Teachings and Lessons for Personal Growth
 description: An exploration of the destructive mindsets in Jedi teachings and how these lessons can apply to personal growth and emotional mastery.
 slug: the-flaws-in-jedi-teachings-and-lessons-for-personal-growth
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

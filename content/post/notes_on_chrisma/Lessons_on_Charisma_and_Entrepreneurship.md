@@ -2,7 +2,8 @@
 title: Lessons on Charisma and Entrepreneurship 
 description: An exploration of a journey through personal growth, entrepreneurial challenges, and the art of charisma.
 slug: lessons-on-charisma-and-entrepreneurship
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

@@ -1,6 +1,8 @@
 ---
 title: The Evolution of Conor McGregor's Confidence
 slug: the-evolution-of-conor-mcgregors-confidence
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Sports

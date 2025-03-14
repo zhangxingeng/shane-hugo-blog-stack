@@ -2,7 +2,8 @@
 title: Harnessing the Confidence Lessons from Don Draper
 slug: harnessing-the-confidence-lessons-from-don-draper
 description: Discover the key elements of confidence as exemplified by Don Draper in Mad Men, and learn how to apply them in real-life situations.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

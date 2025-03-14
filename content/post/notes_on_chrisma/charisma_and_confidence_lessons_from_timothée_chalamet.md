@@ -1,6 +1,8 @@
 ---
 title: Charisma and Confidence - Lessons from Timothée Chalamet
 slug: charisma-and-confidence-lessons-from-timothée_chalamet
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories: 
 - Self-Improvement
 - Charisma

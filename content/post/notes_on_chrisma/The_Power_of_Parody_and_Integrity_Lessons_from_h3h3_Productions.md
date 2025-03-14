@@ -2,7 +2,8 @@
 title: The Power of Parody and Integrity - Lessons from h3h3 Productions
 description: Discover how h3h3 Productions uses parody and integrity to impact the YouTube community positively, similar to iconic cultural commentators.
 slug: the-power-of-parody-and-integrity-lessons-from-h3h3-productions
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Cultural Commentary

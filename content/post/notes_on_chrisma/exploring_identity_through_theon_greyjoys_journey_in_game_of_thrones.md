@@ -2,7 +2,8 @@
 title: Exploring Identity Through Theon Greyjoy’s Journey in Game of Thrones
 description: Analyzing Theon Greyjoy's character arc to understand the importance of identity and its impact on personal growth.
 slug: exploring-identity-through-theon-greyjoys-journey-in-game-of-thrones
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Entertainment

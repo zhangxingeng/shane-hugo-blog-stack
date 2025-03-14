@@ -2,7 +2,8 @@
 title: Mastering Charismatic Body Language - Lessons from Tony Robbins
 description: Learn how to communicate charismatically using your body. This post explores techniques exemplified by Tony Robbins, focusing on gesticulation and body control.
 slug: mastering-charismatic-body-language-lessons-from-tony-robbins
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

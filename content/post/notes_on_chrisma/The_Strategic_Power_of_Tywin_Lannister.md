@@ -1,6 +1,8 @@
 ---
 title: The Strategic Power of Tywin Lannister
 slug: the-strategic-power-tywin-lannister
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Game of Thrones

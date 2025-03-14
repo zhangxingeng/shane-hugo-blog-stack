@@ -2,7 +2,8 @@
 title: Recognizing Manipulative Phrases and How to Respond
 description: A guide to identifying common manipulative phrases and effective strategies to counter them.
 slug: recognizing-manipulative-phrases-and-how-to-respond
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology

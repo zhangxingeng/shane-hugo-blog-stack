@@ -2,7 +2,8 @@
 title: The Art of Media Manipulation - Understanding Media Influence Through Trump’s Strategies
 description: Explore how Donald Trump has mastered media influence, using simplicity, sensationalism, and scandal to garner attention and shape narratives.
 slug: the-art-of-media-manipulation-understanding-media-influence-through-trumps-strategies
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Media Influence

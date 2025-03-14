@@ -2,7 +2,8 @@
 title: Recognizing and Countering Bully Tactics Inspired by "The Boys"
 description: Explore psychological tricks used by bullies and learn effective strategies to counter them.
 slug: recognizing-and-countering-bully-tactics-inspired-by-the-boys
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology

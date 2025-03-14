@@ -5,7 +5,8 @@ description: Discover subtle signs that indicate someone might be attracted to y
 
 slug: subtle-signs-that-someone-is-attracted-to-you
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

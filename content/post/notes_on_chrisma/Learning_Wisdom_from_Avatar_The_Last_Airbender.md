@@ -2,7 +2,8 @@
 title: Learning Wisdom from Avatar - The Last Airbender
 slug: learning-wisdom-from-avatar-the-last-airbender
 description: Explore valuable lessons from Avatar - The Last Airbender on mastering skills efficiently and effectively. 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Learning

@@ -2,6 +2,8 @@
 title: Common Mistakes to Avoid for Better First Impressions
 description: Discover the five common mistakes that can harm your first impressions and find strategies to improve your interactions in business, social settings, and beyond.
 slug: common-mistakes-to-avoid-for-better-first-impressions
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

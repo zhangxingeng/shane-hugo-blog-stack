@@ -5,7 +5,8 @@ description: Dive into the charismatic traits of Tommy Shelby from 'Peaky Blinde
 
 slug: master-the-art-of-charisma-with-lessons-from-tommy-shelby
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

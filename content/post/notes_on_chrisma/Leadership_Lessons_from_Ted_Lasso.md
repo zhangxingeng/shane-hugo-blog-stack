@@ -1,6 +1,8 @@
 ---
 title: Leadership Lessons from Ted Lasso
 slug: leadership-lessons-from-ted-lasso
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Leadership

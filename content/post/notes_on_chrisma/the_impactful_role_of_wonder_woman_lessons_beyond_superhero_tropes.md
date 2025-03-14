@@ -2,7 +2,8 @@
 title: The Impactful Role of Wonder Woman - Lessons Beyond Superhero Tropes
 description: Exploring how Wonder Woman breaks away from typical female tropes in cinema and what we can learn from this iconic character.
 slug: the-impactful-role-of-wonder-woman-lessons-beyond-superhero-tropes
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Film Analysis

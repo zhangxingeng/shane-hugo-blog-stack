@@ -1,7 +1,8 @@
 ---
 title: Mastering the Art of Sarcasm - Insights from Ryan Reynolds
 slug: mastering-the-art-of-sarcasm-insights-from-ryan-reynolds
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Humor

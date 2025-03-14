@@ -2,7 +2,8 @@
 title: Eliminating Shyness in Just 60 Seconds
 slug: eliminating-shyness-in-just-60-seconds
 description: Discover a quick three-step method to overcome shyness and engage more confidently in social settings.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Self-Improvement

@@ -1,6 +1,8 @@
 ---
 title: Mastering the Art of Public Speaking
 slug: mastering-the-art-of-public-speaking
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

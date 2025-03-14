@@ -5,7 +5,8 @@ description: Discover techniques to transition from small talk to meaningful con
 
 slug: how-to-move-beyond-small-talk-as-an-introvert
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

@@ -2,7 +2,8 @@
 title: Building Influence - Lessons from Hank and John Green
 slug: building-influence-lessons-from-hank-and-john-green
 description: Explore strategies inspired by Hank and John Green on how to build influential communities and create impactful connections.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Community Building

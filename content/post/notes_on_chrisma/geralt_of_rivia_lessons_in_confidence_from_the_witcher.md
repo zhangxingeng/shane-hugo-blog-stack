@@ -5,7 +5,8 @@ description: Discover how the quiet demeanor of Geralt of Rivia from The Witcher
 
 slug: geralt-of-rivia-lessons-in-confidence-from-the-witcher
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

@@ -2,7 +2,8 @@
 title: Types of Jokes That Can Make People Dislike You and How to Avoid Them
 description: Understand common joke types that can alienate you and learn how to make jokes that foster connections and positive reactions.
 slug: types-of-jokes-that-can-make-people-dislike-you-and-how-to-avoid-them
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

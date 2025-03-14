@@ -1,6 +1,8 @@
 ---
 title: Six Habits to Instantly Boost Your Attractiveness
 slug: six-habits-to-instantly-boost-your-attractiveness
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Self-Improvement

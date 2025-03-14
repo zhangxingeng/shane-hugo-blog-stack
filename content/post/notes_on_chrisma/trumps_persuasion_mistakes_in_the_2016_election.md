@@ -2,7 +2,8 @@
 title: Trump's Persuasion Mistakes in the 2016 Election 
 description: Analyzing Donald Trump's persuasion mistakes and how Hillary Clinton countered them during the 2016 election.
 slug: trumps-persuasion-mistakes-in-the-2016-election
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Politics 

@@ -2,7 +2,8 @@
 title: The Transformative Journey of Confidence in "Breaking Bad"
 description: Exploring the impactful lessons on confidence and presence from Walter White's journey in "Breaking Bad."
 slug: the-transformative-journey-of-confidence-in-breaking-bad
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Television Analysis

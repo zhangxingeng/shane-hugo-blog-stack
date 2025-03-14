@@ -5,7 +5,8 @@ description: Discover techniques for managing anxiety by adopting powerful minds
 
 slug: overcoming-anxiety-insights-and-strategies-from-sadhguru
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

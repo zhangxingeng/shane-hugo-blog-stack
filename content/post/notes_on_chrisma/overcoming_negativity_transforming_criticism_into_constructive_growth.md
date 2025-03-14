@@ -2,7 +2,8 @@
 title: Overcoming Negativity - Transforming Criticism into Constructive Growth
 slug: overcoming-negativity-transforming-criticism-into-constructive-growth
 description: Learn six techniques for handling negativity from those closest to you when embarking on personal growth journeys.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

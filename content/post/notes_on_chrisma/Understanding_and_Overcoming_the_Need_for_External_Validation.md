@@ -2,7 +2,8 @@
 title: Understanding and Overcoming the Need for External Validation
 description: Explore why caring too much about what others think can limit your life and learn strategies for fostering self-acceptance and authentic living.
 slug: understanding-and-overcoming-the-need-for-external-validation
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

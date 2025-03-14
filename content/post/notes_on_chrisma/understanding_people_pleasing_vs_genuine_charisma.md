@@ -2,7 +2,8 @@
 title: Understanding People-Pleasing vs Genuine Charisma
 slug: understanding-people-pleasing-vs-genuine-charisma
 description: Explore the subtle differences between people-pleasing and genuine charisma. Learn how to identify people-pleasing behaviors, and discover steps to cultivate true charisma.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Self-Improvement

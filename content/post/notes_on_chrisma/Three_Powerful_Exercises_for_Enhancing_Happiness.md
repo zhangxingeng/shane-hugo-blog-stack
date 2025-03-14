@@ -2,7 +2,8 @@
 title: Three Powerful Exercises for Enhancing Happiness
 slug: three-powerful-exercises-for-enhancing-happiness
 description: Explore three practical exercises to elevate everyday happiness, including subconscious problem-solving, negative gratitude, and extending gratitude to others.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

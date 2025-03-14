@@ -2,7 +2,8 @@
 title: Understanding the Journey to Manhood Through "Cobra Kai"
 description: Exploring the cultural perspectives on masculinity and the journey from boyhood to becoming a free thinker through the lens of "Cobra Kai."
 slug: understanding-the-journey-to-manhood-through-cobra-kai
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

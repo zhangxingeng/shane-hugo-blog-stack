@@ -2,7 +2,8 @@
 title: Charisma Uncovered - Channeling Charm Like Chris Evans
 slug: charisma-uncovered-channeling-charm-like-chris-evans
 description: An exploration of charisma through Chris Evans' charming tactics, covering body language tricks, conversational strategies, and a mindset for unforgettable interactions.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Self Improvement

@@ -2,7 +2,8 @@
 title: The Genius of Tyrion Lannister - Mastering Influence and Understanding People's Desires
 description: Explore the subtle art of influence through the genius of Tyrion Lannister from Game of Thrones by understanding people's deepest desires.
 slug: the-genius-of-tyrion-lannister-mastering-influence-and-understanding-peoples-desires
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Strategy

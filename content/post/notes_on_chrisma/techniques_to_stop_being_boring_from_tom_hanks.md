@@ -1,6 +1,8 @@
 ---
 title: Techniques to Stop Being Boring from Tom Hanks
 slug: techniques-to-stop-being-boring-from-tom-hanks
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

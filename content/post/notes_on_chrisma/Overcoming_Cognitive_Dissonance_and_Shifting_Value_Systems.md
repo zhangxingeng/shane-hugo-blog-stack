@@ -5,7 +5,8 @@ description: Exploring the challenges of cognitive dissonance and how to align y
 
 slug: overcoming-cognitive-dissonance-and-shifting-value-systems
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

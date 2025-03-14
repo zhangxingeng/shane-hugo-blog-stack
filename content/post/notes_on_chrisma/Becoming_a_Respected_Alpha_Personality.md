@@ -2,7 +2,8 @@
 title: Becoming a Respected Alpha Personality 
 description: Exploring common misconceptions about alpha personalities and offering tips to become a well-liked leader in social interactions.
 slug: becoming-a-respected-alpha-personality
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

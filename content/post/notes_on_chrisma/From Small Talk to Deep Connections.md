@@ -2,7 +2,8 @@
 title: From Small Talk to Deep Connections - Mastering Meaningful Conversations
 description: Discover strategies to transform everyday conversations into meaningful interactions and form genuine connections.
 slug: from-small-talk-to-deep-connections-mastering-meaningful-conversations
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

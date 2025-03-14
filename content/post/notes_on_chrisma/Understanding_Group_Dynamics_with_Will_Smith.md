@@ -5,7 +5,8 @@ description: Analyzing the charismatic group dynamics techniques used by Will Sm
 
 slug: understanding-group-dynamics-with-will-smith
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

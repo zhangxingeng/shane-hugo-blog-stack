@@ -2,7 +2,8 @@
 title: Psychological Tricks To Persuade And Influence Effectively
 description: Discover five psychological tricks to help persuade others and get what you want more easily in life, whether in sales, interviews, or social situations.
 slug: psychological-tricks-to-persuade-and-influence-effectively
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology

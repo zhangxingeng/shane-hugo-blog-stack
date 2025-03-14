@@ -1,7 +1,8 @@
 ---
 title: Five Behaviors Secretly Destroying Your Confidence
 slug: five-behaviors-secretly-destroying-your-confidence
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

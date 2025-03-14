@@ -2,7 +2,8 @@
 title: Unlocking Social Charisma - Lessons from Sophie Turner
 slug: unlocking-social-charisma-lessons-from-sophie-turner
 description: An exploration of how Sophie Turner transforms shyness and anxiety into charisma, with key takeaways for those seeking to enhance their social interactions.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

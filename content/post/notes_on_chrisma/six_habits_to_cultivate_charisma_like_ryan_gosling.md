@@ -2,7 +2,8 @@
 title: Six Habits to Cultivate Charisma Like Ryan Gosling
 description: Discover six habits that can make people love being around you, inspired by the universally adored Ryan Gosling.
 slug: six-habits-to-cultivate-charisma-like-ryan-gosling
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

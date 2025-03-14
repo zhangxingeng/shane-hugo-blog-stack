@@ -5,7 +5,8 @@ description: Discover the secrets behind Ellen DeGeneres' irresistible humor sty
 
 slug: mastering-humor-lessons-from-ellen-degeneres-joke-style
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

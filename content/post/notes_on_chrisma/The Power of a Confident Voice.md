@@ -2,7 +2,8 @@
 title: The Power of a Confident Voice
 slug: the-power-of-a-confident-voice
 description: Discover how a confident voice enhances interactions, leadership, and communication skills.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

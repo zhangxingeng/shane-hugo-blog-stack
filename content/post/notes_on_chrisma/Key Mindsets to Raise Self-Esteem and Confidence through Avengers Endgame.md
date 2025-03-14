@@ -1,7 +1,8 @@
 ---
 title: Key Mindsets to Raise Self-Esteem and Confidence through Avengers Endgame
 slug: key-mindsets-to-raise-self-esteem-and-confidence-through-avengers-endgame
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

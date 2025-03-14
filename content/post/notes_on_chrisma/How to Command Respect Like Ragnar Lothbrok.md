@@ -1,6 +1,8 @@
 ---
 title: How to Command Respect Like Ragnar Lothbrok
 slug: how-to-command-respect-like-ragnar-lothbrok
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Leadership

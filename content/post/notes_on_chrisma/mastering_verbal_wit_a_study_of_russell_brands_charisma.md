@@ -2,7 +2,8 @@
 title: Mastering Verbal Wit - A Study of Russell Brand's Charisma
 description: This blog post delves into the charismatic brilliance of Russell Brand, analyzing key aspects of his verbal dexterity and charm.
 slug: mastering-verbal-wit-a-study-of-russell-brands-charisma
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

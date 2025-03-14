@@ -2,7 +2,8 @@
 title: "Seven Essential Lessons from Your Twenties"
 description: "Navigating through your twenties can be tumultuous, but understanding these key lessons can save you time, money, and unnecessary heartache."
 slug: seven-essential-lessons-from-your-twenties
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

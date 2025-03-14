@@ -2,7 +2,8 @@
 title: The Transformative Impact of Three Essential Books
 slug: the-transformative-impact-of-three-essential-books
 description: Explore how three influential books can change your life by providing alternative perspectives, enhancing interpersonal skills, and boosting self-esteem.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

@@ -1,7 +1,8 @@
 ---
 title: The Art of Making People Laugh - Lessons from Andrew Schulz
 slug: the-art-of-making-people-laugh-lessons-from-andrew-schulz
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Comedy

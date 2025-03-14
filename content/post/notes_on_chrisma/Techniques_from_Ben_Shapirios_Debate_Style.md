@@ -5,7 +5,8 @@ description: A deep dive into the strategic rhetorical devices used by Ben Shapi
 
 slug: techniques-from-ben-shapiros-debate-style
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

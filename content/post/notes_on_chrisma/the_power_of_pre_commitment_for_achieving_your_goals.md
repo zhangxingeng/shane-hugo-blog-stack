@@ -2,7 +2,8 @@
 title: The Power of Pre-commitment for Achieving Your Goals
 description: Discover how publicly committing to your goals can enhance your motivation and accountability through pre-commitment strategies.
 slug: the-power-of-pre-commitment-for-achieving-your-goals
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

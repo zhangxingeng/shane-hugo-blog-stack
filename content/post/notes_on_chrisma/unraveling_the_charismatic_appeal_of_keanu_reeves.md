@@ -2,7 +2,8 @@
 title: Unraveling the Charismatic Appeal of Keanu Reeves
 slug: unraveling-the-charismatic-appeal-of-keanu-reeves
 description: An exploration of how Keanu Reeves captivates the world with his unique charisma, humility, and generous spirit.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Celebrity Charisma

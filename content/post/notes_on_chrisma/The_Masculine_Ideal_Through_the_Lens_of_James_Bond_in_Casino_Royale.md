@@ -2,7 +2,8 @@
 title: The Masculine Ideal Through the Lens of James Bond in Casino Royale
 description: A deconstruction of the masculine traits embodied by James Bond in Casino Royale, exploring traits to adopt and those to reconsider.
 slug: the-masculine-ideal-through-the-lens-of-james-bond-in-casino-royale
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Film Analysis

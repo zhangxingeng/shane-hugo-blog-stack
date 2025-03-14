@@ -5,7 +5,8 @@ slug: optimize-your-learning-for-faster-progress
 
 description: Discover effective strategies to enhance your learning curve in any field, from martial arts to academics, with these practical tips for optimal knowledge acquisition.
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

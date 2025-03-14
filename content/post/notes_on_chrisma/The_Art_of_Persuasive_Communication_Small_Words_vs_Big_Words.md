@@ -2,7 +2,8 @@
 title: The Art of Persuasive Communication - Small Words vs. Big Words
 description: Understanding how word choice impacts communication and how to adapt speech for clarity and impact.
 slug: the-art-of-persuasive-communication-small-words-vs-big-words
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

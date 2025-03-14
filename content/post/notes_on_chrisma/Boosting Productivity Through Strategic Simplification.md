@@ -2,7 +2,8 @@
 title: Boosting Productivity Through Strategic Simplification
 slug: boosting-productivity-through-strategic-simplification
 description: Discover four essential steps to significantly increase productivity without sacrificing free time, emphasizing goal clarity, task elimination, and identifying personal barriers.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Productivity

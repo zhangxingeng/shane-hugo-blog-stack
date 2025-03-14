@@ -5,7 +5,8 @@ description: Discover how Jennifer Lawrence's charisma makes her relatable and l
 
 slug: enhancing-relatability-and-likeability-lessons-from-jennifer-lawrence
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

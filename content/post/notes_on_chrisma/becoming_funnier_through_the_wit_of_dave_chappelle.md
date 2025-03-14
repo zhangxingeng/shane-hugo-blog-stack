@@ -1,6 +1,8 @@
 ---
 title: Becoming Funnier Through the Wit of Dave Chappelle
 slug: becoming-funnier-through-the-wit-of-dave-chappelle
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Comedy

@@ -1,7 +1,8 @@
 ---
 title: Building Lasting Friendships - Common Pitfalls to Avoid
 summary: Understand how to foster strong friendships by avoiding common mistakes that can undermine trust and connections.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Relationships

@@ -2,7 +2,8 @@
 title: Enhancing Charisma With Small Yet Impactful Actions
 slug: enhancing-charisma-with-small-yet-impactful-actions
 description: Discover how seemingly small actions can significantly boost your charisma and create lasting impressions.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

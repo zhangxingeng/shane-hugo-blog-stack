@@ -1,6 +1,8 @@
 ---
 title: Mastering the Art of Storytelling like Kevin Hart
 slug: mastering-the-art-of-storytelling-like-kevin-hart
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Storytelling

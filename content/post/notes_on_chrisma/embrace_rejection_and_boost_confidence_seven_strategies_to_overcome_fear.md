@@ -3,7 +3,8 @@ title: Embrace Rejection and Boost Confidence - Seven Strategies to Overcome Fea
 
 slug: embrace-rejection-and-boost-confidence-seven-strategies-to-overcome-fear
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

@@ -1,7 +1,8 @@
 ---
 title: Effective Flirting - Avoiding Common Mistakes
 slug: effective-flirting-avoiding-common-mistakes
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Social Skills

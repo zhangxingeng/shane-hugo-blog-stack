@@ -2,7 +2,8 @@
 title: Strategies for Effectively Handling Tough Conversations
 description: Learn strategies to navigate tough conversations with clarity and empathy, ensuring outcomes are beneficial for all parties involved.
 slug: strategies-for-effectively-handling-tough-conversations
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

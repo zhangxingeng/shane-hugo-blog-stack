@@ -5,7 +5,8 @@ description: Explore how Sam Harris excels in debates with effective logical and
 
 slug: mastering-debate-tactics-lessons-from-sam-harris
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

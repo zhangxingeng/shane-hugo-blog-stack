@@ -2,7 +2,8 @@
 title: Understanding the Dominance and Leadership Strategies of Negan from The Walking Dead
 description: A breakdown of the traits that make Negan a dominant leader and how to handle such traits in real-life scenarios.
 slug: understanding_the_dominance_and_leadership_strategies_of_negan
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Leadership

@@ -2,7 +2,8 @@
 title: Seven Tips to Earn Respect Instantly
 slug: seven-tips-to-earn-respect-instantly
 description: Practical steps to generate respect on a day-to-day basis that complement the development of a good character over time.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

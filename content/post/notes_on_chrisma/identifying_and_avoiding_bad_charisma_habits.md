@@ -2,7 +2,8 @@
 title: Identifying and Avoiding Bad Charisma Habits 
 description: Learn about seven common charisma mistakes and how to avoid them to enhance your interactions with others.
 slug: identifying-and-avoiding-bad-charisma-habits
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

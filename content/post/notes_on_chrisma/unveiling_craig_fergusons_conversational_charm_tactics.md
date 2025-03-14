@@ -2,7 +2,8 @@
 title: Unveiling Craig Ferguson’s Conversational Charm Tactics
 slug: unveiling-craig-fergusons-conversational-charm-tactics
 description: Explore Craig Ferguson’s unique habits that make him a master of social interaction and how you can apply these in your own conversations.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Social Skills

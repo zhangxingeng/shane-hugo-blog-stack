@@ -2,7 +2,8 @@
 title: Mastering Confidence and Charisma - Strategies for Success
 description: Discover practical strategies to develop confidence and charisma across various social situations and environments.
 slug: mastering-confidence-and-charisma-strategies-for-success
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

@@ -6,7 +6,8 @@ description: Exploring the importance of experiencing pain and challenges as cat
 
 slug: the-role-of-pain-in-personal-growth-and-change
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

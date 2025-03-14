@@ -5,7 +5,8 @@ description: Discover how Norm Macdonald's unique approach to humor can elevate 
 
 slug: mastering-the-art-of-making-bad-jokes-land-like-gems
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

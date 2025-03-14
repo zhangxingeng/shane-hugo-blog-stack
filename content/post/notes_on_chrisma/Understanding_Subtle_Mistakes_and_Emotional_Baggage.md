@@ -5,7 +5,8 @@ description: Delving into subtle actions that might lead to social backlash and 
 
 slug: understanding-subtle-mistakes-and-emotional-baggage
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

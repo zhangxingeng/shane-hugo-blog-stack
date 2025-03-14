@@ -5,7 +5,8 @@ description: A well-aligned posture can greatly contribute to charismatic presen
 
 slug: enhancing-charisma-through-body-language-and-posture
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

@@ -1,6 +1,8 @@
 ---
 title: The Art and Business of Logan Paul's Content Creation
 slug: The-Art-and-Business-of-Logan-Pauls-Content-Creation
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Social Media Analysis

@@ -2,7 +2,8 @@
 title: Mastering Persuasive Conversations - Tips from Lex Friedman and Ye's Dialogue 
 description: Discover how to effectively change someone’s mind while fostering mutual respect and understanding. Explore key strategies from a conversation between Ye and Lex Friedman that highlight the art of persuasion.
 slug: mastering-persuasive-conversations-tips-from-lex-friedman-and-yes-dialogue
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

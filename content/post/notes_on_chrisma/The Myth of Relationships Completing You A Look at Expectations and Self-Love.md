@@ -2,7 +2,8 @@
 title: The Myth of Relationships "Completing" You - A Look at Expectations and Self-Love
 description: An exploration of the cultural narrative that romantic relationships are the key to happiness and how self-love plays into healthy relationships.
 slug: the-myth-of-relationships-completing-you-a-look-at-expectations-and-self-love
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Relationships

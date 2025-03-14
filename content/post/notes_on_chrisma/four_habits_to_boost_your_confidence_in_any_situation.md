@@ -5,7 +5,8 @@ description: Discover how to cultivate the habits of laughing at yourself, calli
 
 slug: four-habits-to-boost-your-confidence-in-any-situation
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 tags:
 - confidence

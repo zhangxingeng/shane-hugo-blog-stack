@@ -1,6 +1,8 @@
 ---
 title: Building New Social Circles After Graduating
 slug: building-new-social-circles-after-graduating
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Social Skills

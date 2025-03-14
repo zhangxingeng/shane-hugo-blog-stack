@@ -2,7 +2,8 @@
 title: Phrases to Avoid for Greater Charisma and Persuasion
 slug: phrases-to-avoid-for-greater-charisma-and-persuasion
 description: Learn about phrases that may be hindering your charisma and explore alternatives to become more persuasive in everyday interactions.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

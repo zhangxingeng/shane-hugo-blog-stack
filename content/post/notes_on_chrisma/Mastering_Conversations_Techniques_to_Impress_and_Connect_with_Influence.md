@@ -2,7 +2,8 @@
 title: Mastering Conversations - Techniques to Impress and Connect with Influence
 slug: mastering-conversations-techniques-to-impress-and-connect-with-influence
 description: Discover techniques to ask compelling questions and connect on a personal level to impress those you admire in professional and personal settings.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

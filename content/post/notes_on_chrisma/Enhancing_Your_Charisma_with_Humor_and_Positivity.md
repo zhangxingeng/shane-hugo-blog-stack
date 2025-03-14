@@ -5,7 +5,8 @@ description: Discover six techniques to become more charismatic and make people 
 
 slug: enhancing-your-charisma-with-humor-and-positivity
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

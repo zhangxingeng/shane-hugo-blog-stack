@@ -2,7 +2,8 @@
 title: Mastering the Art of Making People Laugh Effortlessly
 description: Discover simple techniques to get a laugh in various social situations, from banter to story-telling, and become a magnet for good company.
 slug: Mastering-the-Art-of-Making-People-Laugh-Effortlessly
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

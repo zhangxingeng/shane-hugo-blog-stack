@@ -1,7 +1,8 @@
 ---
 title: Strategies for Mastering the Business Handshake
 slug: strategies-for-mastering-the-business-handshake
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Professional Skills

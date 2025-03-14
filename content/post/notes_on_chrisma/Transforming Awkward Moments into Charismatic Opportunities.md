@@ -2,7 +2,8 @@
 title: Transforming Awkward Moments into Charismatic Opportunities
 slug: transforming-awkward-moments-into-charismatic-opportunities
 description: Explore how to turn awkward situations into engaging moments that enhance your charisma, influenced by Aubrey Plaza’s unique approach.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

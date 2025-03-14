@@ -2,7 +2,8 @@
 title: The Power of Bill Clinton's Eye Contact
 slug: the-power-of-bill-clintons-eye-contact
 description: An in-depth look at how Bill Clinton's eye contact in the 1992 town hall debate exemplifies effective communication techniques.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

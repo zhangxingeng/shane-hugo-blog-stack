@@ -5,7 +5,8 @@ description: Discover the power of five simple daily habits that can significant
 
 slug: five-simple-habits-to-transform-your-life-in-minutes
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

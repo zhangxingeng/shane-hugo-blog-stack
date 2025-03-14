@@ -2,7 +2,8 @@
 title: Habits to Instantly Boost Your Likeability - Lessons from Millie Bobby Brown
 description: Explore a collection of habits inspired by Millie Bobby Brown to enhance your social likeability and charm.
 slug: habits-to-instantly-boost-your-likeability-lessons-from-millie-bobby-brown
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

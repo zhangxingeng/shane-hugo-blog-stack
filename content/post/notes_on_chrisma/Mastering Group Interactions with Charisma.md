@@ -2,7 +2,8 @@
 title: Mastering Group Interactions with Charisma
 slug: mastering-group-interactions-with-charisma
 description: Learn effective techniques for thriving in group interactions with insights from charismatic personalities like Will Smith.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

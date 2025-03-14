@@ -2,7 +2,8 @@
 title: Immunize Yourself Against Doubt and Social Pressure to Achieve Your Dreams
 description: Learn how to overcome doubt and social pressure from others to pursue your dreams, with key strategies for strengthening your inner resolve and finding support.
 slug: immunize-yourself-against-doubt-and-social-pressure-to-achieve-your-dreams
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

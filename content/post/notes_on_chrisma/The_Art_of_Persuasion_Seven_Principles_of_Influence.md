@@ -2,7 +2,8 @@
 title: The Art of Persuasion - Seven Principles of Influence
 slug: the-art-of-persuasion-seven-principles-of-influence
 description: Discover the ethical application of powerful persuasion principles and how they shape decision-making.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology

@@ -5,7 +5,8 @@ description: Explore the concept of charisma with insights from Russell Brand, f
 
 slug: understanding-charisma-insights-from-russell-brand
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

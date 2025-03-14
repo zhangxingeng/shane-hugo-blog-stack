@@ -2,7 +2,8 @@
 title: Understanding the Impact of Fraudulent Copyright Claims on YouTube Creators
 description: This post delves into the challenges of fair use and the legal ramifications for content creators on platforms like YouTube, focusing on the prevalence of fraudulent copyright claims.
 slug: understanding-the-impact-of-fraudulent-copyright-claims-on-youtube-creators
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Digital Media

@@ -2,7 +2,8 @@
 title: Five Key Strategies to Maintain Motivation and Willpower
 description: Learn effective methods to better harness motivation and strengthen willpower for achieving your goals.
 slug: five-key-strategies-to-maintain-motivation-and-willpower
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

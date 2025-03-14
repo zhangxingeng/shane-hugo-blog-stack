@@ -2,7 +2,8 @@
 title: Elon Musk, Video Games, and the Psychological Underpinnings of Toxic Shame
 description: Exploring the intriguing psychology behind Elon Musk's alleged video game claims and the broader implications of toxic shame.
 slug: elon-musk-video-games-and-the-psychological-underpinnings-of-toxic-shame
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology

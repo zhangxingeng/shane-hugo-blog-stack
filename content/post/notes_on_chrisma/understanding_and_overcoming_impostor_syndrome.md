@@ -2,6 +2,8 @@
 title: Understanding and Overcoming Impostor Syndrome 
 description: Delve into the nuances of impostor syndrome, its impact on self-growth, and practical steps for overcoming it.
 slug: understanding-and-overcoming-impostor-syndrome
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

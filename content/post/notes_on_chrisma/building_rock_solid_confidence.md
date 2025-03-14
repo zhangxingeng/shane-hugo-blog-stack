@@ -1,6 +1,8 @@
 ---
 title: Building Rock-Solid Confidence
 slug: building-rock-solid-confidence
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

@@ -2,7 +2,8 @@
 title: Developing Confidence - Lessons from Conor McGregor
 slug: developing-confidence-lessons-from-conor-mcgregor
 description: Explore the strategies that underpin Conor McGregor's legendary confidence and how you can apply them to your own life.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

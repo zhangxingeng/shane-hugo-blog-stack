@@ -2,7 +2,8 @@
 title: How Abstaining from Alcohol Boosts Your Social Skills 
 description: Learn how cutting out alcohol can enhance your social skills and charisma. Discover three major benefits and practical examples to implement today.
 slug: how-abstaining-from-alcohol-boosts-your-social-skills 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories: 
 - Personal Development
 - Social Skills 

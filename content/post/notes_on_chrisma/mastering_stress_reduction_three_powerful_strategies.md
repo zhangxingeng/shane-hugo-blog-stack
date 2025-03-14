@@ -2,7 +2,8 @@
 title: Mastering Stress Reduction - Three Powerful Strategies
 slug: mastering-stress-reduction-three-powerful-strategies
 description: A comprehensive guide on reducing stress using mindset shifts with practical strategies.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

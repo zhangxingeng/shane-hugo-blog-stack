@@ -1,7 +1,8 @@
 ---
 title: Understanding Trump's Unexpected Political Strategy
 slug: understanding-trumps-unexpected-political-strategy
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Politics

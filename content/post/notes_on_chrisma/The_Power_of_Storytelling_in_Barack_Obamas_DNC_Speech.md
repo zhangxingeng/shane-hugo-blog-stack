@@ -5,7 +5,8 @@ description: Analyzing the storytelling techniques and rhetorical skills used by
 
 slug: The-Power-of-Storytelling-in-Barack-Obamas-DNC-Speech
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

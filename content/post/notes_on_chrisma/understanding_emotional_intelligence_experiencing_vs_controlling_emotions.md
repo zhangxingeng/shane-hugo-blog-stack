@@ -2,7 +2,8 @@
 title: Understanding Emotional Intelligence - Experiencing vs. Controlling Emotions
 description: Explore the nuances of emotional intelligence, the myth of controlling emotions, and how embracing one's full emotional spectrum can enhance self-awareness and authenticity.
 slug: understanding-emotional-intelligence-experiencing-vs-controlling-emotions
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

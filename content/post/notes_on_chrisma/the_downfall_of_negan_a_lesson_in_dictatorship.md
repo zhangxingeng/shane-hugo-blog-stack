@@ -2,7 +2,8 @@
 title: The Downfall of Negan - A Lesson in Dictatorship
 slug: the-downfall-of-negan-a-lesson-in-dictatorship
 description: An analysis of how Negan's strategies in The Walking Dead could lead to his own downfall — insights from "The Rules for Rulers" and "The Dictator's Handbook."
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Television

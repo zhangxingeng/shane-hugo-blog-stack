@@ -2,7 +2,8 @@
 title: Stark Leadership and the Perils of Misunderstanding Human Desires
 description: An analysis of the Stark family's failures in leadership, focusing on understanding motivations and strategic misalignment.
 slug: stark-leadership-and-the-perils-of-misunderstanding-human-desires
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
   - CoC
   - Leadership

@@ -3,7 +3,8 @@ title: Three Key Traits to Boost Your Charisma Instantly
 
 slug: three-key-traits-to-boost-your-charisma-instantly
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

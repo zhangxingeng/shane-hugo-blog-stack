@@ -1,7 +1,8 @@
 ---
 title: Seven Humorous Techniques to Make Others Laugh and Enjoy Your Company
 slug: seven-humorous-techniques-to-make-others-laugh-and-enjoy-your-company
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

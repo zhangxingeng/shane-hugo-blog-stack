@@ -1,7 +1,8 @@
 ---
 title: Handling Haters with Grace - Five Effective Strategies
 slug: handling-haters-with-grace-five-effective-strategies
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

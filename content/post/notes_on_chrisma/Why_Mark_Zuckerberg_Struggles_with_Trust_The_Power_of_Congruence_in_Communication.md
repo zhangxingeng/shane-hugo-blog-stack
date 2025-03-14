@@ -1,7 +1,8 @@
 ---
 title: Why Mark Zuckerberg Struggles with Trust - The Power of Congruence in Communication
 slug: Why-Mark-Zuckerberg-Struggles-with-Trust-The-Power-of-Congruence-in-Communication
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

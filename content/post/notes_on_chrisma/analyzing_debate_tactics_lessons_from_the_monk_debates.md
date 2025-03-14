@@ -2,7 +2,8 @@
 title: Analyzing Debate Tactics - Lessons from the Monk Debates
 slug: analyzing-debate-tactics-lessons-from-the-monk-debates
 description: A deep dive into debate tactics with insights from the Monk Debates featuring Malcolm Gladwell, Douglas Murray, and Matt Taibbi.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

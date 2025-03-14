@@ -2,7 +2,8 @@
 title: How to Build and Display Confidence Like Scarlett Johansson
 slug: how-to-build-and-display-confidence-like-scarlett-johansson
 description: Learn techniques to boost your self-confidence and improve the perception others have of you by adopting body language tips and conversation strategies.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

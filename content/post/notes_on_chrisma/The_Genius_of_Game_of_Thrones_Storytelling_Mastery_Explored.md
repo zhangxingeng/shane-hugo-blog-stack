@@ -2,7 +2,8 @@
 title: The Genius of Game of Thrones - Storytelling Mastery Explored
 description: An analysis of the storytelling brilliance of Game of Thrones, exploring themes like morally gray characters, dramatic reversals, and the hidden hero's journey.
 slug: the-genius-of-game-of-thrones-storytelling-mastery-explored
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Television

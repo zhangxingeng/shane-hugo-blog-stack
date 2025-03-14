@@ -5,7 +5,8 @@ description: Discover the secrets behind Graham Norton's beloved charisma and le
 
 slug: how-graham-nortons-charisma-makes-him-unforgettable
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

@@ -2,7 +2,8 @@
 title: Mastering the Art of Memory-Friendly Speech Delivery
 description: Discover effective techniques for delivering speeches without the need for memorization, ensuring an authentic and engaging experience.
 slug: mastering-the-art-of-memory-friendly-speech-delivery
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Public Speaking

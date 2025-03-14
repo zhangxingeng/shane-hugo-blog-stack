@@ -5,7 +5,8 @@ description: Explore the underlying causes of self-sabotage and discover effecti
 
 slug: understanding-and-overcoming-self-sabotage
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

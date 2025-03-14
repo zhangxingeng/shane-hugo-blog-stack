@@ -2,7 +2,8 @@
 title: Discovering Your Passions for a Charismatic Life
 description: Learn how identifying and integrating your passions can enhance your charisma and attract like-minded individuals.
 slug: discovering-your-passions-for-a-charismatic-life
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

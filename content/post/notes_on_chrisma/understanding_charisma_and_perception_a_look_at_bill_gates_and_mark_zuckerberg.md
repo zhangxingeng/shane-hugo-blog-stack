@@ -5,7 +5,8 @@ description: This post examines the reasons behind the perception challenges fac
 
 slug: understanding-charisma-and-perception-a-look-at-bill-gates-and-mark-zuckerberg
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

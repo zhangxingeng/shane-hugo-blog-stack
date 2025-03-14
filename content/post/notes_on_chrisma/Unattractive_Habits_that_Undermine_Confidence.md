@@ -1,6 +1,8 @@
 ---
 title: Unattractive Habits that Undermine Confidence
 slug: unattractive-habits-undermine-confidence
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Self-Improvement

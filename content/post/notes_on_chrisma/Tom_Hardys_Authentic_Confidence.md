@@ -2,6 +2,8 @@
 title: Tom Hardy's Authentic Confidence - Lessons from the Actor's Charismatic Presence
 description: Discover the unconventional mindsets that make Tom Hardy a beacon of confident charisma and learn how you can adopt these principles for yourself.
 slug: tom-hardys-authentic-confidence
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Self-improvement

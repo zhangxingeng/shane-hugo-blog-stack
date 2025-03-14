@@ -2,7 +2,8 @@
 title: How to Gracefully Handle Pressure to Drink at Social Gatherings
 description: Learn effective strategies to resist peer pressure to drink alcohol without compromising your social life.
 slug: how-to-gracefully-handle-pressure-to-drink-at-social-gatherings
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Social Skills

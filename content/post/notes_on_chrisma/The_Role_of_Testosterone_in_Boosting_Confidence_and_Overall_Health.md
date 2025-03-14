@@ -2,7 +2,8 @@
 title: The Role of Testosterone in Boosting Confidence and Overall Health
 description: Discover how optimizing testosterone can positively impact your confidence, health, and lifestyle.
 slug: the-role-of-testosterone-in-boosting-confidence-and-overall-health
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Health and Wellness

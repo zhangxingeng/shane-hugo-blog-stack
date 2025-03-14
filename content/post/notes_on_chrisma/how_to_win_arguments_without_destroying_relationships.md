@@ -4,7 +4,8 @@ title: How to Win Arguments Without Destroying Relationships
 description: A guide to effective and respectful debate techniques, inspired by the discussions of Jordan Peterson.
 
 slug: how-to-win-arguments-without-destroying-relationships
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

@@ -2,7 +2,8 @@
 title: Game of Thrones Characters Ranked by Charisma
 slug: game-of-thrones-characters-ranked-by-charisma
 description: An intriguing look at the charisma of Game of Thrones characters, ranked and tiered based on their persuasive abilities and cunning.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Entertainment

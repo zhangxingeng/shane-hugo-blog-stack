@@ -2,7 +2,8 @@
 title: The Importance of Good Posture and How to Achieve It
 slug: the-importance-of-good-posture-and-how-to-achieve-it
 description: Discover the three common postural issues and learn effective techniques to correct them for a confident and healthy appearance.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Health

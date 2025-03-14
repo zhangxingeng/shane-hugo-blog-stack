@@ -5,7 +5,8 @@ description: A deep dive into the nuances of force, manipulation, and true power
     
 slug: understanding-power-dynamics-lessons-from-westeros
     
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
     
 categories:
 - CoC

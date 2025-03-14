@@ -2,7 +2,8 @@
 title: Leveraging Persuasion - 6 Phrases to Influence People Effectively
 description: Discover how a few strategic phrases can enhance your persuasive abilities in various situations.
 slug: leveraging-persuasion-6-phrases-to-influence-people-effectively
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:  
 - Psychology  
 - Communication  

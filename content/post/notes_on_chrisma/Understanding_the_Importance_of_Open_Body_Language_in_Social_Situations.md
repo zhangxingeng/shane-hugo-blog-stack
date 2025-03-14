@@ -2,7 +2,8 @@
 title: Understanding the Importance of Open Body Language in Social Situations
 description: Learn why maintaining open body language is crucial in conveying confidence and competence, and how it can affect social interactions.
 slug: understanding-the-importance-of-open-body-language-in-social-situations
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Body Language

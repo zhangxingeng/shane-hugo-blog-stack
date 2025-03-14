@@ -5,7 +5,8 @@ description: Learn effective strategies to defend yourself in arguments and avoi
 
 slug: mastering-the-art-of-argumentation-strategies-to-defend-yourself-effectively
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

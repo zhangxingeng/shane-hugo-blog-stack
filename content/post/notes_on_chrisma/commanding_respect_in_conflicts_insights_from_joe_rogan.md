@@ -2,7 +2,8 @@
 title: Commanding Respect in Conflicts - Insights from Joe Rogan
 slug: commanding-respect-in-conflicts-insights-from-joe-rogan
 description: Explore the strategies to command respect in tough situations without being aggressive, inspired by Joe Rogan's approach.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

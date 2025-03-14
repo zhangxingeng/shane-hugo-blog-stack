@@ -1,7 +1,8 @@
 ---
 title: Mastering Persuasion - Five Key Steps to Change Minds
 summary: Learn effective strategies for changing someone’s mind, with insights from Steven Crowder’s "Change My Mind" segment, emphasizing rapport building and effective communication.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

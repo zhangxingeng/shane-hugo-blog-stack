@@ -2,7 +2,8 @@
 title: How to Persuade a Stubborn Person Without Damaging Relationships
 description: Learn six effective strategies to change a stubborn person's mind while maintaining a positive relationship.
 slug: how-to-persuade-a-stubborn-person-without-damaging-relationships
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

@@ -1,7 +1,8 @@
 ---
 title: Mastering the Art of Ending Conversations with Charisma
 slug: mastering-the-art-of-ending-conversations-with-charisma
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

@@ -1,7 +1,8 @@
 ---
 title: Understanding Sociopathic Behavior - Key Signs to Recognize
 slug: understanding-sociopathic-behavior-key-signs-to-recognize
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology

@@ -1,7 +1,8 @@
 ---
 title: Disarming Rudeness Through Effective Communication Strategies
 description: Learn strategies to transform rudeness into respect through boundaries, non-engagement, and open questioning
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

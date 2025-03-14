@@ -2,7 +2,8 @@
 title: Navigating Awkward Social Situations - Lessons from Cringe-worthy Moments
 description: Analyzing awkward social interactions can offer valuable lessons in communication and self-awareness.
 slug: navigating-awkward-social-situations-lessons-from-cringe-worthy-moments
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Social Skills

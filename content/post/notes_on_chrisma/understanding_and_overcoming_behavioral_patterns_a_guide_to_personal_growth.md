@@ -2,7 +2,8 @@
 title: Understanding and Overcoming Behavioral Patterns - A Guide to Personal Growth
 slug: understanding-and-overcoming-behavioral-patterns-a-guide-to-personal-growth
 description: Explore the importance of recognizing and changing ingrained behavioral patterns for personal development and healthier relationships.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

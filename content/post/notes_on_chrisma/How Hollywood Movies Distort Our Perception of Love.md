@@ -1,6 +1,8 @@
 ---
 title: How Hollywood Movies Distort Our Perception of Love
 slug: how-hollywood-movies-distort-our-perception-of-love
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Relationships

@@ -5,7 +5,8 @@ slug: try-these-five-texting-tips-to-stand-out-and-secure-that-date
 
 description: Discover essential texting strategies to make an impressive connection and turn that initial encounter into an exciting first date.
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

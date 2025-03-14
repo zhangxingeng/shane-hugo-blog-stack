@@ -2,7 +2,8 @@
 title: LeBron James' Leadership Playbook - Transforming Challenges into Triumphs
 slug: lebron-james-leadership-playbook-transforming-challenges-into-triumphs
 description: Exploring how LeBron James' leadership principles can inspire others to face challenges, focus on contributions, and prioritize collective achievements over personal accolades.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Leadership

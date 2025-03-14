@@ -2,7 +2,8 @@
 title: The Hidden Perils of Curating an Online Persona
 slug: the-hidden-perils-of-curating-an-online-persona
 description: Exploring the psychological and emotional impacts of maintaining a curated persona on social media.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Social Media

@@ -2,7 +2,8 @@
 title: Nine Tricks to Spot a Liar
 slug: nine-tricks-to-spot-a-liar
 description: Discover effective techniques to detect deception in communication using body language and verbal cues.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication Skills

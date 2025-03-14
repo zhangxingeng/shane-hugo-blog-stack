@@ -2,7 +2,8 @@
 title: Mastering Conversational Tactics Against "Verbal Bullying"
 description: Learn how to handle subtle conversational tricks designed to undermine you with examples from a notable interview.
 slug: mastering-conversational-tactics-against-verbal-bullying
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

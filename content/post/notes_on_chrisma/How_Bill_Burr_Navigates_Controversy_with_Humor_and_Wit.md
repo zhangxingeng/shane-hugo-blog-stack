@@ -2,7 +2,8 @@
 title: How Bill Burr Navigates Controversy with Humor and Wit
 slug: how-bill-burr-navigates-controversy-with-humor-and-wit
 description: An analysis of Bill Burr's techniques to share controversial opinions without alienating his audience and maintaining popularity.
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Comedy

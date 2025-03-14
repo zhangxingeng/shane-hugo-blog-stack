@@ -5,7 +5,8 @@ description: Learn effective strategies for addressing rude and passive-aggressi
 
 slug: navigating-passive-aggressive-behavior-strategies-for-assertive-communication
 
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 
 categories:
 - CoC

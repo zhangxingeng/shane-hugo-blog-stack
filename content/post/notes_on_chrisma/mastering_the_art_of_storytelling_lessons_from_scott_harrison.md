@@ -2,7 +2,8 @@
 title: Mastering the Art of Storytelling - Lessons from Scott Harrison
 description: Discover the transformative power of storytelling with principles from Scott Harrison, founder of Charity - Water.
 slug: mastering-the-art-of-storytelling-lessons-from-scott-harrison
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Storytelling

@@ -5,7 +5,8 @@ description: An exploration of the psychological strategies that have made PewDi
  
 slug: the-anatomy-of-pewdiepies-success
  
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
  
 categories:
 - CoC

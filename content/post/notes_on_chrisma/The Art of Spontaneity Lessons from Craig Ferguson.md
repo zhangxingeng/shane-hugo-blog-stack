@@ -1,7 +1,8 @@
 ---
 title: The Art of Spontaneity - Lessons from Craig Ferguson
 slug: the-art-of-spontaneity-lessons-from-craig-ferguson
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Communication

@@ -2,7 +2,8 @@
 title: Overcoming Self-Doubt - Strategies to Reclaim Your Confidence
 description: Explore effective exercises and techniques to eliminate self-doubt and build confidence.
 slug: overcoming-self-doubt-strategies-to-reclaim-your-confidence
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

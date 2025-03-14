@@ -2,7 +2,8 @@
 title: Ironman's Most Savage Lessons for Commanding Respect
 description: Exploring the strategies behind Ironman's savage moments and how to apply them in your life to command more respect.
 slug: ironmans-most-savage-lessons-for-commanding-respect
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

@@ -2,7 +2,8 @@
 title: Navigating Social Interactions as an Introvert - Tips from Zendaya's Playbook
 description: An insightful guide for introverts on how to charm in social interactions without changing their true selves, inspired by Zendaya's techniques.
 slug: navigating-social-interactions-as-an-introvert-tips-from-zendayas-playbook
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Personal Development

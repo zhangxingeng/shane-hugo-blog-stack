@@ -2,7 +2,8 @@
 title: The Influence of Fathers - A Star Wars Analysis on Personal Destiny
 description: Exploring how the relationship between fathers and sons impacts personal destiny, using Star Wars characters as examples.
 slug: the-influence-of-fathers-a-star-wars-analysis-on-personal-destiny
-date: 2023-03-06 00:00:00+0000
+draft: true
+date: 0000-01-01 00:00:00+0000
 categories:
 - CoC
 - Psychology
