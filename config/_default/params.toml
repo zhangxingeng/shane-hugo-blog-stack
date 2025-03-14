@@ -28,7 +28,7 @@ readingTime = true
 
 [article.license]
 enabled = true
-default = "MIT"
+default = "All Rights Reserved"
 
 ## Widgets
 [[widgets.homepage]]

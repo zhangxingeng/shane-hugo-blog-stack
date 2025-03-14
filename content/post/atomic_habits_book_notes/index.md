@@ -21,6 +21,7 @@ tags:
 
 ### Sustained Tiny Change Makes a Difference
 
+- Takeaway: **trajectory** should be your daily concern, not **results**
 - We tend to value defining moments but look over daily changes
   - e.g. Steve Jobs is so good at presentation, but most people don't know he work so hard he wake up at 5 in the morning everyday
   - Instead we call it a "talent," neglecting all the tiny effort during his daily effort
@@ -31,18 +32,20 @@ tags:
 
 ### Valley of Disappointment
 
+- Takeaway: Be patient at your dark times.
 - Habits appears to make no difference until you cross a critical threshold (Plateau of Latent Potential)
 - ![Plateau of Latent Potential](the_plateau_of_latent_potential.png)
 - Like melting ice -- nothing seems to happen for a while, then all actions happens at 32 degrees
 
 ### Forget about Goals, Your System Will Take Care of It
 
-- Best way to achieve is to set **Specific, actionable** goals
+- Best way to achieve is to set **Specific, actionable** goals (There are limitations to setting goals, as we will see later)
 - Goals are about what you want to achieve (like be fit), systems are the process that lead to that goal (like exercise every day)
 - Fantasizing achieving the goal does not make it a reality, real progress come from a usable system
 
 #### Goal-oriented is the Problem
 
+- Takeaway: The Journey is the reward. Be present. (after you build up the system, of course)
 - Problem 1: Goal setting suffers from a serious case of survivorship bias:
   - Society emphasizing successful people's (achieved) goals, while ignoring failed people have the same goals
 - Problem 2: Goal only temporarily change things, it treats a symptom but not the cause of it
@@ -58,6 +61,7 @@ tags:
 
 ### A System of Atomic Habits
 
+- Takeaway: Accept human limitations, build a better system instead of blaiming self-control.
 - If you failed to change your habits, the problem isn't you, it's your system
 - Small habits compound over time, just like atoms make up molecules
 - Breaking habits into atomic units makes them easier to build
