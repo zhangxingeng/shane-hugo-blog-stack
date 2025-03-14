@@ -57,10 +57,7 @@ jobs:
         run: git submodule update --remote --merge
       - name: Build with Hugo
       # add --buildDrafts in the run command if you want to show draft posts
-        run: |
-          hugo \
-             --gc \ 
-            --baseURL ${{ steps.pages.outputs.base_url }}
+        run: hugo --gc --baseURL ${{ steps.pages.outputs.base_url }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
