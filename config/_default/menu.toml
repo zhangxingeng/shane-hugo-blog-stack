@@ -26,7 +26,7 @@ icon = "brand-x"
 [[social]]
 identifier = "linkedin"
 name = "LinkedIn"
-url = "https://www.linkedin.com/in/shanechang"
+url = "https://www.linkedin.com/in/zhangxingeng"
 
 [social.params]
 icon = "brand-linkedin"
