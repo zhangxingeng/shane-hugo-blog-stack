@@ -1,3 +1,8 @@
+---
+title: "Some translations of Confucius's sayings"
+draft: true
+---
+
 ## 居敬而行简，以临其民，不亦可乎
 
 - 居：对待事物的态度

@@ -1,0 +1,27 @@
+[build]
+    publish = "public"
+    command = "git submodule update --init --recursive && hugo --gc -b ${URL}"
+
+[build.environment]
+    HUGO_VERSION = "0.145.0"
+    HUGO_EXTENDED = "true"
+    GIT_SUBMODULE_STRATEGY = "recursive"
+
+[context.production]
+    command = "git submodule update --remote --merge && hugo --gc -b ${URL}"
+    [context.production.environment]
+        HUGO_ENV = "production"
+
+[[plugins]]
+    package = "netlify-plugin-hugo-cache-resources"
+    [plugins.inputs]
+        debug = true
+        srcdir = ""
+
+[[headers]]
+    for = "/*"
+    [headers.values]
+        Cache-Control = "public, max-age=31536000, immutable"
+
+[context.deploy-preview]
+    command = "git submodule update --remote --merge && hugo --gc -b ${DEPLOY_PRIME_URL}"
