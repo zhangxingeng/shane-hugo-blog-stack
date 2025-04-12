@@ -49,4 +49,5 @@ Note: markdown should not contain level 1 headers (h1 or single hashtag # titles
 ## Cover image prompt
 
 Based on the given blog post front matter, generate me an image as the cover image for the post.
-The image should be 3:2 aspect ratio (wide screen). make the image attactive to attention so it could attract more people to read the post.
+The image should be as wide as possible. make the image attactive to attention so it could attract more people to read the post.
+do not include any text in the image.
