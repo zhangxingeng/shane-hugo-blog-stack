@@ -10,6 +10,7 @@ enableRobotsTXT = true
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
 defaultContentLanguage = "en"
 
+
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage = true
@@ -23,3 +24,9 @@ pagerSize = 10
 [services]
 [services.googleAnalytics]
 id = "G-9RZMBQK5TZ"
+
+[module]
+[[module.mounts]]
+excludeFiles =  ["playgrounds/*"]
+source = 'content'
+target = 'content'
