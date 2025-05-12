@@ -1,0 +1,565 @@
+{
+  "author": "张欣耕 (Shane Zhang)",
+  "description": "张欣耕的简历 - 专注于生成式AI、LLM微调和RAG系统的AI/ML工程师",
+  "profile": {
+    "enable": true,
+    "name": "张欣耕 (Shane Zhang)",
+    "tagline": "AI/ML工程师，LLM专家，RAG专家",
+    "avatar": "img/avatar.png"
+  },
+  "contact": {
+    "enable": true,
+    "location": "新泽西州皮斯卡塔韦",
+    "list": [
+      {
+        "icon": "fas fa-phone-square",
+        "url": "tel:7324916378",
+        "text": "732-491-6378"
+      },
+      {
+        "icon": "fas fa-envelope-square",
+        "url": "mailto:zhangxingeng970221@gmail.com",
+        "text": "zhangxingeng970221@gmail.com"
+      },
+      {
+        "icon": "fas fa-globe",
+        "url": "https://www.shanezhang.com",
+        "text": "www.shanezhang.com"
+      }
+    ]
+  },
+  "skills": {
+    "enable": true,
+    "list": [
+      {
+        "title": "生成式AI",
+        "items": [
+          {
+            "details": "LLM微调"
+          },
+          {
+            "details": "参数高效微调 (PEFT)"
+          },
+          {
+            "details": "检索增强生成 (RAG)"
+          },
+          {
+            "details": "代理式RAG系统"
+          },
+          {
+            "details": "知识图谱 (RDF)"
+          },
+          {
+            "details": "知识图谱 (LPG格式)"
+          },
+          {
+            "details": "GraphRAG"
+          },
+          {
+            "details": "OpenAI GPT"
+          },
+          {
+            "details": "Google Gemini"
+          },
+          {
+            "details": "Anthropic Claude"
+          },
+          {
+            "details": "LangChain"
+          },
+          {
+            "details": "LangGraph"
+          },
+          {
+            "details": "提示工程"
+          },
+          {
+            "details": "RLHF"
+          }
+        ]
+      },
+      {
+        "title": "机器学习与NLP",
+        "items": [
+          {
+            "details": "PyTorch"
+          },
+          {
+            "details": "TensorFlow"
+          },
+          {
+            "details": "Keras"
+          },
+          {
+            "details": "Transformers"
+          },
+          {
+            "details": "HuggingFace"
+          },
+          {
+            "details": "自然语言处理 (NLP)"
+          },
+          {
+            "details": "spaCy"
+          },
+          {
+            "details": "NLTK"
+          },
+          {
+            "details": "特征工程"
+          },
+          {
+            "details": "统计建模"
+          },
+          {
+            "details": "量化"
+          },
+          {
+            "details": "剪枝技术"
+          },
+          {
+            "details": "模型评估"
+          },
+          {
+            "details": "性能分析"
+          },
+          {
+            "details": "神经网络"
+          },
+          {
+            "details": "GANs"
+          },
+          {
+            "details": "Stable Diffusion"
+          }
+        ]
+      },
+      {
+        "title": "数据工程",
+        "items": [
+          {
+            "details": "Postgres with pgvector"
+          },
+          {
+            "details": "FAISS"
+          },
+          {
+            "details": "Chroma"
+          },
+          {
+            "details": "Neo4j"
+          },
+          {
+            "details": "Cypher"
+          },
+          {
+            "details": "MySQL"
+          },
+          {
+            "details": "PostgreSQL"
+          },
+          {
+            "details": "Oracle"
+          },
+          {
+            "details": "Elasticsearch"
+          },
+          {
+            "details": "MongoDB"
+          },
+          {
+            "details": "PySpark"
+          },
+          {
+            "details": "Pandas"
+          },
+          {
+            "details": "NumPy"
+          },
+          {
+            "details": "Apache Spark"
+          },
+          {
+            "details": "Hadoop"
+          },
+          {
+            "details": "ETL工作流"
+          },
+          {
+            "details": "数据处理管道"
+          }
+        ]
+      },
+      {
+        "title": "编程",
+        "items": [
+          {
+            "details": "Python"
+          },
+          {
+            "details": "FastAPI"
+          },
+          {
+            "details": "Streamlit"
+          },
+          {
+            "details": "PyTest"
+          },
+          {
+            "details": "JavaScript"
+          },
+          {
+            "details": "Node.js"
+          },
+          {
+            "details": "React"
+          },
+          {
+            "details": "Scala"
+          },
+          {
+            "details": "Java"
+          },
+          {
+            "details": "C++"
+          },
+          {
+            "details": "REST API开发"
+          },
+          {
+            "details": "gRPC"
+          },
+          {
+            "details": "JWT"
+          },
+          {
+            "details": "认证系统"
+          }
+        ]
+      },
+      {
+        "title": "DevOps与MLOps",
+        "items": [
+          {
+            "details": "Docker"
+          },
+          {
+            "details": "Kubernetes"
+          },
+          {
+            "details": "OpenShift"
+          },
+          {
+            "details": "CI/CD管道"
+          },
+          {
+            "details": "开发工作流"
+          },
+          {
+            "details": "AWS SageMaker"
+          },
+          {
+            "details": "AWS Bedrock"
+          },
+          {
+            "details": "AWS S3"
+          },
+          {
+            "details": "AWS EC2"
+          },
+          {
+            "details": "AWS Lambda"
+          },
+          {
+            "details": "AWS Glue"
+          },
+          {
+            "details": "Azure云服务"
+          },
+          {
+            "details": "MLflow"
+          },
+          {
+            "details": "RAGAS"
+          }
+        ]
+      },
+      {
+        "title": "专业与软技能",
+        "items": [
+          {
+            "details": "技术沟通"
+          },
+          {
+            "details": "文档编写"
+          },
+          {
+            "details": "团队协作"
+          },
+          {
+            "details": "跨职能领导"
+          },
+          {
+            "details": "利益相关者管理"
+          },
+          {
+            "details": "客户演示"
+          },
+          {
+            "details": "指导"
+          },
+          {
+            "details": "培训"
+          },
+          {
+            "details": "敏捷方法论"
+          },
+          {
+            "details": "项目管理"
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "enable": true,
+    "list": [
+      {
+        "degree": "计算机科学硕士，机器学习专业",
+        "university": "新泽西州立大学罗格斯分校",
+        "dates": "2020年12月 - 2022年12月",
+        "gpa": "GPA: 3.71"
+      },
+      {
+        "degree": "计算机科学学士",
+        "university": "新泽西州立大学罗格斯分校",
+        "dates": "2017年9月 - 2020年9月"
+      }
+    ]
+  },
+  "languages": {
+    "enable": true,
+    "list": [
+      {
+        "name": "英语",
+        "level": "母语，流利"
+      },
+      {
+        "name": "中文",
+        "level": "母语，流利"
+      }
+    ]
+  },
+  "summary": {
+    "enable": true,
+    "text": "拥有超过5年经验的AI/ML工程师，专注于微调大型语言模型（LLM）和构建高级代理式检索增强生成（RAG）系统。对AI充满热情，致力于掌握新兴技术以解决现实问题并增强人类创造力。我的梦想是见证第一个通用人工智能（AGI）的发展。我具备将AI模型从实验室带到实际产品的能力，这些产品已触及数百万用户。"
+  },
+  "interests": {
+    "enable": true,
+    "list": [
+      {
+        "name": "生成式AI",
+        "icon": "fas fa-robot"
+      },
+      {
+        "name": "潜水",
+        "icon": "fas fa-water"
+      },
+      {
+        "name": "阅读",
+        "icon": "fas fa-book"
+      },
+      {
+        "name": "哲学",
+        "icon": "fas fa-brain"
+      },
+      {
+        "name": "心理学",
+        "icon": "fas fa-user-friends"
+      },
+      {
+        "name": "社会学",
+        "icon": "fas fa-users"
+      }
+    ]
+  },
+  "experience": {
+    "enable": true,
+    "list": [
+      {
+        "title": "AI/ML工程师",
+        "dates": "2024年8月 - 至今",
+        "company": "花旗集团美国公司",
+        "details": "新泽西州拉瑟福德",
+        "items": [
+          {
+            "details": "使用Python构建了快速的结构化数据处理管道，将每份文档的处理时间从10秒减少到1秒以内，文档处理效率提高了90%。"
+          },
+          {
+            "details": "使用Python FastAPI设计和加速了一个强大的RESTful API，用于实时数据摄取和NLP处理到Postgres SQL数据库，支持每天超过100万次API调用。"
+          },
+          {
+            "details": "使用OpenShift和Apache Spark部署了规模化解决方案，在120天内实现了零停机的CI/CD流程。"
+          },
+          {
+            "details": "利用Python和LangChain构建了高级代理式RAG系统和知识图谱（RDF和LPG格式），提高了全球检索的准确性，将AI驱动的合规分析的F1分数从0.32提高到0.71。"
+          },
+          {
+            "details": "使用LangChain和RAGAS实现了评估指标和可视化，确保LLM质量，将幻觉率降低了30%，错误调查时间减少了60%。"
+          },
+          {
+            "details": "使用OpenAI GPT、Claude和Google Gemini模型，并微调开源LLM模型，开发了定制化和可扩展的代理式RAG系统，每天处理超过20万次API调用。"
+          },
+          {
+            "details": "开发了以人为中心的评估框架（RLHF），用于评估LLM在现实场景中的表现，持续确保与2000多名活跃用户的意图保持一致。"
+          },
+          {
+            "details": "在AWS上部署了可扩展的AI驱动RAG系统，使用S3、EC2、Glue、Lambda、SageMaker和Bedrock进行高效的数据处理和LLM集成管道。"
+          },
+          {
+            "details": "开发并部署了FastAPI接口和gRPC协议，用于在Azure和AWS等云提供商之间进行高效的API集成。"
+          }
+        ]
+      },
+      {
+        "title": "AI/ML工程师",
+        "dates": "2023年1月 - 2024年8月",
+        "company": "罗伯特·伍德·约翰逊大学医院",
+        "details": "新泽西州新不伦瑞克",
+        "items": [
+          {
+            "details": "使用Python、NumPy、Pandas、JavaScript、SQL和Chroma向量数据库设计、构建并部署了一个代理式RAG系统，自动化解析和总结了超过5000份研究文档。"
+          },
+          {
+            "details": "使用OpenAI和React框架构建了一个高级代理式RAG系统，将入职时间减少了50%，研究效率提高了40%。"
+          },
+          {
+            "details": "与15名学术研究人员组成的跨职能团队合作，将200多个反馈点整合到NLP系统中，使平台与当前和未来的研究目标保持一致。"
+          },
+          {
+            "details": "每月为10多名员工举办ML使用研讨会，实现了80%的ML增强工作流程在组织中的采用率。"
+          },
+          {
+            "details": "使用AWS SageMaker进行模型微调，并使用AWS Bedrock在生产环境中提供服务。"
+          }
+        ]
+      },
+      {
+        "title": "机器学习工程师",
+        "dates": "2020年1月 - 2021年7月",
+        "company": "Fiskkit公司",
+        "details": "加利福尼亚州旧金山",
+        "items": [
+          {
+            "details": "使用Python PyTorch（C++ CUDA）将NLP驱动的功能集成到Node.js后端，实现了实时文本生成和摘要功能，响应时间减少了70%。"
+          },
+          {
+            "details": "使用Python PySpark、NumPy和Pandas进行数据预处理和数据探索，确保高质量的数据集成，使用PyTorch分布式将模型训练结果提高了20%。"
+          },
+          {
+            "details": "通过TensorRT的量化和剪枝技术优化了深度学习模型，推理延迟减少了40%。"
+          },
+          {
+            "details": "使用Neo4j和Cypher查询构建了一个语义图数据库，用于存储和查询复杂关系，数据检索效率提高了60%。"
+          }
+        ]
+      }
+    ]
+  },
+  "certification": {
+    "enable": true,
+    "list": [
+      {
+        "title": "AWS认证机器学习 - 专业 (MLS-C01)",
+        "issuer": "亚马逊网络服务",
+        "date": "2024年6月",
+        "description": "该认证验证了在AWS上构建、训练、调优和部署机器学习、深度学习、生成式AI和LLM模型的专业知识。"
+      }
+    ]
+  },
+  "teaching": {
+    "enable": true,
+    "list": [
+      {
+        "title": "助教",
+        "institution": "罗格斯大学",
+        "dates": "2020年12月 - 2022年12月",
+        "description": "为400多名学生辅导计算机科学和机器学习相关课程"
+      }
+    ]
+  },
+  "projects": {
+    "enable": true,
+    "list": [
+      {
+        "title": "企业级RAG系统",
+        "meta": "花旗集团",
+        "tagline": "使用LangChain、pgvector和AWS Bedrock构建了一个用于金融文档分析的综合RAG系统",
+        "technologies": [
+          "Python",
+          "FastAPI",
+          "LangChain",
+          "Postgres",
+          "pgvector",
+          "AWS Bedrock"
+        ]
+      },
+      {
+        "title": "医疗研究助手",
+        "meta": "RWJUH",
+        "tagline": "使用OpenAI API、向量数据库和React为医学研究人员开发了一个AI助手",
+        "technologies": [
+          "Python",
+          "React",
+          "OpenAI",
+          "Chroma DB",
+          "AWS SageMaker"
+        ]
+      },
+      {
+        "title": "NLP文本分析平台",
+        "meta": "Fiskkit",
+        "tagline": "使用Node.js后端和PyTorch模型创建了一个NLP驱动的文本分析平台",
+        "technologies": [
+          "Node.js",
+          "Python",
+          "PyTorch",
+          "PySpark",
+          "Neo4j"
+        ]
+      }
+    ]
+  },
+  "information": {
+    "enable": true,
+    "list": [
+      {
+        "title": "出版物",
+        "items": [
+          {
+            "details": "Berns, M. P., Nunez, G. M., Zhang, X., et al. (2024年9月). 永久性噪声性听力损失后的听觉决策缺陷。"
+          }
+        ]
+      }
+    ]
+  },
+  "social": {
+    "enable": true,
+    "list": [
+      {
+        "icon": "fab fa-github",
+        "url": "https://github.com/zhangxingeng",
+        "title": "GitHub"
+      },
+      {
+        "icon": "fab fa-linkedin",
+        "url": "https://linkedin.com/in/zhangxingeng",
+        "title": "LinkedIn"
+      }
+    ]
+  },
+  "footer": {
+    "enable": true,
+    "copyright": "© 2025 张欣耕. 版权所有。"
+  }
+}
