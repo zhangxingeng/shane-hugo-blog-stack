@@ -6,15 +6,14 @@ slug: unified-ram-ai-future-nvidia-dgx-spark
 date: 2025-05-17 00:00:00+0000
 image: cover.webp
 categories:
-
-* AI Hardware
-* Future Computing
-  tags:
-* NVIDIA DGX Spark
-* Unified Memory
-* Apple M-series
-* Large Language Models
-* AI Supercomputers
+  - AI Hardware
+  - Future Computing
+tags:
+  - NVIDIA DGX Spark
+  - Unified Memory
+  - Apple M-series
+  - Large Language Models
+  - AI Supercomputers
 
 ---
 
