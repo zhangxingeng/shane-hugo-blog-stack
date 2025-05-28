@@ -25,7 +25,5 @@
         "MD029": false,
         "MD024": false
     },
-    "files.exclude": {
-        "**/.git": false,
-    }
+
 }
