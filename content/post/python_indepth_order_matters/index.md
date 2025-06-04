@@ -2,7 +2,7 @@
 title: "When Python's Top-to-Bottom Execution Bites Back: A Deep Dive into Forward Reference Mysteries"
 description: "How I spent hours debugging a seemingly simple Python error, only to discover it all came down to the order I defined my classes. A tale of forward references, runtime type inspection, and why sometimes the simplest fixes are the hardest to find."
 slug: python-forward-reference-execution-order-debugging
-date: 2024-01-15 00:00:00+0000
+date: 2025-06-04 11:13:00 EDT
 image: cover.webp
 categories:
     - Python
