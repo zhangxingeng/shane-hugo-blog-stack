@@ -34,6 +34,9 @@ Write for a real person sitting across from you. What would confuse them? What q
 
 ### Writing Techniques
 
+**Dont Start with Code**
+If the concept is complex and requires code examples, make sure you start with a good analogy that explains the concept before you even consider writing code. No one likes to read code unless they have the context.
+
 **Use analogies that stick:**
 
 - Compare technical concepts to everyday experiences
