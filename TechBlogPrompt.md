@@ -104,14 +104,7 @@ Use current date/time in any standard format:
 - Simple: `2024-03-14`
 - With timezone: `2024-03-14T10:30:00-05:00`
 
-## Cover Image Prompt Template
 
-"Create a wide banner image for a blog post about [TOPIC]. The image should:
-
-- Visually represent [CORE CONCEPT] without using text
-- Use [EMOTION/MOOD] color palette and style
-- Be eye-catching enough to stop scrolling
-- Work well as a social media preview"
 
 ## Quality Checklist
 
@@ -120,3 +113,13 @@ Use current date/time in any standard format:
 - [ ] Are complex concepts introduced with simple analogies first?
 - [ ] Is the personality genuine rather than performative?
 - [ ] Does the conclusion provide both closure and inspiration?
+
+
+## Cover Image Prompt Template
+
+"Create a wide banner image for a blog post about [TOPIC]. The image should:
+
+- Visually represent [CORE CONCEPT] without using text
+- Use [EMOTION/MOOD] color palette and style
+- Be eye-catching enough to stop scrolling
+- Work well as a social media preview"
