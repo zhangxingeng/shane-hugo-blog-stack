@@ -3,7 +3,7 @@
     command = "git submodule update --init --recursive && hugo --gc -b ${URL}"
 
 [build.environment]
-    HUGO_VERSION = "0.145.0"
+    HUGO_VERSION = "0.148.0"
     HUGO_EXTENDED = "true"
     GIT_SUBMODULE_STRATEGY = "recursive"
 

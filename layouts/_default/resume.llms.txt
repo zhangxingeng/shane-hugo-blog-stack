@@ -1,5 +1,150 @@
 # {{ .Title }}
 
-This resume page is not available in llms.txt format.
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
 
-Visit the full resume at: {{ .Permalink }} 
+{{ with $resume.profile }}
+## {{ .name }}
+{{ .tagline }}
+{{ end }}
+
+{{ with $resume.contact }}
+## Contact Information
+{{- range .list }}
+- {{ .text }}
+{{- end }}
+{{ end }}
+
+{{ with $resume.summary }}
+{{ if .enable }}
+## Summary
+{{ .content }}
+{{ end }}
+{{ end }}
+
+{{ with $resume.experience }}
+{{ if .enable }}
+## Professional Experience
+{{- range .list }}
+
+### {{ .company }} - {{ .title }}
+*{{ .dates }}*
+{{ if .details }}
+Location: {{ .details }}
+{{ end }}
+
+{{- if .items }}
+{{- range .items }}
+- {{ .details }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{ end }}
+{{ end }}
+
+{{ with $resume.projects }}
+{{ if .enable }}
+## Key Projects
+{{- range .list }}
+
+### {{ .title }}
+{{ if .meta }}*{{ .meta }}*{{ end }}
+
+{{ .tagline }}
+
+{{- if .technologies }}
+Technologies:
+{{- range .technologies }}
+- {{ . }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{ end }}
+{{ end }}
+
+{{ with $resume.skills }}
+{{ if .enable }}
+## Technical Skills
+{{- range .list }}
+
+### {{ .title }}
+{{- range .items }}
+- {{ .details }}
+{{- end }}
+{{- end }}
+{{ end }}
+{{ end }}
+
+{{ with $resume.education }}
+{{ if .enable }}
+## Education
+{{- range .list }}
+
+### {{ .degree }} - {{ .university }}
+*{{ .dates }}*
+{{ if .location }}Location: {{ .location }}{{ end }}
+{{ if .gpa }}GPA: {{ .gpa }}{{ end }}
+{{- end }}
+{{ end }}
+{{ end }}
+
+{{ with $resume.languages }}
+{{ if .enable }}
+## Languages
+{{- range .list }}
+- {{ .name }} ({{ .level }})
+{{- end }}
+{{ end }}
+{{ end }}
+
+{{ with $resume.certification }}
+{{ if .enable }}
+## Certifications
+{{- range .list }}
+
+### {{ .title }}
+*{{ .issuer }}* - {{ .date }}
+{{ if .description }}
+{{ .description }}
+{{ end }}
+{{- end }}
+{{ end }}
+{{ end }}
+
+{{ with $resume.teaching }}
+{{ if .enable }}
+## Teaching Experience
+{{- range .list }}
+
+### {{ .title }} - {{ .institution }}
+*{{ .dates }}*
+{{ if .description }}
+{{ .description }}
+{{ end }}
+{{- end }}
+{{ end }}
+{{ end }}
+
+{{ with $resume.information }}
+{{ if .enable }}
+## Additional Information
+{{- range .list }}
+
+### {{ .title }}
+{{- range .items }}
+- {{ .details }}
+{{- end }}
+{{- end }}
+{{ end }}
+{{ end }}
+
+{{ with $resume.interests }}
+{{ if .enable }}
+## Interests
+{{- range .list }}
+- {{ .name }}
+{{- end }}
+{{ end }}
+{{ end }}
+
+---
+Resume generated from structured data - Visit the full interactive version at: {{ .Permalink }}

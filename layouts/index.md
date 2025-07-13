@@ -1,10 +1,11 @@
+{{- $baseURL := .Site.BaseURL -}}
 # {{ .Site.Title }}
 
 > {{ .Site.Params.sidebar.subtitle }}
 >
 > This blog is available in both English and Mandarin Chinese. For every post, you can add `index.md` or `llms.txt` to the URL to get a markdown version in plain text that you can use as context for calls to LLMs.
 
-You can find [more information about the author on the about page](/page/about/index.md).
+You can find [more information about the author on the about page]({{ $baseURL }}page/about/index.md).
 
 ## Recent Posts
 
@@ -12,14 +13,14 @@ You can find [more information about the author on the about page](/page/about/i
 {{- $recentPosts := first 10 $posts -}}
 {{- range $recentPosts }}
 
-- [{{ .Title }}]({{ .RelPermalink }}index.md) - {{ .Summary | plainify | truncate 100 }}
+- [{{ .Title }}]({{ $baseURL }}{{ .RelPermalink }}index.md) - {{ .Summary | plainify | truncate 100 }}
 {{- end }}
 
 ## Categories
 
 {{- range .Site.Taxonomies.categories.ByCount }}
 
-- [{{ .Name | title }}](/categories/{{ .Name | urlize }}/index.md) ({{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }})
+- [{{ .Name | title }}]({{ $baseURL }}categories/{{ .Name | urlize }}/index.md) ({{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }})
 {{- end }}
 
 ## Technical Focus Areas
@@ -33,7 +34,7 @@ You can find [more information about the author on the about page](/page/about/i
 
 ## Archive
 
-All posts organized by year: [Archive](/page/archives/index.md)
+All posts organized by year: [Archive]({{ $baseURL }}page/archives/index.md)
 
 ---
 

@@ -1,4 +1,4 @@
-{{- if or (eq .Layout "resume") (eq .Layout "archives") (eq .Layout "thinkdifferent") -}}
+{{- if or (eq .Layout "archives") (eq .Layout "thinkdifferent") -}}
 
 # {{ .Title }}
 

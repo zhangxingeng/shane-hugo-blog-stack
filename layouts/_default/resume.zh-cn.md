@@ -11,7 +11,7 @@
 
 {{ with $resume.contact }}
 
-## Contact Information
+## 联系信息
 
 {{- range .list }}
 
@@ -22,7 +22,7 @@
 {{ with $resume.summary }}
 {{ if .enable }}
 
-## Summary
+## 个人简介
 
 {{ .text }}
 {{ end }}
@@ -31,7 +31,7 @@
 {{ with $resume.experience }}
 {{ if .enable }}
 
-## Professional Experience
+## 工作经历
 
 {{- range .list }}
 
@@ -39,7 +39,7 @@
 
 *{{ .dates }}*
 {{ if .details }}
-Location: {{ .details }}
+地点：{{ .details }}
 {{ end }}
 
 {{- if .items }}
@@ -55,7 +55,7 @@ Location: {{ .details }}
 {{ with $resume.projects }}
 {{ if .enable }}
 
-## Key Projects
+## 重点项目
 
 {{- range .list }}
 
@@ -66,7 +66,7 @@ Location: {{ .details }}
 {{ .tagline }}
 
 {{- if .technologies }}
-Technologies:
+技术栈：
 {{- range .technologies }}
 
 - {{ . }}
@@ -79,7 +79,7 @@ Technologies:
 {{ with $resume.skills }}
 {{ if .enable }}
 
-## Technical Skills
+## 技能专长
 
 {{- range .list }}
 
@@ -96,15 +96,15 @@ Technologies:
 {{ with $resume.education }}
 {{ if .enable }}
 
-## Education
+## 教育背景
 
 {{- range .list }}
 
 ### {{ .degree }} - {{ .university }}
 
 *{{ .dates }}*
-{{ if .location }}Location: {{ .location }}{{ end }}
-{{ if .gpa }}GPA: {{ .gpa }}{{ end }}
+{{ if .location }}地点：{{ .location }}{{ end }}
+{{ if .gpa }}绩点：{{ .gpa }}{{ end }}
 {{- end }}
 {{ end }}
 {{ end }}
@@ -112,11 +112,11 @@ Technologies:
 {{ with $resume.languages }}
 {{ if .enable }}
 
-## Languages
+## 语言能力
 
 {{- range .list }}
 
-- {{ .name }} ({{ .level }})
+- {{ .name }}（{{ .level }}）
 {{- end }}
 {{ end }}
 {{ end }}
@@ -124,7 +124,7 @@ Technologies:
 {{ with $resume.certification }}
 {{ if .enable }}
 
-## Certifications
+## 认证证书
 
 {{- range .list }}
 
@@ -141,7 +141,7 @@ Technologies:
 {{ with $resume.teaching }}
 {{ if .enable }}
 
-## Teaching Experience
+## 教学经历
 
 {{- range .list }}
 
@@ -158,7 +158,7 @@ Technologies:
 {{ with $resume.information }}
 {{ if .enable }}
 
-## Additional Information
+## 其他信息
 
 {{- range .list }}
 
@@ -175,7 +175,7 @@ Technologies:
 {{ with $resume.interests }}
 {{ if .enable }}
 
-## Interests
+## 兴趣爱好
 
 {{- range .list }}
 
@@ -185,4 +185,4 @@ Technologies:
 {{ end }}
 
 ---
-Resume generated from structured data - Visit the full interactive version at: {{ .Permalink }}
+简历由结构化数据生成 - 访问完整交互版本：{{ .Permalink }} 

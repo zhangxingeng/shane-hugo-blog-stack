@@ -1,10 +1,12 @@
 {{- if or (eq .Layout "archives") (eq .Layout "thinkdifferent") -}}
+
 # {{ .Title }}
 
-This page is not available in llms.txt format.
+此页面不支持markdown格式。
 
-Visit the full page at: {{ .Permalink }}
+访问完整页面：{{ .Permalink }}
 {{- else -}}
+
 # {{ .Title }}
 
 {{ .RawContent }}
