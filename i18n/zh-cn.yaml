@@ -27,6 +27,12 @@ article:
     readingTime:
         other: "阅读时长: {{ .Count }} 分钟"
 
+    copyAsMarkdown:
+        other: 复制为 Markdown
+
+    copied:
+        other: 已复制！
+
 notFound:
     title:
         other: 404 错误

@@ -33,6 +33,12 @@ article:
         one: "{{ .Count }} minute read"
         other: "{{ .Count }} minute read"
 
+    copyAsMarkdown:
+        other: Copy as Markdown
+
+    copied:
+        other: Copied!
+
 notFound:
     title:
         other: Not Found
