@@ -1,0 +1,5 @@
+# {{ .Title }}
+
+This resume page is not available in llms.txt format.
+
+Visit the full resume at: {{ .Permalink }} 

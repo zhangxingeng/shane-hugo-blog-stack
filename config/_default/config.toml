@@ -18,6 +18,27 @@ hasCJKLanguage = true
 # Change it to your Disqus shortname before using
 disqusShortname = "hugo-theme-stack"
 
+# Output formats for LLMs.txt support
+[outputFormats]
+[outputFormats.markdown]
+name = "markdown"
+baseName = "index"
+mediaType = "text/markdown"
+isPlainText = true
+
+[outputFormats.llms]
+baseName = "llms"
+isPlainText = true
+mediaType = "text/plain"
+rel = "alternate"
+
+[outputs]
+home = ["HTML", "RSS", "MARKDOWN", "LLMS"]
+page = ["HTML", "MARKDOWN", "LLMS"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
+term = ["HTML", "RSS", "MARKDOWN", "LLMS"]
+
 [pagination]
 pagerSize = 10
 

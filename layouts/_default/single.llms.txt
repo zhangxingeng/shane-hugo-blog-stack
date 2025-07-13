@@ -1,0 +1,11 @@
+{{- if or (eq .Layout "resume") (eq .Layout "archives") (eq .Layout "thinkdifferent") -}}
+# {{ .Title }}
+
+This page is not available in llms.txt format.
+
+Visit the full page at: {{ .Permalink }}
+{{- else -}}
+# {{ .Title }}
+
+{{ .RawContent }}
+{{- end -}} 

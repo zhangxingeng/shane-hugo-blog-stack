@@ -1,0 +1,5 @@
+# {{ .Title }}
+
+This page is not available in llms.txt format.
+
+Visit the full page at: {{ .Permalink }} 
