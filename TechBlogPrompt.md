@@ -1,6 +1,6 @@
-# Blog Post Rewriting Prompt
+# Blog Post Rewriting Instructions
 
-## Blog Writing Prompt
+## Blog Writing Instructions
 
 ### Core Philosophy
 
@@ -88,7 +88,6 @@ If the content involves code or highly technical concepts, always begin with an 
 
 * Use frameworks readers know (like "Five Stages of Debugging")
 * Create memorable section headers that tell a story
-* End with reflection and community engagement ("What's your experience with…?")
 * Provide a final insightful thought that reshapes the reader’s perspective
 
 ### Categories & Tags Strategy
@@ -136,7 +135,7 @@ tags: [5-20 relevant keywords that highlight the post's key concepts]
 [MARKDOWN CONTENT - No H1 headers since title is in front matter]
 ```
 
-## Cover Image Prompt
+## Cover Image Instructions
 
 Create an ultra-wide, visually captivating banner image inspired by the provided blog post content. Keep the following hints in mind:
 

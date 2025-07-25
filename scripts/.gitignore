@@ -1,0 +1,4 @@
+.venv/
+uv.lock
+.env
+.python-version
