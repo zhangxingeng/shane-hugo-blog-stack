@@ -2,7 +2,7 @@
 title: "Why AI Makes Developers 19% Slower (And 69% Still Choose It)"
 description: "A rigorous study proves AI tools make experienced developers measurably slower. Yet most developers kept using them anyway. Are developers just addicted to shiny tools, or is something deeper going on? The answer reveals why we've been measuring productivity completely wrong."
 slug: ai-developer-productivity-mental-load-paradox
-date: 2025-01-20
+date: 2025-07-25
 image: cover.webp
 categories:
     - Technology

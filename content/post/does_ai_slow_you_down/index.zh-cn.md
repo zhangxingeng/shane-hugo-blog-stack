@@ -2,7 +2,7 @@
 title: "为什么 AI 让开发者变慢了 19%（但 69% 的人依然选择它）"
 description: "一项严谨的研究证明，AI 工具让有经验的开发者变得明显更慢。但大多数开发者依然坚持使用。开发者只是沉迷于新奇工具，还是有更深层的原因？答案揭示了我们一直以来对生产力的衡量方式完全错了。"
 slug: ai-developer-productivity-mental-load-paradox
-date: 2025-01-20
+date: 2025-07-25
 image: cover.webp
 categories:
     - 科技
