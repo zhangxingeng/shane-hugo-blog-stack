@@ -2,7 +2,7 @@
 title: "AI文档如何终结技术主管的瓶颈"
 description: "了解AI增强文档如何消除沟通瓶颈，提升团队协作规模，让你摆脱技术决策的单点故障。"
 slug: tech-lead-trap-ai-enhanced-team-communication
-date: 2024-12-19
+date: 2025-07-26
 image: cover.webp
 categories:
     - 科技

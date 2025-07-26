@@ -2,7 +2,7 @@
 title: "How AI Documentation Ends the Tech Lead Bottleneck"
 description: "Discover how AI-enhanced documentation can eliminate communication bottlenecks, scale your team's coordination, and free you from being the single point of failure in technical decisions."
 slug: tech-lead-trap-ai-enhanced-team-communication
-date: 2024-12-19
+date: 2025-07-26
 image: cover.webp
 categories:
     - Technology
