@@ -404,6 +404,10 @@ Tags are your discoverability engine—15-20 carefully chosen keywords that help
 - Add context: not just "Python" but "Python asyncio"
 - Consider the learning journey: "debugging tips", "best practices", "common mistakes"
 
+### date
+
+- Make sure you know today's date before you write to here. if you dont have that context, either search it up or stop and ask user to confirm before you continue. Dont just assume today's date.
+
 ## Cover Image Instructions
 
 ### Step 1: generate the prompt
