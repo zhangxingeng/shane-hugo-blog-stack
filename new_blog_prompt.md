@@ -408,6 +408,10 @@ Tags are your discoverability engine—15-20 carefully chosen keywords that help
 
 - Make sure you know today's date before you write to here. if you dont have that context, either search it up or stop and ask user to confirm before you continue. Dont just assume today's date.
 
+### Disclaimer
+
+- add a disclaimer at the end "(Written by Human, improved using AI where applicable.)"
+
 ## Cover Image Instructions
 
 ### Step 1: generate the prompt
