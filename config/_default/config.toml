@@ -10,6 +10,11 @@ enableRobotsTXT = true
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
 defaultContentLanguage = "en"
 
+# Define taxonomies to enable series functionality
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.

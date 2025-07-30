@@ -14,6 +14,8 @@ tags:
     - Conflict Resolution
     - Respect
     - Communication
+series:
+    - "Daily Confucius"
 ---
 
 ## The Wisdom Behind the Words

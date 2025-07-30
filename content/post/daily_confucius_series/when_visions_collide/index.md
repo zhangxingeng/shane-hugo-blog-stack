@@ -14,6 +14,8 @@ tags:
     - Conflict Resolution
     - Project Management
     - Ancient Wisdom
+series:
+    - "Daily Confucius"
 ---
 
 ## Ancient Wisdom for Modern Problems

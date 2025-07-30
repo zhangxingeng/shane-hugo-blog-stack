@@ -1,6 +1,8 @@
 ---
 title: "Some translations of Confucius's sayings"
 draft: true
+series:
+    - "Daily Confucius"
 ---
 
 ## 居敬而行简，以临其民，不亦可乎

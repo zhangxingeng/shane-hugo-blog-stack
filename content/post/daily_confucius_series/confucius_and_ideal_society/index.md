@@ -14,6 +14,8 @@ tags:
     - Poetry
     - Social Values
     - The Analects
+series:
+    - "Daily Confucius"
 ---
 
 ## The Social Nature of Confucian Values

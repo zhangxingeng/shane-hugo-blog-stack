@@ -14,6 +14,8 @@ tags:
     - Relationships
     - Eastern Philosophy
     - Cultural Differences
+series:
+    - "Daily Confucius"
 ---
 
 > 司马牛忧曰：人皆有兄弟，我独亡。
