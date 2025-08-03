@@ -414,13 +414,7 @@ Tags are your discoverability engine—15-20 carefully chosen keywords that help
 
 ## Cover Image Instructions
 
-### Step 1: generate the prompt
-
-Find one core analogy that you think better visualizes this blog post overall -- we will use that to generate the cover image. (your task is to simply find the analogy, dont try to recommend the cover image prompt, we might use different style for the image so avoid any specific details)
-
-### Step 2: generate the image
-
-Create an ultra-wide, visually captivating banner image inspired by the provided blog post core visualization description. Keep the following hints in mind:
+Read the blog post and think how you would visualize it. Then create an ultra-wide, visually captivating banner image inspired by the provided blog post core visualization description. Keep the following hints in mind:
 
 - Consider the blog's core themes or key insights.
 - Reflect on the emotional tones or moods suggested by the content.

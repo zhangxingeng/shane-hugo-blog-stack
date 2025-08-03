@@ -12,17 +12,27 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-def get_markdown_files():
-    """Find all markdown files in content/post folder."""
-    content_dir = Path("content/post")
-    en_posts = list(content_dir.rglob("index.md"))
-    cn_posts = list(content_dir.rglob("index.zh-cn.md"))
+def get_markdown_files(content_dirs):
+    """Find all markdown files in the specified content directories."""
+    all_en_posts = []
+    all_cn_posts = []
+    
+    # Collect posts from all specified directories
+    for content_dir_str in content_dirs:
+        content_dir = Path(content_dir_str)
+        if content_dir.exists():
+            en_posts = list(content_dir.rglob("index.md"))
+            cn_posts = list(content_dir.rglob("index.zh-cn.md"))
+            all_en_posts.extend(en_posts)
+            all_cn_posts.extend(cn_posts)
+        else:
+            print(f"Warning: Directory {content_dir} does not exist")
 
     # Get the directories that have English posts
-    en_dirs = {post.parent for post in en_posts}
+    en_dirs = {post.parent for post in all_en_posts}
 
     # Get the directories that have Chinese posts
-    cn_dirs = {post.parent for post in cn_posts}
+    cn_dirs = {post.parent for post in all_cn_posts}
 
     # Find directories with English posts but no Chinese translations
     missing_translation_dirs = en_dirs - cn_dirs
@@ -69,7 +79,17 @@ def translate_content(content):
 
 
 def main():
-    posts_to_translate = get_markdown_files()
+    # Define the content directories to search for posts
+    content_dirs = [
+        "content/post",
+        "content/series",
+        "content/page",
+        # Add more directories as needed, for example:
+        # "content/series",
+        # "content/page"
+    ]
+    
+    posts_to_translate = get_markdown_files(content_dirs)
     print(f"Found {len(posts_to_translate)} posts that need translation")
 
     for post_path in tqdm(posts_to_translate, desc="Translating posts"):

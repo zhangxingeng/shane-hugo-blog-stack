@@ -1,7 +1,7 @@
 ---
 title: "Daily Confucius"
 description: "A collection of posts exploring Confucian philosophy and its practical applications in contemporary daily life, relationships, and personal growth."
-image: 
+image: cover.webp
 ---
 
 Welcome to the **Daily Confucius** series, where ancient wisdom meets modern challenges. In this collection, I explore timeless teachings from Confucius (孔子) and how they can guide us through the complexities of contemporary life.
@@ -29,4 +29,4 @@ Each post in this series takes a specific Confucian teaching and explores how it
 
 ---
 
-*"Is it not a pleasure, having learned something, to try it out at due intervals?" (學而時習之，不亦說乎) - Confucius, Analects 1.1* 
+"Is it not a pleasure, having learned something, to try it out at due intervals?" (學而時習之，不亦說乎) - Confucius, Analects 1.1

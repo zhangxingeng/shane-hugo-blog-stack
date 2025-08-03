@@ -1,5 +1,6 @@
 ---
 title: "Some translations of Confucius's sayings"
+date: 2024-01-01
 draft: true
 series:
     - "Daily Confucius"

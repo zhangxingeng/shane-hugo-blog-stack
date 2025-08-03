@@ -1,5 +1,6 @@
 ---
 title: "Some blog Ideas I want to write about in the future"
+date: 2024-01-01
 draft: true
 ---
 
