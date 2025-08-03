@@ -2,7 +2,7 @@
 title: "Understanding FastAPI Parameters: A Complete Guide"
 description: "A friendly, comprehensive guide to FastAPI's parameter types, dependency injection, and special cases, with clear examples to help you build better APIs"
 slug: understanding-fastapi-parameters
-date: 2025-04-07 00:00:00+0000
+date: 2025-04-07
 image: cover.webp
 categories:
     - Python

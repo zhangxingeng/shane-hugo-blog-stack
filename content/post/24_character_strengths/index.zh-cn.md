@@ -2,7 +2,7 @@
 title: "24种推动个人卓越的性格优势"
 description: "对科学验证的性格优势进行全面探索，这些优势有助于个人成长、幸福感和成功"
 slug: character-strengths-personal-excellence
-date: 2025-03-07 00:00:00+0000
+date: 2025-03-07
 image: cover.webp
 categories:
     - Personal Development

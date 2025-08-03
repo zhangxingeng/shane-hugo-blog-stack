@@ -2,7 +2,7 @@
 title: "数据中心网络揭秘：大科技公司如何应对海量流量"
 description: "通俗易懂地解析谷歌、亚马逊等公司如何在数据中心管理数百万请求"
 slug: inside-data-center-networks-traffic-management
-date: 2024-04-01 00:00:00+0000
+date: 2024-04-01
 image: cover.webp
 categories:
     - 基础设施

@@ -2,7 +2,7 @@
 title: "Understanding Git: The Ultimate Guide"
 description: "A comprehensive, beginner-friendly guide to Git concepts, commands, and workflows with practical examples and clear explanations"
 slug: understanding-git-ultimate-guide
-date: 2025-03-10 00:00:00+0000
+date: 2025-03-10
 image: cover.webp
 categories:
     - Development

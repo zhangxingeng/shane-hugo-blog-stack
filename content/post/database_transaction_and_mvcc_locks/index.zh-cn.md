@@ -2,7 +2,7 @@
 title: "等等，连 SELECT 也会开启事务？——一次关于数据库锁、MVCC 和 SQLAlchemy“魔法”会话的好奇之旅"
 description: "一步步带你从“我完全不知道事务到底做了什么”到“我能像专家一样理解行级锁和自动开启事务”，用简单代码、生活类比和满满的顿悟时刻。"
 slug: wait-even-select-starts-a-transaction
-date: 2025-04-21 00:00:00+0000
+date: 2025-04-21
 image: cover.webp
 categories:
     - 数据库

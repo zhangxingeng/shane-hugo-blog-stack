@@ -2,7 +2,7 @@
 title: "真正的和谐：在尊重中接纳差异"
 description: "探讨孔子的智慧，如何通过尊重差异而非要求一致来建立真正的联系，并结合现代人际关系的实际例子"
 slug: true-harmony-embracing-differences
-date: 2025-03-10 00:00:00+0000
+date: 2025-03-10
 image: cover.webp
 categories:
     - 哲学

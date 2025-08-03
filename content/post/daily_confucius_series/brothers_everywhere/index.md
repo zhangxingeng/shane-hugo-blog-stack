@@ -2,7 +2,7 @@
 title: "Within the Four Seas: Finding Brothers Everywhere"
 description: "Exploring a timeless Confucian teaching about universal brotherhood and how it applies to modern relationships across cultural boundaries."
 slug: finding-brothers-everywhere
-date: 2025-03-11 00:00:00+0000
+date: 2025-03-11
 image: cover.webp
 categories:
     - Philosophy

@@ -2,7 +2,7 @@
 title: "Understanding the Event Loop: Python's Asynchronous Engine"
 description: "A clear explanation of the event loop at the heart of Python's asyncio library"
 slug: python-asyncio-event-loop-explained
-date: 2025-03-09 00:00:00+0000
+date: 2025-03-09
 image: cover.webp
 categories:
     - Python

@@ -2,7 +2,7 @@
 title: "Asyncio最佳实践与常见陷阱"
 description: "学习在使用Python的asyncio库时的关键最佳实践，并避免常见错误"
 slug: python-asyncio-best-practices-pitfalls
-date: 2025-03-09 00:00:00+0000
+date: 2025-03-09
 image: cover.webp
 categories:
     - Python

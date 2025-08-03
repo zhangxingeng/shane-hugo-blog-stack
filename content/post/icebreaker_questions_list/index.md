@@ -2,7 +2,7 @@
 title: "150+ Conversation Starters to Break the Ice in Any Social Situation"
 description: "A comprehensive collection of engaging questions to spark meaningful conversations, from nostalgic throwbacks to thought-provoking hypotheticals"
 slug: conversation-starters-to-break-the-ice
-date: 2025-03-07 00:00:00+0000
+date: 2025-03-07
 image: cover.webp
 categories:
     - Social Skills

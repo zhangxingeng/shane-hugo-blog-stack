@@ -2,7 +2,7 @@
 title: "Asyncio Best Practices and Common Pitfalls"
 description: "Learn the essential best practices and avoid common mistakes when working with Python's asyncio library"
 slug: python-asyncio-best-practices-pitfalls
-date: 2025-03-09 00:00:00+0000
+date: 2025-03-09
 image: cover.webp
 categories:
     - Python

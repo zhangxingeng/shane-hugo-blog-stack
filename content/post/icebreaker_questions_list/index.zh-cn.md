@@ -2,7 +2,7 @@
 title: "150+ 个打破冷场的聊天开场白，适用于任何社交场合"
 description: "一份全面的有趣问题合集，助你激发有意义的对话，从怀旧回忆到发人深省的假设问题"
 slug: conversation-starters-to-break-the-ice
-date: 2025-03-07 00:00:00+0000
+date: 2025-03-07
 image: cover.webp
 categories:
     - 社交技巧

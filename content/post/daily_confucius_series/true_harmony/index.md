@@ -2,7 +2,7 @@
 title: "True Harmony: Embracing Differences While Maintaining Respect"
 description: "Exploring Confucius's wisdom on how genuine connection comes from respecting differences, not demanding uniformity, with practical examples for modern relationships"
 slug: true-harmony-embracing-differences
-date: 2025-03-10 00:00:00+0000
+date: 2025-03-10
 image: cover.webp
 categories:
     - Philosophy

@@ -2,7 +2,7 @@
 title: "四海之内，皆兄弟也"
 description: "探讨儒家关于普世兄弟情的永恒教诲，以及它如何影响跨文化关系。"
 slug: finding-brothers-everywhere
-date: 2025-03-11 00:00:00+0000
+date: 2025-03-11
 image: cover.webp
 categories:
     - 哲学

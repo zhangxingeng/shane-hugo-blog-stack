@@ -2,7 +2,7 @@
 title: "30 Things No One Tells You When You Reach the Age of 40"
 description: "Essential wisdom and life lessons that become apparent when you hit your 40s, covering health, relationships, personal growth, and perspective on life."
 slug: thirty-things-at-forty
-date: 2024-05-31 00:00:00+0000
+date: 2024-05-31
 image: cover.webp
 categories:
     - Life Lessons

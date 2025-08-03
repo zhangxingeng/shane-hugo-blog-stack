@@ -2,7 +2,7 @@
 title: "房地产投资分析：构建全面的租赁房产计算器"
 description: "学习如何创建一个用于分析租赁房产投资的Python计算器，包括按揭还款、现金流、增值，以及NPV和IRR等关键指标。"
 slug: rental-property-investment-calculator-python
-date: 2024-05-31 00:00:00+0000
+date: 2024-05-31
 image: cover.webp
 categories:
     - 房地产

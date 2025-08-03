@@ -2,7 +2,7 @@
 title: "超越智慧：孔子论社会和谐与诗歌的隐喻"
 description: "重新审视儒家哲学，揭示智慧（智）等概念其实关乎社会关系而非智力，以及诗歌如何成为道德教化的载体。"
 slug: confucius-social-harmony-hidden-meanings
-date: 2025-03-12 00:00:00+0000
+date: 2025-03-12
 image: cover.webp
 categories:
     - 哲学

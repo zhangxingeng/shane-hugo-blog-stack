@@ -2,7 +2,7 @@
 title: "使用 as_completed 实时处理结果"
 description: "学习如何使用 asyncio.as_completed 在任务结果就绪时立即处理它们"
 slug: python-asyncio-as-completed-explained
-date: 2025-03-09 00:00:00+0000
+date: 2025-03-09
 image: cover.webp
 categories:
     - Python

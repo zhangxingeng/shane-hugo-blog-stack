@@ -2,7 +2,7 @@
 title: "React Isn’t a 60Hz Game Loop: Memoization, Rerenders, and How React Actually Works"
 description: "A deep, practical dive into React's rendering behavior, memoization, and event-driven design — what really happens under the hood and how to think like React."
 slug: react-rendering-memoization-event-loop
-date: 2025-03-27 00:00:00+0000
+date: 2025-03-27
 image: cover.webp
 categories:
     - React

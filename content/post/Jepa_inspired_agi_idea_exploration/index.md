@@ -2,7 +2,7 @@
 title: "Exploring AGI and the integration of System 1 and System 2: JEPA, Transformers, and Dynamic Memory"
 description: "An in-depth exploration inspired by Yann LeCun and Bill Dally's GTC 2025 discussion, detailing my thinking process on integrating JEPA with transformer models and developing dynamic learning and memory management in AGI."
 slug: integrating-system1-system2-agi-jepa-transformers-memory
-date: 2025-05-05 00:00:00+0000
+date: 2025-05-05
 image: cover.webp
 categories:
     - Artificial Intelligence

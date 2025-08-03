@@ -2,7 +2,7 @@
 title: "How Does SvelteKit Actually Work? A Practical Guide to Its Lifecycle"
 description: "Understand the complete lifecycle of a SvelteKit app, from initial load and hydration to navigation and client-side rendering, with common mistakes clarified."
 slug: sveltekit-lifecycle-practical-guide
-date: 2025-04-03 00:00:00+0000
+date: 2025-04-03
 image: cover.webp
 categories:
     - SvelteKit

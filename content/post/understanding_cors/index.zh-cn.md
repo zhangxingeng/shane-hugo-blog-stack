@@ -2,7 +2,7 @@
 title: "理解 CORS：开发者从困惑到清晰的旅程"
 description: "通过一位真实开发者的视角，揭秘跨域资源共享（CORS）——它实际保护了什么，以及为什么重要"
 slug: understanding-cors-developers-journey
-date: 2025-04-11 00:00:00+0000
+date: 2025-04-11
 image: cover.webp
 categories:
     - Web开发

@@ -2,7 +2,7 @@
 title: "透过老子的双眼：现实的双重本质"
 description: "双重视角看待现实：无预设与有功能，以及这种古老智慧如何应用于现代生活。"
 slug: laozi-dual-perspective-reality
-date: 2025-04-01 00:00:00+0000
+date: 2025-04-01
 image: cover.webp
 categories:
     - 哲学

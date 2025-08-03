@@ -2,7 +2,7 @@
 title: "SvelteKit究竟是如何工作的？——生命周期实用指南"
 description: "全面理解SvelteKit应用的生命周期，从首次加载、激活（hydration）、导航到客户端渲染，并澄清常见误区。"
 slug: sveltekit-lifecycle-practical-guide
-date: 2025-04-03 00:00:00+0000
+date: 2025-04-03
 image: cover.webp
 categories:
     - SvelteKit

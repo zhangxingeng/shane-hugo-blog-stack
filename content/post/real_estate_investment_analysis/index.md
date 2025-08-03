@@ -2,7 +2,7 @@
 title: "Real Estate Investment Analysis: Building a Comprehensive Rental Property Calculator"
 description: "Learn how to create a Python calculator to analyze rental property investments, including mortgage payments, cash flow, appreciation, and key metrics like NPV and IRR."
 slug: rental-property-investment-calculator-python
-date: 2024-05-31 00:00:00+0000
+date: 2024-05-31
 image: cover.webp
 categories:
     - Real Estate

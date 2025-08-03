@@ -2,7 +2,7 @@
 title: "Why JEPA Might Just Be the Missing 'System 2' in AI"
 description: "A casual yet insightful exploration into JEPA, system 1 vs. system 2 thinking, and how AI might finally learn to stop hallucinating."
 slug: why-jepa-might-just-be-the-missing-system-2-in-ai
-date: 2025-05-03 00:00:00+0000
+date: 2025-05-03
 image: cover.webp
 categories:
     - Artificial Intelligence

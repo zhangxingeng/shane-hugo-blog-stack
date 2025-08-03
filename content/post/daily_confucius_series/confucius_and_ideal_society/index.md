@@ -2,7 +2,7 @@
 title: "Beyond Intelligence: Confucius on Social Harmony and Hidden Meanings"
 description: "A fresh look at Confucian philosophy revealing how concepts like wisdom (智) are about social relationships rather than intellect, and how poetry served as a vehicle for moral teachings."
 slug: confucius-social-harmony-hidden-meanings
-date: 2025-03-12 00:00:00+0000
+date: 2025-03-12
 image: cover.webp
 categories:
     - Philosophy

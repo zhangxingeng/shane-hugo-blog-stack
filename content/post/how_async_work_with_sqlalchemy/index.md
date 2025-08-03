@@ -2,7 +2,7 @@
 title: "Async SQLAlchemy Journey: From Confusion to Clarity"
 description: "Exploring the pitfalls and revelations of migrating from synchronous to async SQLAlchemy with FastAPI"
 slug: async-sqlalchemy-journey
-date: 2025-04-12 00:00:00+0000
+date: 2025-04-12
 image: cover.webp
 categories:
     - Python

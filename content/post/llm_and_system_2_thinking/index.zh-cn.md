@@ -2,7 +2,7 @@
 title: "为什么 JEPA 可能正是 AI 缺失的“系统2”"
 description: "轻松却深刻地探索 JEPA、系统1与系统2思维，以及 AI 终于能停止“幻觉”的可能性。"
 slug: why-jepa-might-just-be-the-missing-system-2-in-ai
-date: 2025-05-03 00:00:00+0000
+date: 2025-05-03
 image: cover.webp
 categories:
     - 人工智能

@@ -2,7 +2,7 @@
 title: "24 Character Strengths That Drive Personal Excellence"
 description: "A comprehensive exploration of scientifically validated character strengths that contribute to personal growth, wellbeing, and success"
 slug: character-strengths-personal-excellence
-date: 2025-03-07 00:00:00+0000
+date: 2025-03-07
 image: cover.webp
 categories:
     - Personal Development

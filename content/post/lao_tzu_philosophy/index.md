@@ -2,7 +2,7 @@
 title: "Seeing Through Lao Tzu's Eyes: The Dual Nature of Reality"
 description: "Dual Perspective Viewing Reality: Presumption-free and functionally, and how this ancient wisdom applies to modern life."
 slug: laozi-dual-perspective-reality
-date: 2025-04-01 00:00:00+0000
+date: 2025-04-01
 image: cover.webp
 categories:
     - Philosophy

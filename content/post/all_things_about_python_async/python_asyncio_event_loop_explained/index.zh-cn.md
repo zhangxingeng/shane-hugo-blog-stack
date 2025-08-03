@@ -2,7 +2,7 @@
 title: "理解事件循环：Python 异步引擎揭秘"
 description: "对 Python asyncio 库核心——事件循环的清晰解释"
 slug: python-asyncio-event-loop-explained
-date: 2025-03-09 00:00:00+0000
+date: 2025-03-09
 image: cover.webp
 categories:
     - Python

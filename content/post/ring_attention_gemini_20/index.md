@@ -2,7 +2,7 @@
 title: "Ring Attention Explained: How Modern LLMs Remember Long Contexts Without Losing Their Minds"
 description: "A deep dive into Ring Attention—how models like Gemini and Claude handle long contexts using clever memory tricks like sliding windows, compressed memory, and selective token referencing."
 slug: ring-attention-explained
-date: 2025-04-01 00:00:00+0000
+date: 2025-04-01
 image: cover.webp
 categories:
     - Machine Learning

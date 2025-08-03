@@ -2,7 +2,7 @@
 title: "When Visions Collide: Why Shared Goals Are Essential for Collaboration"
 description: "Exploring how divergent visions impact teamwork, through ancient wisdom and modern experiences, with practical strategies for aligning goals in collaborative environments"
 slug: diverged-vision-collaboration-failure
-date: 2025-03-10 00:00:00+0000
+date: 2025-03-10
 image: cover.webp
 categories:
     - Leadership

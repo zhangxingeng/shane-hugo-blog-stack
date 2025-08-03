@@ -2,7 +2,7 @@
 title: "教AI学会澄清：让语言模型识别假设与歧义"
 description: "深入探讨近期关于教大型语言模型识别隐含假设、提出澄清问题、提升批判性思维的前沿研究。"
 slug: training-llms-smarter-clarifying-ambiguity-assumptions
-date: 2025-05-28 00:00:00+0000
+date: 2025-05-28
 image: cover.webp
 categories:
     - AI

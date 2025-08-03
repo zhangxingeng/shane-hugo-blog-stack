@@ -2,7 +2,7 @@
 title: "The Machiavellian Paradox: Why Incompetence Often Trumps Intelligence in Power Games"
 description: "Exploring why the least qualified often rise to power and how to navigate this paradox in your personal and professional life using insights from both Machiavellian philosophy and modern psychology"
 slug: machiavellian-paradox-incompetence-power-games
-date: 2025-05-03 00:00:00+0000
+date: 2025-05-03
 image: cover.webp
 categories:
     - Psychology

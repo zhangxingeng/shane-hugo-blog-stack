@@ -2,7 +2,7 @@
 title: "使用 OpenAI Whisper 轻松实现视频转录"
 description: "学习如何使用 OpenAI 的 Whisper 和 Python 自动从任意视频源生成高质量转录文本"
 slug: auto-video-transcription-with-whisper
-date: 2025-03-07 00:00:00+0000
+date: 2025-03-07
 image: cover.webp
 categories:
     - AI 工具

@@ -2,7 +2,7 @@
 title: "理解基于图的AI智能体：从概念到代码"
 description: "基于图的方式如何让AI智能体的工作流更易管理、可恢复、易于理解——用厨房类比和PydanticAI实际示例讲解"
 slug: graph-based-ai-agent-workflows
-date: 2025-04-27 00:00:00+0000
+date: 2025-04-27
 image: cover.webp
 categories:
     - AI开发

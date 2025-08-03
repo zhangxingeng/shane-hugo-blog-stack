@@ -2,7 +2,7 @@
 title: "Processing Results as They Arrive with as_completed"
 description: "Learn how to use asyncio.as_completed to handle task results immediately when they're ready"
 slug: python-asyncio-as-completed-explained
-date: 2025-03-09 00:00:00+0000
+date: 2025-03-09
 image: cover.webp
 categories:
     - Python

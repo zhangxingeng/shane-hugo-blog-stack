@@ -2,7 +2,7 @@
 title: "当愿景冲突时：为何共同目标对协作至关重要"
 description: "通过古代智慧与现代经验，探讨分歧愿景如何影响团队合作，并提供在协作环境中对齐目标的实用策略"
 slug: diverged-vision-collaboration-failure
-date: 2025-03-10 00:00:00+0000
+date: 2025-03-10
 image: cover.webp
 categories:
     - 领导力

@@ -2,7 +2,7 @@
 title: "Python的GIL与Asyncio：理解它们的关系"
 description: "了解Python的全局解释器锁（GIL）与asyncio并发的关系，以及何时使用各自的方式"
 slug: python-gil-asyncio-relationship
-date: 2025-03-09 00:00:00+0000
+date: 2025-03-09
 image: cover.webp
 categories:
     - Python

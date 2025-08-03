@@ -2,7 +2,7 @@
 title: "Inside Data Center Networks: How Big Tech Handles Massive Traffic"
 description: "A simple guide to understanding how companies like Google and Amazon manage millions of requests in their data centers"
 slug: inside-data-center-networks-traffic-management
-date: 2024-04-01 00:00:00+0000
+date: 2024-04-01
 image: cover.webp
 categories:
     - Infrastructure

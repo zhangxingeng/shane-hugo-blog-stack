@@ -2,7 +2,7 @@
 title: "Understanding Graph-Based AI Agents: From Concept to Code"
 description: "How graph-based approaches make AI agent workflows more manageable, resumable, and understandable - explained with kitchen analogies and practical PydanticAI examples"
 slug: graph-based-ai-agent-workflows
-date: 2025-04-27 00:00:00+0000
+date: 2025-04-27
 image: cover.webp
 categories:
     - AI Development

@@ -2,7 +2,7 @@
 title: "Atomic Habits - How to Build Good Habits and Break Bad Ones"
 description: "An in-depth look at James Clear's framework for developing effective habits through four simple laws and understanding the power of tiny changes."
 slug: atomic-habits-summary
-date: 2024-05-31 00:00:00+0000
+date: 2024-05-31
 image: cover.webp
 categories:
     - Personal Development

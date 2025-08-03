@@ -2,7 +2,7 @@
 title: "Wisdom from Positive Psychology: Lessons on Resilience, Growth, and Happiness"
 description: "A comprehensive collection of insights and quotes from positive psychology, covering topics from resilience and failure to relationships and personal growth - wisdom to build a more meaningful life."
 slug: positive-psychology-wisdom-lessons
-date: 2025-03-07 00:00:00+0000
+date: 2025-03-07
 image: cover.webp
 categories:
     - Personal Development

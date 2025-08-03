@@ -2,7 +2,7 @@
 title: "Wait, Even SELECT Starts a Transaction?—A Curious Tour of DB Locks, MVCC, and SQLAlchemy's 'Magic' Sessions"
 description: "A step‑by‑step journey from 'I have no idea what a transaction really does' to 'I can reason about row‑level locks and auto‑begin like a pro,' using simple code, real‑life analogies, and plenty of aha‑moments."
 slug: wait-even-select-starts-a-transaction
-date: 2025-04-21 00:00:00+0000
+date: 2025-04-21
 image: cover.webp
 categories:
     - Databases

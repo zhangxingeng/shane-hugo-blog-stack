@@ -2,7 +2,7 @@
 title: "Context Keeper: How Storing Long but Indexing Short Affects Retrival Accuracy"
 description: "How breaking text into chunks can improve similarity detection for question pairs, outperforming traditional full-text embedding methods"
 slug: context-keeper-retrival-algorithm
-date: 2025-03-16 00:00:00+0000
+date: 2025-03-16
 image: cover.webp
 categories:
     - Natural Language Processing

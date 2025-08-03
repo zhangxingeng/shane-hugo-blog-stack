@@ -2,7 +2,7 @@
 title: "Deep Dive into React: Understanding useEffect, useRef, useMemo, and useState with Real-World Examples"
 description: "Explore the intricacies of React hooks through practical scenarios and detailed explanations. Understand how to effectively use useEffect, useRef, useMemo, and useState for robust and performant React applications."
 slug: react-hooks-deep-dive
-date: 2025-03-27 00:00:00+0000
+date: 2025-03-27
 image: cover.webp
 categories:
     - React

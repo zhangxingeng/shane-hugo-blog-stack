@@ -2,7 +2,7 @@
 title: "原子习惯——如何养成好习惯并打破坏习惯"
 description: "深入剖析詹姆斯·克利尔提出的习惯养成框架，通过四大法则和理解微小改变的力量，帮助你建立有效习惯。"
 slug: atomic-habits-summary
-date: 2024-05-31 00:00:00+0000
+date: 2024-05-31
 image: cover.webp
 categories:
     - 个人成长

@@ -2,7 +2,7 @@
 title: "React 不是 60Hz 游戏循环：记忆化、重新渲染，以及 React 的真实工作原理"
 description: "深入且实用地剖析 React 的渲染行为、记忆化和事件驱动设计——React 底层到底发生了什么，以及如何像 React 那样思考。"
 slug: react-rendering-memoization-event-loop
-date: 2025-03-27 00:00:00+0000
+date: 2025-03-27
 image: cover.webp
 categories:
     - React

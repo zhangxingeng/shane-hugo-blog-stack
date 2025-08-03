@@ -2,7 +2,7 @@
 title: "幕后揭秘：浏览器如何让网站焕发生机"
 description: "直观探索浏览器如何将代码转化为交互式网站，从文件请求到渲染的全过程"
 slug: behind-scenes-how-browsers-bring-websites-to-life
-date: 2024-04-01 00:00:00+0000
+date: 2024-04-01
 image: cover.webp
 categories:
     - Web开发

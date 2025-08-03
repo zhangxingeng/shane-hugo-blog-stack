@@ -2,7 +2,7 @@
 title: "理解 Git：终极指南"
 description: "一份全面、适合初学者的 Git 概念、命令和工作流指南，配有实用示例和清晰解释"
 slug: understanding-git-ultimate-guide
-date: 2025-03-10 00:00:00+0000
+date: 2025-03-10
 image: cover.webp
 categories:
     - 开发

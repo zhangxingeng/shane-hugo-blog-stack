@@ -2,7 +2,7 @@
 title: "上下文守护者：长文本存储、短文本索引对检索准确率的影响"
 description: "如何将文本切分为片段以提升问题对的相似性检测，超越传统的全文嵌入方法"
 slug: context-keeper-retrival-algorithm
-date: 2025-03-16 00:00:00+0000
+date: 2025-03-16
 image: cover.webp
 categories:
     - 自然语言处理

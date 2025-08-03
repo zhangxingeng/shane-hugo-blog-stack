@@ -2,7 +2,7 @@
 title: "Behind the Scenes: How Browsers Bring Websites to Life"
 description: "An intuitive exploration of how browsers transform code into interactive websites, from file requests to rendering and beyond"
 slug: behind-scenes-how-browsers-bring-websites-to-life
-date: 2024-04-01 00:00:00+0000
+date: 2024-04-01
 image: cover.webp
 categories:
     - Web Development

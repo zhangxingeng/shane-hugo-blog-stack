@@ -2,7 +2,7 @@
 title: "Effortless Video Transcription with OpenAI Whisper"
 description: "Learn how to automatically generate high-quality transcripts from any video source using OpenAI's Whisper and Python"
 slug: auto-video-transcription-with-whisper
-date: 2025-03-07 00:00:00+0000
+date: 2025-03-07
 image: cover.webp
 categories:
     - AI Tools

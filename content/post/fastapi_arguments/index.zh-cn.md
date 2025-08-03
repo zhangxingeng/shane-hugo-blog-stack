@@ -2,7 +2,7 @@
 title: "深入理解 FastAPI 参数：完整指南"
 description: "一份友好且全面的 FastAPI 参数类型、依赖注入及特殊用法指南，配有清晰示例，助你构建更优质的 API"
 slug: understanding-fastapi-parameters
-date: 2025-04-07 00:00:00+0000
+date: 2025-04-07
 image: cover.webp
 categories:
     - Python

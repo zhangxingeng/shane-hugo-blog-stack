@@ -14,7 +14,7 @@ The follwing is the template for the post front matter.
 title: "[TITLE]"
 description: "[BRIEF DESCRIPTION OF THE POST CONTENT]"
 slug: [URL-FRIENDLY-SLUG-alpha-numeric-only-nocolons-or-spaces-use-dash-instead]
-date: [YYYY-MM-DD 00:00:00+0000]
+date: [YYYY-MM-DD]
 image: cover.webp #  leave this as is do not change cover image name
 categories:
     - [CATEGORY 1]

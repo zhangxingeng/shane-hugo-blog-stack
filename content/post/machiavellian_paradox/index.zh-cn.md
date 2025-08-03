@@ -2,7 +2,7 @@
 title: "马基雅维利悖论：为何无能者在权力游戏中常常胜过聪明人"
 description: "探讨为何最不称职的人常常登上权力巅峰，以及如何利用马基雅维利哲学和现代心理学的洞见，在个人和职业生活中应对这一悖论"
 slug: machiavellian-paradox-incompetence-power-games
-date: 2025-05-03 00:00:00+0000
+date: 2025-05-03
 image: cover.webp
 categories:
     - 心理学

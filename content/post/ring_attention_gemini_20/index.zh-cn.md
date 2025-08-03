@@ -2,7 +2,7 @@
 title: "环形注意力详解：现代大模型如何在长上下文中高效记忆"
 description: "深入解析环形注意力——Gemini、Claude 等模型如何通过滑动窗口、压缩记忆和选择性引用等巧妙机制高效处理超长上下文。"
 slug: ring-attention-explained
-date: 2025-04-01 00:00:00+0000
+date: 2025-04-01
 image: cover.webp
 categories:
     - 机器学习

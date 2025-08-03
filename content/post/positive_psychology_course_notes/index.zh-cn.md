@@ -2,7 +2,7 @@
 title: "积极心理学的智慧：关于韧性、成长与幸福的人生课题"
 description: "积极心理学的洞见与名言集锦，涵盖从韧性与失败到人际关系与个人成长等主题——为你构建更有意义的人生提供智慧。"
 slug: positive-psychology-wisdom-lessons
-date: 2025-03-07 00:00:00+0000
+date: 2025-03-07
 image: cover.webp
 categories:
     - 个人成长

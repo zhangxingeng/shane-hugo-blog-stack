@@ -2,7 +2,7 @@
 title: "Async SQLAlchemy之旅：从困惑到明朗"
 description: "探索从同步到异步SQLAlchemy与FastAPI迁移中的陷阱与启示"
 slug: async-sqlalchemy-journey
-date: 2025-04-12 00:00:00+0000
+date: 2025-04-12
 image: cover.webp
 categories:
     - Python

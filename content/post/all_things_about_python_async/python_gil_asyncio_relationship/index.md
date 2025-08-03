@@ -2,7 +2,7 @@
 title: "Python's GIL and Asyncio: Understanding the Relationship"
 description: "Learn how Python's Global Interpreter Lock relates to asyncio concurrency and when to use each approach"
 slug: python-gil-asyncio-relationship
-date: 2025-03-09 00:00:00+0000
+date: 2025-03-09
 image: cover.webp
 categories:
     - Python

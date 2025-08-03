@@ -2,7 +2,7 @@
 title: "40岁时没人告诉你的30件事"
 description: "当你步入40岁时，才会逐渐明白的一些重要智慧和人生经验，涵盖健康、关系、个人成长以及对生活的全新视角。"
 slug: thirty-things-at-forty
-date: 2024-05-31 00:00:00+0000
+date: 2024-05-31
 image: cover.webp
 categories:
     - 人生经验

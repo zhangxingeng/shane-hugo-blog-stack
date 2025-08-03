@@ -2,7 +2,7 @@
 title: "Understanding CORS: A Developer's Journey from Confusion to Clarity"
 description: "Demystifying Cross-Origin Resource Sharing (CORS) through a real developer's perspective - what it actually protects and why it matters"
 slug: understanding-cors-developers-journey
-date: 2025-04-11 00:00:00+0000
+date: 2025-04-11
 image: cover.webp
 categories:
     - Web Development

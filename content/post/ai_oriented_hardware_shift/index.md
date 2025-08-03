@@ -3,7 +3,7 @@
 title: "Unified RAM and the Future of AI: Why NVIDIA DGX Spark Matters"
 description: "Exploring how NVIDIA's DGX Spark highlights the crucial shift toward unified RAM systems, and why large AI models depend heavily on memory."
 slug: unified-ram-ai-future-nvidia-dgx-spark
-date: 2025-05-17 00:00:00+0000
+date: 2025-05-17
 image: cover.webp
 categories:
   - AI Hardware

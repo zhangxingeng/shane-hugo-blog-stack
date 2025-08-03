@@ -2,7 +2,7 @@
 title: "Teaching AI to Clarify: Handling Assumptions and Ambiguity in Language Models"
 description: "A deep dive into recent research on teaching large language models to identify hidden assumptions, ask clarifying questions, and improve critical thinking."
 slug: training-llms-smarter-clarifying-ambiguity-assumptions
-date: 2025-05-28 00:00:00+0000
+date: 2025-05-28
 image: cover.webp
 categories:
     - AI

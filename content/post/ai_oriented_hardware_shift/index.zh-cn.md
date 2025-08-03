@@ -3,7 +3,7 @@
 title: "统一内存与AI的未来：为什么NVIDIA DGX Spark意义重大"
 description: "探讨NVIDIA DGX Spark如何凸显向统一内存系统转变的重要性，以及为何大型AI模型高度依赖内存。"
 slug: unified-ram-ai-future-nvidia-dgx-spark
-date: 2025-05-17 00:00:00+0000
+date: 2025-05-17
 image: cover.webp
 categories:
 

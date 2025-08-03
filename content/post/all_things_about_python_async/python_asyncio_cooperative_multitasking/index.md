@@ -2,7 +2,7 @@
 title: "Cooperative Multitasking: The Core of Python Asyncio"
 description: "Learn how Python's cooperative multitasking works and how it differs from traditional threading"
 slug: python-asyncio-cooperative-multitasking
-date: 2025-03-09 00:00:00+0000
+date: 2025-03-09
 image: cover.webp
 categories:
     - Python
