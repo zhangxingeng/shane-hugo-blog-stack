@@ -37,9 +37,13 @@ If you can't fully understand the code your AI assistant generates, this system 
 
 Let me share how I've evolved my approach to working with AI coding assistants like Cursor. This isn't some universal truth, but rather a system I've developed through months of trial and error to get consistently better results.
 
+To make this concrete, here's a mock example tailored for your ease of understanding: refactoring a coffee shop ordering app that somehow ended up with blockchain integration for latte orders. Yes, that's as ridiculous as it sounds.
+
 ## The Problem I Used to Have
 
 I started out doing what most people probably do—describe my problem, hit enter, and expect the AI to magically figure everything out. This approach feels natural, but I discovered it's actually working against how these tools are designed.
+
+Like when I asked the AI to 'fix the latte ordering flow' and it confidently refactored the wrong payment module because it only saw fragments of the codebase.
 
 Here's what I learned: companies like Cursor need to manage compute costs (which is actually good for users too), so they implement search and grep functions that only grab partial snippets of your code files. The AI might see a few relevant lines, but it completely misses the bigger picture of your coding patterns and style.
 
@@ -50,6 +54,8 @@ The result? The AI generates code that might work, but doesn't fit your codebase
 ## My First Breakthrough: Force Reading Whole Files
 
 My solution was to create custom MCPs (Model Context Protocols) that read entire files instead of just code snippets. Through prompt engineering, I force the assistant to use my tools rather than Cursor's built-in search functions.
+
+I learned this the hard way when the AI kept suggesting fixes that broke our 'customer_caffeine_desperation_index' calculations—it couldn't see how the urgency scoring connected across three different files.
 
 But here's the crucial trade-off: **reading whole files devours your context window**.
 
@@ -96,6 +102,31 @@ Now I go back to my original conversation (the one I spent time on) and give it 
 
 Congratulations! You now have Level 1 ready. As we say in China: "万事具备，只欠东风" (Everything is ready except the east wind—feel free to ask ChatGPT about this story, it explains it better than I could).
 
+### Example: Setting Up the Coffee Shop Refactor
+
+**User:**
+
+```python
+"""
+Task: Refactor the coffee shop ordering system to remove unnecessary \
+blockchain integration from latte orders while preserving the customer \
+urgency scoring system.
+
+Essential files to read completely:
+- order_processor.py (main ordering logic, handles the mysterious blockchain calls)
+- urgency_calculator.py (determines customer caffeine desperation levels) 
+- payment_handler.py (where normal and blockchain payments diverge)
+- customer_model.py (defines urgency scoring attributes)
+
+Don't edit anything yet - just read these files completely and help me \
+understand how the latte blockchain integration connects to the rest of \
+the system. Then discover other relevant files and create a detailed \
+refactor plan.
+"""
+```
+
+**Agent:** *Reads all files, discovers the blockchain logic also affects cappuccino orders, identifies 3 additional files that need attention, and creates a comprehensive understanding of the codebase architecture...*
+
 ### Level 2: The Implementation Phase
 
 Now comes the actual coding. With your solid Level 1 foundation, the agent understands your project deeply. You can either tell it exactly what to do next, or ask it to generate the next task plan (yes, I'm stingy with tokens—every one counts!), copy that plan, and paste it into a new implementation chat.
@@ -111,6 +142,32 @@ Always use "the user" to refer to yourself instead of "I"—it prevents confusio
 **Strategic Code Cleanup (Advanced)**  
 When I know my codebase well, I ask the assistant to delete old code while implementing new features, even if it temporarily breaks other parts. This prevents code residue from accumulating. If you prefer maintaining backward compatibility, that works too—just make sure to properly mark deprecated functions in docstrings, otherwise the agent won't know to avoid using them.
 
+### Example: Implementation Chat
+
+**User:**
+
+```python
+"""
+Here's the refined plan from our Level 1 conversation: @current_task_plan.md
+
+Let's implement step 1: Remove blockchain integration from latte orders \
+in order_processor.py. 
+
+Work iteratively - edit only this one file and stop to ask for \
+confirmation before touching the payment handler. The user wants to \
+review each change before proceeding to avoid breaking the production \
+coffee queue.
+"""
+```
+
+**Agent:** *Implements changes to order_processor.py, removes blockchain calls for lattes, updates to use standard payment flow...*
+
+**Key phrases that keep the AI focused:**
+
+- "edit only this one file and stop"
+- "ask for confirmation before proceeding"
+- "the user wants to review each change"
+
 ## The Magic of Context Recycling
 
 Here's where my system becomes really powerful: instead of letting chat history grow infinitely, I cycle back to that golden Level 1 conversation for each new implementation step.
@@ -123,11 +180,54 @@ Think of it like having a master conversation that maintains all your project co
 
 This is why I call it a "Two-Level System". Level 1 provides the long-term project memory, while Level 2 handles short-term implementation focus.
 
+### Example: Cycling Back to Level 1
+
+**User:**
+
+```python
+"""
+I've completed step 1 of the coffee shop refactor. Here's the updated \
+order_processor.py - the blockchain calls for lattes have been removed \
+and now use the standard payment flow.
+
+Current status: Latte orders work normally, but I noticed the \
+urgency_calculator.py still has references to blockchain transaction \
+times for calculating "peak caffeine panic moments." 
+
+Based on our plan, what should step 2 focus on?
+"""
+```
+
+**Agent:** *Reviews the updated file, understands current progress, and suggests step 2 should focus on cleaning up urgency calculation references while maintaining the core desperation scoring logic...*
+
+**The Beauty:** Level 1 chat maintains full project context while getting fresh information about what's actually been completed.
+
 ## When to Update Your Master Plan
 
 There comes a point (typically after 2-3 implementation steps) where your changes become so significant that the original plan needs updating. When this happens, I ask the assistant to revise the markdown file based on recent code changes, removing completed tasks completely ("with no residue left" for example — it helps keeping the plan from getting confusing).
 
 Once the plan is revised, you can return to that Level 1 conversation and re-send the same message. Since files are referenced (not hard-embedded), your chat will automatically work with your updated codebase and plan. The beauty is that Level 1 doesn't even know the previous steps existed—it's working with fresh context.
+
+### Example: Plan Evolution
+
+**User:**
+
+```python
+"""
+The coffee shop refactor has evolved significantly. We've removed \
+blockchain integration, but discovered the urgency scoring system was \
+more complex than expected - it now includes "barista stress levels" \
+and "line length anxiety multipliers."
+
+Please update our master plan markdown file:
+- Remove completed tasks with no residue left
+- Add the newly discovered barista stress integration requirements  
+- Reorganize remaining steps based on what we've learned about the \
+  system architecture
+"""
+```
+
+**Agent:** *Updates @current_task_plan.md with clean, reorganized tasks that reflect the current reality rather than initial assumptions...*
 
 ## The Complete Workflow
 
