@@ -13,7 +13,9 @@
     "tailwindcss": "^4.1.12"
   },
   "scripts": {
-    "build": "hugo ",
-    "dev": "hugo server --watch --port 1313"
+    "build": "npm run build:css && hugo",
+    "build:css": "tailwindcss -o assets/css/tailwind.css --minify",
+    "dev": "hugo server --watch --port 1313",
+    "dev:css": "tailwindcss -o assets/css/tailwind.css --watch"
   }
 }

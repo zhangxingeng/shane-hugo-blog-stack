@@ -1,14 +1,14 @@
 [build]
     publish = "public"
-    command = "git submodule update --init --recursive && hugo --gc -b ${URL}"
+    command = "npm ci && npm run build:css && hugo --gc -b ${URL}"
 
 [build.environment]
     HUGO_VERSION = "0.148.0"
     HUGO_EXTENDED = "true"
-    GIT_SUBMODULE_STRATEGY = "recursive"
+    NODE_VERSION = "22"
 
 [context.production]
-    command = "git submodule update --remote --merge && hugo --gc -b ${URL}"
+    command = "npm ci && npm run build:css && hugo --gc -b ${URL}"
     [context.production.environment]
         HUGO_ENV = "production"
 
@@ -24,4 +24,4 @@
         Cache-Control = "public, max-age=31536000, immutable"
 
 [context.deploy-preview]
-    command = "git submodule update --remote --merge && hugo --gc -b ${DEPLOY_PRIME_URL}"
+    command = "npm ci && npm run build:css && hugo --gc -b ${DEPLOY_PRIME_URL}"

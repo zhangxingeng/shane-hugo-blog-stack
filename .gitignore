@@ -6,4 +6,5 @@ resources
 assets/jsconfig.json
 node_modules/
 old_theme_files/
+hugo_stats.json
 **/*:Zone.Identifier
