@@ -1,16 +1,12 @@
 [build]
     publish = "public"
-    command = "npm ci && npm run build:css && hugo --gc -b ${URL}"
+    command = "pnpm install && pnpm build"
 
 [build.environment]
-    HUGO_VERSION = "0.148.0"
+    HUGO_VERSION = "0.148.2"
     HUGO_EXTENDED = "true"
     NODE_VERSION = "22"
-
-[context.production]
-    command = "npm ci && npm run build:css && hugo --gc -b ${URL}"
-    [context.production.environment]
-        HUGO_ENV = "production"
+    HUGO_ENV = "production"
 
 [[plugins]]
     package = "netlify-plugin-hugo-cache-resources"
@@ -24,4 +20,4 @@
         Cache-Control = "public, max-age=31536000, immutable"
 
 [context.deploy-preview]
-    command = "npm ci && npm run build:css && hugo --gc -b ${DEPLOY_PRIME_URL}"
+    command = "pnpm install && pnpm build"
