@@ -11,6 +11,9 @@ list:
 
     subsection: 子章节
 
+    noContent:
+        other: 没有找到内容
+
 article:
     back:
         other: 返回
@@ -62,8 +65,17 @@ search:
     placeholder:
         other: 输入关键词...
 
+    inlineHint:
+        other: 输入搜索词来过滤下方文章
+
     resultTitle:
-        other: "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
+        other: "找到 #PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
+
+    noResults:
+        other: 没有找到结果
+
+    tryDifferentTerms:
+        other: 尝试使用不同的搜索词
 
 footer:
     builtWith:

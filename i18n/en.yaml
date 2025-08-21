@@ -16,6 +16,9 @@ list:
         one: Subsection
         other: Subsections
 
+    noContent:
+        other: No content found
+
 article:
     back:
         other: Back
@@ -68,8 +71,17 @@ search:
     placeholder:
         other: Type something...
 
+    inlineHint:
+        other: Type to filter posts below
+
     resultTitle:
-        other: "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
+        other: "Found #PAGES_COUNT results in #TIME_SECONDS seconds"
+
+    noResults:
+        other: No results found
+
+    tryDifferentTerms:
+        other: Try different search terms
 
 footer:
     builtWith:

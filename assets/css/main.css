@@ -3,9 +3,15 @@
 
 /* Import modular CSS files */
 @import "variables.css";
-@import "components.css";
 @import "animations.css";
 @import "utilities.css";
+
+/* Import component-specific CSS files */
+@import "components/hamburger.css";
+@import "components/article-content.css";
+@import "components/toc.css";
+@import "components/ui-components.css";
+@import "components/search-results.css";
 
 /* 
  * Main CSS Entry Point

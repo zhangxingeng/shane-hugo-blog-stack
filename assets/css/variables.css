@@ -31,15 +31,10 @@
   --spacing-menu-icon: var(--menu-icon-separation);
   --spacing-widget: var(--widget-separation);
   
-  --border-radius-card: var(--card-border-radius);
-  --border-radius-tag: var(--tag-border-radius);
-  
   --radius-card: var(--card-border-radius);
   --radius-tag: var(--tag-border-radius);
   
   --font-size-article: var(--article-font-size);
-  --line-height-article: var(--article-line-height);
-  
   --leading-article: var(--article-line-height);
   
   --border-color-blockquote: var(--blockquote-border-color);

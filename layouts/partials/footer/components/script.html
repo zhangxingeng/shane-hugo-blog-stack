@@ -1,6 +1,6 @@
 {{- partial "helper/external" (dict "Context" . "Namespace" "Vibrant") -}}
 
-{{- $opts := dict "minify" hugo.IsProduction -}}
+{{- $opts := dict "minify" hugo.IsProduction "target" "es2020" -}}
 {{- $script := resources.Get "ts/main.ts" | js.Build $opts | fingerprint -}}
 
 <script type="text/javascript" src="{{ $script.RelPermalink }}" defer></script>

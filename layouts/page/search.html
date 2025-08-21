@@ -5,28 +5,29 @@
     {{- end -}}
 {{ end }}
 {{ define "main" }}
-<form action="{{ .RelPermalink }}" class="bg-card-bg rounded-card p-4 shadow-l1"{{ with .OutputFormats.Get "json" -}} data-json="{{ .RelPermalink }}"{{- end }}>
-    <p>
-        <label>{{ T "search.title" }}</label>
-        <input name="keyword" placeholder="{{ T `search.placeholder` }}" class="w-full px-4 py-2 border border-card-separator rounded-card bg-card-bg text-card-text placeholder-card-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent" />
+<form action="{{ .RelPermalink }}" class="search-form bg-card-bg rounded-card p-4 shadow-l1"{{ with .OutputFormats.Get "json" -}} data-json="{{ .RelPermalink }}"{{- end }}>
+    <p class="relative">
+        <label class="absolute top-3 left-4 text-sm font-medium text-card-text-secondary">{{ T "search.title" }}</label>
+        <input name="keyword" placeholder="{{ T `search.placeholder` }}" 
+               class="w-full pt-8 pb-4 px-4 border border-card-separator rounded-card bg-card-bg text-card-text text-lg placeholder-card-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-all duration-200" />
+        <button type="submit" title="{{ T `search.title` }}" 
+                class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 text-card-text-tertiary hover:text-accent transition-colors duration-200 cursor-pointer bg-transparent border-0">
+            {{ partial "helper/icon" "search" }}
+        </button>
     </p>
-
-    <button title="{{ T `search.title` }}" class="mt-2 px-4 py-2 bg-accent text-accent-text rounded-card hover:bg-accent-darker transition-colors duration-200">
-        {{ partial "helper/icon" "search" }}
-    </button>
 </form>
 
-<div class="mt-8">
-    <h3 class="text-xl font-semibold text-card-text mb-4"></h3>
-    <div class="space-y-4"></div>
+<div class="search-result mt-8">
+    <h3 class="search-result--title text-xl font-semibold text-card-text mb-4"></h3>
+    <div class="search-result--list space-y-4"></div>
 </div>
 
 <script>
     window.searchResultTitleTemplate = "{{ T `search.resultTitle` }}"
 </script>
 
-{{- $opts := dict "minify" hugo.IsProduction "JSXFactory" "createElement" -}}
-{{- $searchScript := resources.Get "ts/search.tsx" | js.Build $opts -}}
+{{- $opts := dict "minify" hugo.IsProduction "JSXFactory" "createElement" "target" "es2020" -}}
+{{- $searchScript := resources.Get "ts/search.ts" | js.Build $opts -}}
 <script type="text/javascript" src="{{ $searchScript.RelPermalink }}" defer></script>
 
 {{ partialCached "footer/footer" . }}

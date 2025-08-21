@@ -8,6 +8,12 @@
     "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
+    "postcss-cli": "^11.0.0",
+    "postcss-lightningcss": "^1.0.0",
     "tailwindcss": "^4.1.12"
+  },
+  "scripts": {
+    "build": "hugo ",
+    "dev": "hugo server --watch --port 1313"
   }
 }

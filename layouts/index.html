@@ -4,11 +4,8 @@
     {{ $filtered := ($pages | intersect $notHidden) }}
     {{ $pag := .Paginate ($filtered) }}
 
-    <section class="space-y-8">
-        {{ range $index, $element := $pag.Pages }}
-            {{ partial "article-list/default" . }}
-        {{ end }}
-    </section>
+    {{/* Use the modular post listing component with search functionality */}}
+    {{ partial "post-listing.html" (dict "Context" . "Pages" $pag.Pages "SearchMode" true) }}
 
     {{- partial "pagination.html" . -}}
     {{- partial "footer/footer" . -}}

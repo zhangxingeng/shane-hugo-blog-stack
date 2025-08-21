@@ -10,6 +10,7 @@ import StackColorScheme from 'ts/colorScheme';
 import { setupScrollspy } from 'ts/scrollspy';
 import { setupSmoothAnchors } from "ts/smoothAnchors";
 import { setupTOC } from 'ts/toc';
+import Search from 'ts/search';
 
 let Stack = {
     init: () => {
@@ -97,6 +98,15 @@ let Stack = {
         });
 
         new StackColorScheme(document.getElementById('dark-mode-toggle'));
+        
+        /**
+         * Initialize search functionality
+         */
+        // The Search class has its own initialization, but we need to ensure it's included in the bundle
+        if (Search) {
+            // Search will auto-initialize via its own event listeners
+            console.log('Search functionality loaded');
+        }
         
         /**
          * Initialize back to top button

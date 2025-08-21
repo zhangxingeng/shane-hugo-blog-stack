@@ -1,0 +1,45 @@
+{{/*
+Post Listing Component
+Usage: {{ partial "post-listing.html" (dict "Context" . "Pages" $pages "SearchMode" false) }}
+Parameters:
+- Context: Current page context
+- Pages: Pages to display  
+- SearchMode: Whether this is for search results (optional, default false)
+*/}}
+
+{{- $context := .Context -}}
+{{- $pages := .Pages -}}
+{{- $searchMode := default false .SearchMode -}}
+
+<div class="post-listing {{ if $searchMode }}search-results{{ end }}" {{ if $searchMode }}id="search-results"{{ end }}>
+    {{- if $searchMode -}}
+        <div class="search-result--title text-lg font-semibold text-card-text mb-4" id="search-result-title"></div>
+    {{- end -}}
+    
+    <section class="space-y-8 post-list" id="post-list">
+        {{ range $index, $element := $pages }}
+            {{ partial "article-list/default" . }}
+        {{ end }}
+        
+        {{- if and (not $searchMode) (eq (len $pages) 0) -}}
+            <div class="text-center py-12">
+                <p class="text-card-text-secondary">{{ T "list.noContent" | default "No content found" }}</p>
+            </div>
+        {{- end -}}
+    </section>
+    
+    {{- if $searchMode -}}
+        <div class="search-no-results text-center py-12 hidden" id="search-no-results">
+            <div class="text-accent mb-4">
+                {{ partial "helper/icon" "search" }}
+            </div>
+            <p class="text-card-text-secondary mb-2">{{ T "search.noResults" | default "No results found" }}</p>
+            <p class="text-card-text-tertiary text-sm">{{ T "search.tryDifferentTerms" | default "Try different search terms" }}</p>
+        </div>
+    {{- end -}}
+</div>
+
+{{- if $searchMode -}}
+<!-- Search result template is set by the main search initialization -->
+<div class="search-result-template" data-template="{{ T "search.resultTitle" | default "Found #PAGES_COUNT results in #TIME_SECONDS seconds" }}" style="display: none;"></div>
+{{- end -}}
