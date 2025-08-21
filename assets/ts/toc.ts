@@ -24,7 +24,7 @@ function setupTOCInstance(idPrefix: string) {
     }
 
     // TOC toggle functionality (if toggle button exists)
-    if (tocToggle) {
+    if (tocToggle && tocContent) {
         tocToggle.addEventListener('click', () => {
             const isExpanded = tocToggle.getAttribute('aria-expanded') === 'true';
             const newState = !isExpanded;
@@ -32,8 +32,14 @@ function setupTOCInstance(idPrefix: string) {
             tocToggle.setAttribute('aria-expanded', newState.toString());
             
             if (newState) {
-                tocNavigation.classList.add('expanded');
-                tocNavigation.style.maxHeight = tocNavigation.scrollHeight + 'px';
+                // For mobile TOC, target the content container
+                if (idPrefix === 'mobile-toc') {
+                    tocContent.classList.add('expanded');
+                    tocContent.style.maxHeight = tocNavigation.scrollHeight + 'px';
+                } else {
+                    tocNavigation.classList.add('expanded');
+                    tocNavigation.style.maxHeight = tocNavigation.scrollHeight + 'px';
+                }
                 
                 // Rotate chevron icon
                 const chevron = tocToggle.querySelector('svg');
@@ -41,8 +47,14 @@ function setupTOCInstance(idPrefix: string) {
                     chevron.style.transform = 'rotate(180deg)';
                 }
             } else {
-                tocNavigation.classList.remove('expanded');
-                tocNavigation.style.maxHeight = '0';
+                // For mobile TOC, target the content container
+                if (idPrefix === 'mobile-toc') {
+                    tocContent.classList.remove('expanded');
+                    tocContent.style.maxHeight = '0';
+                } else {
+                    tocNavigation.classList.remove('expanded');
+                    tocNavigation.style.maxHeight = '0';
+                }
                 
                 // Reset chevron icon
                 const chevron = tocToggle.querySelector('svg');
@@ -111,10 +123,17 @@ function setupTOCInstance(idPrefix: string) {
             
             // Auto-collapse on mobile (if enabled)
             const autoCollapseMobile = document.documentElement.dataset.autoCollapseMobile !== 'false';
-            if (tocToggle && window.innerWidth < 1024 && autoCollapseMobile) {
+            if (tocToggle && tocContent && window.innerWidth < 1024 && autoCollapseMobile) {
                 tocToggle.setAttribute('aria-expanded', 'false');
-                tocNavigation.classList.remove('expanded');
-                tocNavigation.style.maxHeight = '0';
+                
+                // For mobile TOC, target the content container
+                if (idPrefix === 'mobile-toc') {
+                    tocContent.classList.remove('expanded');
+                    tocContent.style.maxHeight = '0';
+                } else {
+                    tocNavigation.classList.remove('expanded');
+                    tocNavigation.style.maxHeight = '0';
+                }
                 
                 const chevron = tocToggle.querySelector('svg');
                 if (chevron) {
@@ -125,13 +144,20 @@ function setupTOCInstance(idPrefix: string) {
     });
 
     // Handle window resize
-    if (tocToggle) {
+    if (tocToggle && tocContent) {
         window.addEventListener('resize', () => {
             if (window.innerWidth >= 1024) {
                 // Desktop: reset mobile states
                 tocToggle.setAttribute('aria-expanded', 'false');
-                tocNavigation.classList.remove('expanded');
-                tocNavigation.style.maxHeight = '';
+                
+                // For mobile TOC, target the content container
+                if (idPrefix === 'mobile-toc') {
+                    tocContent.classList.remove('expanded');
+                    tocContent.style.maxHeight = '';
+                } else {
+                    tocNavigation.classList.remove('expanded');
+                    tocNavigation.style.maxHeight = '';
+                }
                 
                 const chevron = tocToggle.querySelector('svg');
                 if (chevron) {

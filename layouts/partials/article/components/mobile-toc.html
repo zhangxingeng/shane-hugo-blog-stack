@@ -11,14 +11,14 @@
 
 {{ if $showTOC }}
 <!-- Mobile TOC - Visible on mobile/tablet, hidden on desktop -->
-<div class="lg:hidden mb-6 bg-card-bg-selected rounded-card border border-card-separator/30 overflow-hidden shadow-l1 hover:shadow-l2 transition-all duration-300 hover:border-accent/20 animate-fade-in">
+<div class="lg:hidden mb-6 bg-card-bg rounded-card border border-card-separator/30 shadow-l1 hover:shadow-l2 transition-all duration-300 hover:border-accent/20 animate-fade-in">
     {{ partial "article/components/toc-core" (dict 
         "context" .
         "id_prefix" "mobile-toc"
         "show_toggle" true
         "toggle_classes" ""
-        "wrapper_classes" "max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
-        "content_classes" "overflow-hidden"
+        "wrapper_classes" ""
+        "content_classes" ""
     ) }}
 </div>
 {{ end }}

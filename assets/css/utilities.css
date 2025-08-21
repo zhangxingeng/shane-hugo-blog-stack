@@ -91,8 +91,6 @@
 .toc-widget {
   position: sticky;
   top: 2rem;
-  max-height: calc(100vh - 4rem);
-  overflow-y: auto;
 }
 
 .toc-navigation {
@@ -198,19 +196,34 @@
     white-space: nowrap;
   }
   
-  /* Mobile TOC adjustments */
+  /* Mobile TOC adjustments - SIMPLIFIED */
   .toc-widget {
-    position: relative;
+    position: static;
     top: auto;
     max-height: none;
   }
   
-  .toc-navigation.expanded {
-    max-height: 70vh;
-    overflow-y: auto;
+  /* Simple mobile TOC collapse/expand */
+  #mobile-toc-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
   }
   
-  #toc-toggle[aria-expanded="true"] svg {
+  #mobile-toc-content.expanded {
+    max-height: 80vh;
+    overflow-y: auto;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  #mobile-toc-navigation {
+    overflow: visible;
+  }
+  
+  #mobile-toc-toggle[aria-expanded="true"] svg {
     transform: rotate(180deg);
   }
   
