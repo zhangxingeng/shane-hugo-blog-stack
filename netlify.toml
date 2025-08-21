@@ -9,3 +9,8 @@
     NODE_VERSION = "22"
     HUGO_ENV = "production"
     NPM_FLAGS = "--version"
+
+# Disable JS bundling to prevent search script corruption
+[build.processing]
+  [build.processing.js]
+    bundle = false
