@@ -1,6 +1,6 @@
 [build]
     publish = "public"
-    command = "pnpm install && pnpm build"
+    command = "pnpm install && pnpm run build"
 
 [build.environment]
     HUGO_VERSION = "0.148.2"
@@ -20,4 +20,4 @@
         Cache-Control = "public, max-age=31536000, immutable"
 
 [context.deploy-preview]
-    command = "pnpm install && pnpm build"
+    command = "pnpm install && pnpm run build"

@@ -37,7 +37,7 @@ mediaType = "text/plain"
 rel = "alternate"
 
 [outputs]
-home = ["HTML", "RSS", "MARKDOWN", "LLMS"]
+home = ["HTML", "RSS", "JSON", "MARKDOWN", "LLMS"]
 page = ["HTML", "MARKDOWN", "LLMS"]
 section = ["HTML", "RSS"]
 taxonomy = ["HTML", "RSS"]
