@@ -1,7 +1,3 @@
-/*!
-*   Hugo Theme Stack
-*
-*/
 import StackGallery from "ts/gallery";
 import { getColor } from 'ts/color';
 import menu from 'ts/menu';
