@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="{{ default `ltr` .Language.LanguageDirection }}">
+    <head>
+        {{- partial "head/head.html" . -}}
+        {{- block "head" . -}}{{ end }}
+    </head>
+    <body class="bg-body-bg text-body-text font-sans text-base antialiased {{ block `body-class` . }}{{ end }}"
+          data-smooth-scroll="{{ .Site.Params.article.toc.smoothScroll | default true }}"
+          data-scroll-offset="{{ .Site.Params.article.toc.scrollOffset | default 80 }}"
+          data-auto-collapse-mobile="{{ .Site.Params.article.toc.autoCollapseMobile | default true }}"
+          data-highlight-current-section="{{ .Site.Params.article.toc.highlightCurrentSection | default true }}">
+        {{- partial "head/colorScheme" . -}}
+        
+        <!-- Reading Progress Bar -->
+        {{ if and (not .IsHome) (.Site.Params.article.toc.showProgress | default true) }}
+        <div class="reading-progress">
+            <div class="reading-progress-bar" id="reading-progress-bar"></div>
+        </div>
+        {{ end }}
+
+        {{/* The container is wider when there's any activated widget */}}
+        {{ $hasWidget := false }}
+        {{ range .Site.Params.widgets.homepage }}
+            {{ $hasWidget = true }}
+        {{ end }}
+        {{ range .Site.Params.widgets.page }}
+            {{ $hasWidget = true }}
+        {{ end }}
+        {{ .Scratch.Set "hasWidget" $hasWidget }}
+        <div class="mx-auto min-h-screen flex flex-col lg:flex-row items-start px-4 sm:px-6 lg:px-8 gap-4 sm:gap-6 lg:gap-8 pt-4 sm:pt-6 lg:pt-8
+                    {{ if $hasWidget }}
+                      max-w-full sm:max-w-4xl lg:max-w-6xl xl:max-w-7xl 
+                    {{ else }}
+                      max-w-full sm:max-w-3xl lg:max-w-4xl xl:max-w-5xl
+                    {{ end }}
+                    transition-all duration-300">
+            {{- block "left-sidebar" . -}}
+                <aside class="order-first lg:order-1 flex-shrink-0 w-full lg:w-80 sidebar z-20">
+                    {{ partial "sidebar/left.html" . }}
+                </aside>
+            {{- end -}}
+            <main class="order-2 min-w-0 flex-grow flex flex-col gap-4 sm:gap-6 lg:gap-8 lg:pt-4 animate-fade-in">
+                {{- block "main" . }}{{- end }}
+            </main>
+            {{- block "right-sidebar" . -}}
+                {{ if .Scratch.Get "hasWidget" }}
+                    <aside class="order-3 lg:order-last w-full lg:w-80 flex-shrink-0 hidden lg:block">
+                        {{ if .IsHome }}
+                            {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+                        {{ else }}
+                            {{ partial "sidebar/right.html" (dict "Context" . "Scope" "page") }}
+                        {{ end }}
+                    </aside>
+                {{ end }}
+            {{- end -}}
+        </div>
+        
+        <!-- Back to top button -->
+        {{ if (default true .Site.Params.ui.backToTop.enabled) }}
+        {{ $position := default "bottom-right" .Site.Params.ui.backToTop.position }}
+        {{ $size := default "medium" .Site.Params.ui.backToTop.size }}
+        {{ $threshold := default 300 .Site.Params.ui.backToTop.threshold }}
+        <button id="back-to-top" 
+                class="fixed z-50 bg-accent text-accent-text rounded-full shadow-l3 hover:shadow-l4 hover:scale-110 transition-all duration-300 opacity-0 pointer-events-none flex items-center justify-center group
+                       {{ if eq $position "bottom-right" }}bottom-6 right-6{{ else if eq $position "bottom-left" }}bottom-6 left-6{{ else }}bottom-6 left-1/2 transform -translate-x-1/2{{ end }}
+                       {{ if eq $size "small" }}w-10 h-10{{ else if eq $size "large" }}w-14 h-14{{ else }}w-12 h-12{{ end }}"
+                data-threshold="{{ $threshold }}"
+                aria-label="Back to top">
+            <svg class="{{ if eq $size "small" }}w-5 h-5{{ else if eq $size "large" }}w-7 h-7{{ else }}w-6 h-6{{ end }} transform group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+            </svg>
+        </button>
+        {{ end }}
+        
+        {{ partial "footer/include.html" . }}
+    </body>
+</html>

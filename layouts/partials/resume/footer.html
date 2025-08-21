@@ -1,0 +1,5 @@
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
+
+<div class="text-center mt-section">
+    <small class="block mb-2 text-card-text-tertiary text-sm">{{ with $resume.footer.copyright }}{{ . | markdownify }}{{ else }}<a href="https://github.com/cowboysmall" target="_blank">CowboySmall</a>{{ end }}</small>
+</div>

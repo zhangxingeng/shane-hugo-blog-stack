@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@source "hugo_stats.json";
+
+/* Import modular CSS files */
+@import "variables.css";
+@import "components.css";
+@import "animations.css";
+@import "utilities.css";
+
+/* 
+ * Main CSS Entry Point
+ * 
+ * This file imports Tailwind CSS and modular CSS files.
+ * Most styling should be done with Tailwind classes in HTML.
+ * Only essential styles that cannot be replaced with Tailwind utilities are in the imported files.
+ */

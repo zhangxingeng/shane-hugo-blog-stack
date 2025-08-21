@@ -1,0 +1,24 @@
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
+
+<section class="mb-section">
+    <h3 class="relative pl-4 text-2xl tracking-widest text-accent mb-6 before:content-[''] before:inline-block before:w-1 before:h-full before:bg-accent before:absolute before:left-0 before:top-0 before:rounded-sm">Projects</h3>
+    
+    {{ range $resume.projects.list }}
+    <div class="p-6 rounded-card bg-card-bg shadow-l1 transition-transform duration-300 ease-in-out mb-8 hover:-translate-y-1 hover:shadow-l2">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-3">
+            <h4 class="text-xl text-card-text mb-2">
+                <a href="#" class="text-card-text hover:text-accent transition-colors duration-300">{{ .title }}</a>
+            </h4>
+            <div class="text-sm text-card-text-tertiary">{{ .meta }}</div>
+        </div>
+        <div class="text-card-text-secondary leading-article mb-4 text-sm">
+            <p>{{ .tagline }}</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+            {{ range .technologies }}
+            <span class="text-xs py-1 px-3 rounded-tag bg-accent text-accent-text">{{ . }}</span>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</section>

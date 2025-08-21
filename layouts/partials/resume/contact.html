@@ -1,0 +1,16 @@
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
+
+<div class="md:border-l md:border-card-separator md:pl-4 text-sm w-full md:w-1/2 lg:w-1/3 xl:w-1/4 box-border mt-6 md:mt-0">
+    <ul class="list-none p-0 m-0">
+        {{ range $resume.contact.list }}
+        <li class="flex items-center mb-2 text-card-text-secondary">
+            <i class="{{ .icon }} mr-2 text-accent filter var(--svg-filter)"></i>
+            <a class="text-accent hover:text-accent-darker transition-colors duration-300" href="{{ .url | safeURL }}">{{ .text }}</a>
+        </li>
+        {{ end }}
+        <li class="flex items-center text-card-text-secondary">
+            <i class="fas fa-map-marker-alt mr-2 text-accent filter var(--svg-filter)"></i>
+            <span>{{ $resume.contact.location }}</span>
+        </li>
+    </ul>
+</div>

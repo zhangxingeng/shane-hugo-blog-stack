@@ -1,0 +1,49 @@
+{{ $relatedEnabled := .Site.Params.article.relatedArticles.enabled | default true }}
+{{ if $relatedEnabled }}
+{{ $relatedCount := .Site.Params.article.relatedArticles.limit | default 5 }}
+{{ $related := (where (.Site.RegularPages.Related .) "Params.hidden" "!=" true) | first $relatedCount }}
+{{ with $related }}
+<aside class="mt-16 mb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-card-bg-selected/30 to-transparent py-12 rounded-2xl border border-card-separator/20">
+    <div class="max-w-6xl mx-auto">
+        <header class="mb-10 text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-accent to-accent-darker rounded-2xl mb-4 shadow-lg">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                </svg>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-card-text mb-3 bg-gradient-to-r from-card-text to-accent bg-clip-text">
+                {{ T "article.relatedContent" }}
+            </h2>
+            <p class="text-card-text-secondary text-lg max-w-2xl mx-auto">
+                Discover more articles that might interest you
+            </p>
+            <div class="w-24 h-1 bg-gradient-to-r from-accent via-accent-darker to-accent rounded-full mx-auto mt-4"></div>
+        </header>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 {{ if ge (len .) 3 }}lg:grid-cols-3{{ else }}lg:grid-cols-2{{ end }} gap-8 lg:gap-10" id="related-articles-grid">
+            {{ range $index, $article := . }}
+                <div class="related-content-animate opacity-0 {{ if ge $index 3 }}hidden lg:block{{ end }}" data-article-index="{{ $index }}">
+                    {{ partial "article-list/tile" (dict "context" $article "size" "500x300" "Type" "articleList") }}
+                </div>
+            {{ end }}
+        </div>
+        
+        {{ if gt (len .) 3 }}
+        <div class="mt-12 text-center lg:hidden">
+            <button 
+                id="show-more-related" 
+                class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-accent to-accent-darker text-white font-semibold rounded-2xl hover:from-accent-darker hover:to-accent transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-accent/30 shadow-lg hover:shadow-xl"
+                onclick="toggleRelatedArticles()"
+                aria-label="Show more related articles"
+            >
+                <span class="show-more-text">Show More Articles</span>
+                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+        </div>
+        {{ end }}
+    </div>
+</aside>
+{{ end }}
+{{ end }}

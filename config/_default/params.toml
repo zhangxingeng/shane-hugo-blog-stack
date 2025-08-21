@@ -3,6 +3,7 @@ mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
 favicon = "/favicon.svg"
+featuredImageField = "image"
 
 [footer]
 since = 2022
@@ -15,20 +16,54 @@ lastUpdated = "Jan 02, 2006 15:04 MST"
 [sidebar]
 emoji = "😃"
 subtitle = "Gain wisdom at dawn; die with no regret at dusk. 朝闻道，夕死可矣"
+# Enable compact mode for smaller sidebar
+compact = false
 
 [sidebar.avatar]
 enabled = true
 local = true
 src = "favicon.svg"
+# Avatar size options: "small" (96px), "medium" (128px), "large" (160px)
+size = "medium"
 
 [article]
 headingAnchor = false
 math = false
 readingTime = true
 
+[article.toc]
+# Enable table of contents
+enabled = true
+# Enable TOC on mobile devices
+showOnMobile = true
+# Show mobile TOC at the top of article content (collapsed by default)
+showMobileTOCAtTop = true
+# Maximum depth of headings to include in TOC (1-6)
+maxDepth = 4
+# Minimum number of headings required to show TOC
+minHeadings = 1
+# Enable reading progress indicator
+showProgress = true
+# Enable smooth scrolling when clicking TOC links
+smoothScroll = true
+# Offset for scroll position (to account for sticky headers)
+scrollOffset = 80
+# Enable section highlighting in TOC
+highlightCurrentSection = true
+# Auto-collapse mobile TOC after clicking a link
+autoCollapseMobile = true
+# Show section count in TOC header
+showSectionCount = false
+
 [article.license]
 enabled = true
 default = "All Rights Reserved"
+
+[article.relatedArticles]
+# Number of related articles to show
+limit = 5
+# Enable related articles section
+enabled = true
 
 ## Widgets
 [[widgets.homepage]]
@@ -36,21 +71,18 @@ type = "search"
 
 [[widgets.homepage]]
 type = "archives"
-
 [widgets.homepage.params]
-limit = 10
+limit = 8
 
 [[widgets.homepage]]
 type = "categories"
-
 [widgets.homepage.params]
-limit = 10
+limit = 12
 
 [[widgets.homepage]]
 type = "tag-cloud"
-
 [widgets.homepage.params]
-limit = 10
+limit = 15
 
 [[widgets.page]]
 type = "toc"
@@ -67,6 +99,43 @@ src = "img/logo.png"
 [colorScheme]
 toggle = true
 default = "auto"
+
+[navigation]
+# Show icons in main menu
+showIcons = true
+# Enable smooth scrolling
+smoothScroll = true
+# Mobile menu animation duration (in ms)
+animationDuration = 300
+# Enable staggered menu item animations
+staggeredAnimations = true
+
+[ui]
+# Enable enhanced hover effects
+enhancedHovers = true
+# Avatar hover scale factor (1.0 = no scale, 1.1 = 10% larger)
+avatarHoverScale = 1.05
+# Social icon rotation on hover (in degrees)
+socialIconRotation = 6
+
+# Responsive design settings
+[ui.responsive]
+# Enable responsive images
+enableResponsiveImages = true
+# Mobile breakpoint in pixels
+mobileBreakpoint = 768
+# Tablet breakpoint in pixels
+tabletBreakpoint = 1024
+
+# Back to top button configuration
+[ui.backToTop]
+enabled = true
+# Scroll threshold in pixels before showing the button
+threshold = 300
+# Button position: "bottom-right", "bottom-left", "bottom-center"
+position = "bottom-right"
+# Button size: "small", "medium", "large"
+size = "medium"
 
 [imageProcessing.cover]
 enabled = true

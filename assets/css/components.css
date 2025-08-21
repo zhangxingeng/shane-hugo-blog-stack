@@ -1,0 +1,687 @@
+/* Essential Component Styles - Cannot be replaced with Tailwind utilities */
+
+/* Hamburger Menu Animation - Complex pseudo-element animations */
+.hamburger {
+  padding: 0.5rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity 75ms;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.hamburger:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+}
+
+.hamburger-box {
+  width: 1.5rem;
+  height: 1rem;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: 0;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 1.5rem;
+  height: 0.125rem;
+  background-color: currentColor;
+  border-radius: 0.0625rem;
+  position: absolute;
+  transition: all 150ms ease-in-out;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: '';
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -6px;
+}
+
+.hamburger-inner::after {
+  bottom: -6px;
+}
+
+/* Hamburger spin animation states */
+.hamburger--spin .hamburger-inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spin .hamburger-inner::before {
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+
+.hamburger--spin .hamburger-inner::after {
+  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spin.is-active .hamburger-inner {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--spin.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+
+.hamburger--spin.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* Article Content - Markdown-generated content styling */
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+  color: var(--card-text-color-main);
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.article-content p {
+  margin-bottom: 1.5rem;
+  color: var(--card-text-color-secondary);
+  line-height: var(--article-line-height);
+}
+
+.article-content blockquote {
+  border-left: var(--blockquote-border-size) solid var(--blockquote-border-color);
+  background-color: var(--blockquote-background-color);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+.article-content pre {
+  background-color: var(--pre-background-color);
+  color: var(--pre-text-color);
+  padding: 1rem;
+  border-radius: var(--card-border-radius);
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 1.5rem 0;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+  /* Ensure code blocks don't break out of container */
+  box-sizing: border-box;
+  /* Allow horizontal scrolling for long lines while maintaining formatting */
+  white-space: pre;
+  word-wrap: normal;
+  /* Prevent overflow on mobile devices */
+  min-width: 0;
+  /* Add subtle border for better definition */
+  border: 1px solid var(--card-separator-color);
+  /* Ensure proper containment within article content */
+  contain: layout style;
+  /* Prevent horizontal overflow in the main container */
+  max-width: 100%;
+  /* Ensure proper text wrapping for very long lines */
+  word-break: break-all;
+  /* Better mobile handling */
+  overflow-wrap: break-word;
+}
+
+/* Responsive adjustments for code blocks */
+@media (max-width: 768px) {
+  .article-content pre {
+    padding: 0.75rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    /* Ensure proper containment on mobile */
+    contain: layout style;
+    /* Better mobile overflow handling */
+    max-width: 100%;
+    /* Improve touch scrolling on mobile */
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .article-content pre {
+    padding: 0.5rem;
+    margin: 0.75rem 0;
+    max-width: 100%;
+    font-size: 0.875rem;
+  }
+}
+
+.article-content pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+.article-content pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.article-content pre::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+.article-content pre::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+.article-content code {
+  background-color: var(--code-background-color);
+  color: var(--code-text-color);
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.article-content pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Table wrapper for horizontal scrolling */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: var(--card-border-radius);
+  border: 1px solid var(--table-border-color);
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none; /* Border handled by table-wrapper */
+  margin: 0; /* Margin handled by table-wrapper */
+  min-width: 600px; /* Ensure tables have minimum width for readability */
+}
+
+.article-content th,
+.article-content td {
+  border: 1px solid var(--table-border-color);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.article-content th {
+  background-color: var(--card-background-selected);
+  font-weight: 600;
+}
+
+.article-content tr:nth-child(even) {
+  background-color: var(--tr-even-background-color);
+}
+
+/* TOC Navigation - Hierarchical styling inspired by old theme */
+.toc-navigation {
+  /* Remove scrolling to prevent double scrollbars - let the page handle scrolling */
+}
+
+.toc-navigation ol,
+.toc-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ordered list styling with counters (like old theme) */
+.toc-navigation ol {
+  list-style-type: none;
+  counter-reset: item;
+}
+
+.toc-navigation ol li a:first-of-type::before {
+  counter-increment: item;
+  content: counters(item, ".") ". ";
+  font-weight: bold;
+  margin-right: 0.3125rem; /* 5px */
+  color: var(--accent-color);
+  opacity: 0.8;
+}
+
+/* Unordered list styling */
+.toc-navigation ul {
+  list-style: none;
+}
+
+/* Base list item styling */
+.toc-navigation li {
+  margin: 0.375rem 0 0.375rem 1.25rem; /* 6px 0 6px 20px - reduced from 15px */
+  padding: 0.125rem; /* 2px - reduced from 5px */
+  position: relative;
+}
+
+/* Nested list styling */
+.toc-navigation li > ol,
+.toc-navigation li > ul {
+  margin-top: 0.25rem; /* 4px - reduced from 10px */
+  padding-left: 0.5rem; /* 8px - reduced from 10px */
+  margin-bottom: -0.125rem; /* -2px - reduced from -5px */
+}
+
+.toc-navigation li > ol > li:last-child,
+.toc-navigation li > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+/* Base link styling */
+.toc-navigation a {
+  display: block;
+  color: var(--card-text-color-secondary);
+  text-decoration: none;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  padding: 0.375rem 0.75rem; /* reduced from 0.5rem */
+  border-left: 3px solid transparent;
+  margin: 0.125rem 0; /* reduced from 0.25rem */
+  position: relative;
+}
+
+.toc-navigation a:hover {
+  background-color: var(--card-background-selected);
+  color: var(--card-text-color-main);
+  border-left-color: var(--accent-color);
+  transform: translateX(3px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toc-navigation a:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Active TOC item styling (like old theme) */
+.toc-navigation a.active {
+  border-left: 4px solid var(--accent-color); /* --heading-border-size equivalent */
+  font-weight: 600;
+  background-color: var(--card-background-selected);
+  color: var(--card-text-color-main);
+  transform: translateX(3px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Progressive indentation for nested active items (like old theme SCSS loop) */
+/* Level 1: Direct children of root ul */
+.toc-navigation > ul > li.active-class > a {
+  margin-left: calc(-25px - 1em);
+  padding-left: calc(25px + 1em - 4px);
+}
+
+/* Level 2: ul > li > ul > li */
+.toc-navigation > ul > li > ul > li.active-class > a {
+  margin-left: calc(-60px - 1em);
+  padding-left: calc(60px + 1em - 4px);
+}
+
+/* Level 3: ul > li > ul > li > ul > li */
+.toc-navigation > ul > li > ul > li > ul > li.active-class > a {
+  margin-left: calc(-95px - 1em);
+  padding-left: calc(95px + 1em - 4px);
+}
+
+/* Level 4: ul > li > ul > li > ul > li > ul > li */
+.toc-navigation > ul > li > ul > li > ul > li > ul > li.active-class > a {
+  margin-left: calc(-130px - 1em);
+  padding-left: calc(130px + 1em - 4px);
+}
+
+/* Progressive indentation for nested active items in ordered lists */
+/* Level 1: Direct children of root ol */
+.toc-navigation > ol > li.active-class > a {
+  margin-left: calc(-9px - 1em);
+  padding-left: calc(9px + 1em - 4px);
+  display: block;
+}
+
+/* Level 2: ol > li > ol > li */
+.toc-navigation > ol > li > ol > li.active-class > a {
+  margin-left: calc(-44px - 1em);
+  padding-left: calc(44px + 1em - 4px);
+  display: block;
+}
+
+/* Level 3: ol > li > ol > li > ol > li */
+.toc-navigation > ol > li > ol > li > ol > li.active-class > a {
+  margin-left: calc(-79px - 1em);
+  padding-left: calc(79px + 1em - 4px);
+  display: block;
+}
+
+/* Level 4: ol > li > ol > li > ol > li > ol > li */
+.toc-navigation > ol > li > ol > li > ol > li > ol > li.active-class > a {
+  margin-left: calc(-114px - 1em);
+  padding-left: calc(114px + 1em - 4px);
+  display: block;
+}
+
+/* Root level padding for unordered lists */
+.toc-navigation > ul {
+  padding: 0 1em;
+}
+
+/* Improved visual hierarchy for nested TOC items */
+.toc-navigation > ul > li,
+.toc-navigation > ol > li {
+  border-left: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.toc-navigation > ul > li:hover,
+.toc-navigation > ol > li:hover {
+  border-left-color: var(--accent-color);
+}
+
+/* Progressive indentation for better hierarchy */
+.toc-navigation li li {
+  margin-left: 0.75rem;
+  padding-left: 0.5rem;
+  border-left: 1px solid var(--card-separator-color);
+  opacity: 0.95;
+}
+
+.toc-navigation li li li {
+  margin-left: 0.5rem;
+  opacity: 0.9;
+}
+
+.toc-navigation li li li li {
+  margin-left: 0.25rem;
+  opacity: 0.85;
+}
+
+/* Subtle visual cues for nested levels */
+.toc-navigation li li a {
+  font-size: 0.8rem;
+}
+
+.toc-navigation li li li a {
+  font-size: 0.75rem;
+}
+
+.toc-navigation li li li li a {
+  font-size: 0.7rem;
+}
+
+/* Visual hierarchy indicators for nested items */
+.toc-navigation li > ul > li > a {
+  position: relative;
+}
+
+.toc-navigation li > ul > li > a::before {
+  content: "•";
+  position: absolute;
+  left: -0.5rem;
+  color: var(--accent-color);
+  opacity: 0.5;
+  font-size: 0.75rem;
+  transition: opacity 0.2s ease;
+}
+
+.toc-navigation li > ul > li > a:hover::before {
+  opacity: 0.8;
+}
+
+.toc-navigation li > ul > li > ul > li > a::before {
+  content: "◦";
+  position: absolute;
+  left: -0.5rem;
+  color: var(--accent-color);
+  opacity: 0.4;
+  font-size: 0.6875rem;
+  transition: opacity 0.2s ease;
+}
+
+.toc-navigation li > ul > li > ul > li > a:hover::before {
+  opacity: 0.7;
+}
+
+.toc-navigation li > ul > li > ul > li > ul > li > a::before {
+  content: "▪";
+  position: absolute;
+  left: -0.5rem;
+  color: var(--accent-color);
+  opacity: 0.3;
+  font-size: 0.625rem;
+  transition: opacity 0.2s ease;
+}
+
+.toc-navigation li > ul > li > ul > li > ul > li > a:hover::before {
+  opacity: 0.6;
+}
+
+/* Smooth scrolling for TOC links */
+.toc-navigation a {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced focus states for accessibility */
+.toc-navigation a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  background-color: var(--card-background-selected);
+}
+
+/* Click feedback effect */
+.toc-navigation a.clicked {
+  background-color: var(--accent-color);
+  color: var(--accent-color-text);
+  transform: translateX(4px) scale(0.98);
+  transition: all 0.1s ease;
+}
+
+/* Dark Mode Toggle Icon - Complex SVG state management */
+.dark-mode-icon {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  will-change: opacity;
+}
+
+.dark-mode-icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+[data-scheme="light"] .dark-mode-icon svg:first-child {
+  opacity: 1;
+}
+
+[data-scheme="light"] .dark-mode-icon svg:last-child {
+  opacity: 0;
+}
+
+[data-scheme="dark"] .dark-mode-icon svg:first-child {
+  opacity: 0;
+}
+
+[data-scheme="dark"] .dark-mode-icon svg:last-child {
+  opacity: 1;
+}
+
+/* Details/Summary Enhancement */
+details summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  content: '▶';
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* Video Wrapper - Responsive aspect ratio */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 1.5rem 0;
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--card-border-radius);
+}
+
+/* Table Wrapper - Responsive scrolling */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+/* Copy Code Button - Positioned overlay */
+.copyCodeButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent-color);
+  color: var(--accent-color-text);
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.highlight:hover .copyCodeButton {
+  opacity: 1;
+}
+
+.copyCodeButton:hover {
+  background: var(--accent-color-darker);
+  transform: scale(1.05);
+}
+
+/* Reading Progress Bar - Fixed positioning */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.reading-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-color-darker));
+  width: 0%;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Related Content Enhancements */
+.related-content-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.related-content-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  opacity: 0.3;
+}
+
+/* Gradient text support for older browsers */
+.gradient-text {
+  background: linear-gradient(135deg, var(--card-text-color-main), var(--accent-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Fallback for browsers that don't support background-clip: text */
+@supports not (-webkit-background-clip: text) {
+  .gradient-text {
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,15 @@
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
+
+<title>{{ .Site.Title }}</title>
+
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ $resume.description }}">
+<meta name="author" content="{{ $resume.author }}">
+
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">

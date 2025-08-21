@@ -1,0 +1,19 @@
+{{- $tagName := .Get 0 -}}
+{{- $tagPage := .Site.GetPage (printf "tags/%s" $tagName) -}}
+{{- if $tagPage -}}
+    {{- $posts := $tagPage.Pages -}}
+    {{- $notHidden := where $posts "Params.hidden" "!=" true -}}
+    {{- if $notHidden -}}
+        <div class="posts-by-tag">
+            <div class="article-list--compact">
+                {{- range $notHidden -}}
+                    {{ partial "article-list/compact" . }}
+                {{- end -}}
+            </div>
+        </div>
+    {{- else -}}
+        <p class="no-posts">{{ printf "No posts found with tag '%s'" $tagName }}</p>
+    {{- end -}}
+{{- else -}}
+    <p class="no-posts">{{ printf "Tag '%s' not found" $tagName }}</p>
+{{- end -}} 

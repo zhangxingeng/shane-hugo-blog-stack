@@ -1,0 +1,24 @@
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
+<div class="lg:sticky top-5 border-l border-card-separator">
+    <div class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+        {{ if $resume.education.enable }}
+        {{ partial "resume/education.html" . }}
+        {{ end }}
+
+        {{ if $resume.awards.enable }}
+        {{ partial "resume/awards.html" . }}
+        {{ end }}
+
+        {{ if $resume.skills.enable }}
+        {{ partial "resume/skills.html" . }}
+        {{ end }}
+
+        {{ if $resume.languages.enable }}
+        {{ partial "resume/languages.html" . }}
+        {{ end }}
+
+        {{ if $resume.interests.enable }}
+        {{ partial "resume/interests.html" . }}
+        {{ end }}
+    </div><!--//resume-aside-->
+</div>

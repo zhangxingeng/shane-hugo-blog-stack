@@ -1,0 +1,4 @@
+{{ $image := partialCached "helper/image" (dict "Context" . "Type" "articleList") .RelPermalink "articleList" }}
+<article class="bg-card-bg rounded-card shadow-l1 overflow-hidden mb-8 hover:shadow-l3 hover:scale-[1.02] transition-all duration-300 group {{ if $image.exists }}has-image{{ end }}">
+    {{ partial "article/components/header" . }}
+</article>

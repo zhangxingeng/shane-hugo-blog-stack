@@ -1,0 +1,16 @@
+{{- $scope := default "homepage" .Scope -}}
+{{- $context := .Context -}}
+{{- with (index .Context.Site.Params.widgets $scope) -}}
+    <div class="space-y-8">
+        {{ range $widget := . }}
+            {{ if templates.Exists (printf "partials/widget/%s.html" .type) }}
+                <!-- Ensure that the `params` is not nil -->
+                {{- $params := default dict .params -}}
+
+                {{ partial (printf "widget/%s" .type) (dict "Context" $context "Params" $params) }}
+            {{ else }}
+                {{ warnf "Widget %s not found" .type }}
+            {{ end }}
+        {{ end }}
+    </div>
+{{ end }}

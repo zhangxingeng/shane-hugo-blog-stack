@@ -1,0 +1,41 @@
+<article class="bg-card-bg rounded-card p-4 mb-4 shadow-l1 hover:shadow-l2 transition-shadow duration-200">
+    <a href="{{ .RelPermalink }}" class="flex items-center gap-4">
+        <div class="flex-1">
+            <h2 class="text-lg font-semibold text-card-text mb-2 hover:text-accent transition-colors duration-200">
+                {{- .Title -}}
+            </h2>
+            <footer class="text-sm text-card-text-tertiary">
+                <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+                    {{- .Date | time.Format (or .Site.Params.dateFormat.published "Jan 02, 2006") -}}
+                </time>
+            </footer>
+        </div>
+
+        {{- $image := partialCached "helper/image" (dict "Context" . "Type" "articleList") .RelPermalink "articleList" -}}
+        {{ if $image.exists }}
+            <div class="flex-shrink-0 w-16 h-16 rounded-card overflow-hidden">
+                {{ if $image.resource }}
+                    {{- $Permalink := $image.resource.RelPermalink -}}
+                    {{- $Width := $image.resource.Width -}}
+                    {{- $Height := $image.resource.Height -}}
+
+                    {{- if (default true .Page.Site.Params.imageProcessing.cover.enabled) -}}
+                        {{- $thumbnail := $image.resource.Fill "120x120" -}}
+                        {{- $Permalink = $thumbnail.RelPermalink -}}
+                        {{- $Width = $thumbnail.Width -}}
+                        {{- $Height = $thumbnail.Height -}}
+                    {{- end -}}
+                    
+                    <img src="{{ $Permalink }}" 
+                        width="{{ $Width }}"
+                        height="{{ $Height }}" 
+                        alt="{{ .Title }}"
+                        loading="lazy"
+                        class="w-full h-full object-cover">
+                {{ else }}
+                    <img src="{{ $image.permalink }}" loading="lazy" alt="Featured image of post {{ .Title }}" class="w-full h-full object-cover" />
+                {{ end }}
+            </div>
+        {{ end }}
+    </a>
+</article>

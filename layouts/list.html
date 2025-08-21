@@ -1,0 +1,82 @@
+{{ define "main" }}
+    <header>
+        <h3 class="text-2xl font-bold text-card-text mb-6">
+            {{ if eq .Parent (.GetPage "/") }}
+                {{ T "list.section" }}
+            {{ else }}
+                {{ .Parent.Title }}
+            {{ end }}
+        </h3>
+
+        <div class="bg-card-bg rounded-card p-6 shadow-l1 mb-8 flex items-center gap-6">
+            <div class="flex-1">
+                <h3 class="text-sm text-card-text-tertiary font-semibold uppercase tracking-wider mb-2">{{ T "list.page" (len .Pages) }}</h3>
+                <h1 class="text-3xl font-bold text-card-text mb-2">{{ .Title }}</h1>
+                {{ with .Params.description }}
+                    <h2 class="text-card-text-secondary">{{ . }}</h2>
+                {{ end }}
+            </div>
+    
+            {{- $image := partialCached "helper/image" (dict "Context" . "Type" "section") .RelPermalink "section" -}}
+            {{ if $image.exists }}
+                <div class="flex-shrink-0">
+                    {{ if $image.resource }}
+                        {{- $Permalink := $image.resource.RelPermalink -}}
+                        {{- $Width := $image.resource.Width -}}
+                        {{- $Height := $image.resource.Height -}}
+    
+                        {{- if (default true .Page.Site.Params.imageProcessing.cover.enabled) -}}
+                            {{- $thumbnail := $image.resource.Fill "120x120" -}}
+                            {{- $Permalink = $thumbnail.RelPermalink -}}
+                            {{- $Width = $thumbnail.Width -}}
+                            {{- $Height = $thumbnail.Height -}}
+                        {{- end -}}
+                        
+                        <img src="{{ $Permalink }}" 
+                            width="{{ $Width }}"
+                            height="{{ $Height }}" 
+                            loading="lazy"
+                            class="w-24 h-24 object-cover rounded-card">
+                    {{ else }}
+                        <img src="{{ $image.permalink }}" loading="lazy" class="w-24 h-24 object-cover rounded-card" />
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+    </header>
+
+    {{- $subsections := .Sections -}}
+    {{- $pages := .Pages | complement $subsections -}}
+    
+    {{- if eq (len $pages) 0 -}}
+        {{/* If there are no normal pages, display subsections in list style, with pagination */}}
+        {{/* This happens with taxonomies like categories or tags */}}
+        {{- $pages = $subsections -}}
+        {{- $subsections = slice -}}
+    {{- end -}}
+
+    {{- with $subsections -}}
+        <aside>
+            <h2 class="text-2xl font-bold text-card-text mb-6">{{ T "list.subsection" (len $subsections) }}</h2>
+            <div class="mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {{ range . }}
+                        {{ partial "article-list/tile" (dict "context" . "size" "250x150" "Type" "section") }}
+                    {{ end }}
+                </div>
+            </div>
+        </aside>
+    {{- end -}}
+    
+    {{/* List only pages that are not a subsection */}}
+    {{ $paginator := .Paginate $pages }}
+    <section class="space-y-4">
+        {{ range $paginator.Pages }}
+            {{ partial "article-list/compact" . }}
+        {{ end }}
+    </section>
+
+    {{- partial "pagination.html" . -}}
+
+    {{ partialCached "footer/footer" . }}
+{{ end }}

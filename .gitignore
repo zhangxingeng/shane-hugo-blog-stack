@@ -3,3 +3,5 @@ resources
 .hugo_build.lock
 .obsidian/
 **/.env
+assets/jsconfig.json
+node_modules/

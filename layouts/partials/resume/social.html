@@ -1,0 +1,14 @@
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
+
+<div class="text-center mt-section">
+    <ul class="list-none p-0 m-0 flex flex-wrap justify-center gap-6">
+        {{ range $resume.social.list }}
+        <li class="inline-block">
+            <a class="text-card-text-secondary hover:text-accent transition-colors duration-300" href="{{ .url }}" target="_blank">
+                <i class="{{ .icon }} text-lg transform hover:scale-110 transition-transform duration-300"></i>
+                <span class="hidden lg:inline ml-2 text-sm">{{ .title }}</span>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</div>

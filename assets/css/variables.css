@@ -1,0 +1,173 @@
+/* CSS Variables and Theme Configuration */
+
+/* Tailwind CSS custom properties mapping */
+@theme {
+  --color-body-bg: var(--body-background);
+  --color-accent: var(--accent-color);
+  --color-accent-darker: var(--accent-color-darker);
+  --color-accent-text: var(--accent-color-text);
+  --color-body-text: var(--body-text-color);
+  --color-card-bg: var(--card-background);
+  --color-card-bg-selected: var(--card-background-selected);
+  --color-card-text: var(--card-text-color-main);
+  --color-card-text-secondary: var(--card-text-color-secondary);
+  --color-card-text-tertiary: var(--card-text-color-tertiary);
+  --color-card-separator: var(--card-separator-color);
+  --color-scrollbar-thumb: var(--scrollbar-thumb);
+  --color-scrollbar-track: var(--scrollbar-track);
+  --color-blockquote-bg: var(--blockquote-background-color);
+  --color-pre-bg: var(--pre-background-color);
+  --color-pre-text: var(--pre-text-color);
+  --color-code-bg: var(--code-background-color);
+  --color-code-text: var(--code-text-color);
+  --color-table-border: var(--table-border-color);
+  --color-tr-even-bg: var(--tr-even-background-color);
+  --color-kbd-border: var(--kbd-border-color);
+  
+  --spacing-card: var(--card-padding);
+  --spacing-section: var(--section-separation);
+  --spacing-main-top: var(--main-top-padding);
+  --spacing-container: var(--container-padding);
+  --spacing-menu-icon: var(--menu-icon-separation);
+  --spacing-widget: var(--widget-separation);
+  
+  --border-radius-card: var(--card-border-radius);
+  --border-radius-tag: var(--tag-border-radius);
+  
+  --radius-card: var(--card-border-radius);
+  --radius-tag: var(--tag-border-radius);
+  
+  --font-size-article: var(--article-font-size);
+  --line-height-article: var(--article-line-height);
+  
+  --leading-article: var(--article-line-height);
+  
+  --border-color-blockquote: var(--blockquote-border-color);
+  --border-color-heading: var(--heading-border-color);
+  
+  --border-width-blockquote: var(--blockquote-border-size);
+  --border-width-heading: var(--heading-border-size);
+  
+  --max-width-left-sidebar: var(--left-sidebar-max-width);
+  --max-width-right-sidebar: var(--right-sidebar-max-width);
+  
+  --box-shadow-l1: var(--shadow-l1);
+  --box-shadow-l2: var(--shadow-l2);
+  --box-shadow-l3: var(--shadow-l3);
+  --box-shadow-l4: var(--shadow-l4);
+  
+  --shadow-l1: var(--shadow-l1);
+  --shadow-l2: var(--shadow-l2);
+  --shadow-l3: var(--shadow-l3);
+  --shadow-l4: var(--shadow-l4);
+}
+
+/* Light Theme Variables */
+:root {
+  /* Colors */
+  --body-background: #f8f9fa;
+  --accent-color: #34495e;
+  --accent-color-darker: #2c3e50;
+  --accent-color-text: #ffffff;
+  --body-text-color: #2c3e50;
+  --card-background: #ffffff;
+  --card-background-selected: #f1f3f4;
+  --card-text-color-main: #2c3e50;
+  --card-text-color-secondary: #5a6c7d;
+  --card-text-color-tertiary: #7b8794;
+  --card-separator-color: #e1e8ed;
+  
+  /* Scrollbar */
+  --scrollbar-thumb: #c1c9d2;
+  --scrollbar-track: #f8f9fa;
+  
+  /* Code blocks */
+  --blockquote-background-color: #f8f9fa;
+  --blockquote-border-color: #34495e;
+  --pre-background-color: #2d3748;
+  --pre-text-color: #e2e8f0;
+  --code-background-color: #f1f3f4;
+  --code-text-color: #e53e3e;
+  
+  /* Tables */
+  --table-border-color: #e1e8ed;
+  --tr-even-background-color: #f8f9fa;
+  
+  /* Keyboard */
+  --kbd-border-color: #c1c9d2;
+  
+  /* Spacing */
+  --card-padding: 1.5rem;
+  --section-separation: 2.5rem;
+  --main-top-padding: 2rem;
+  --container-padding: 1rem;
+  --menu-icon-separation: 2.5rem;
+  --widget-separation: 2rem;
+  
+  /* Border radius */
+  --card-border-radius: 0.75rem;
+  --tag-border-radius: 0.375rem;
+  
+  /* Typography */
+  --article-font-size: 1.125rem;
+  --article-line-height: 1.75;
+  
+  /* Borders */
+  --blockquote-border-size: 0.25rem;
+  --heading-border-size: 0.125rem;
+  --heading-border-color: #e1e8ed;
+  
+  /* Sidebar */
+  --left-sidebar-max-width: 20rem;
+  --right-sidebar-max-width: 18rem;
+  
+  /* Shadows */
+  --shadow-l1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-l2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-l3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-l4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* SVG filter for icons */
+  --svg-filter: none;
+}
+
+/* Dark Theme Variables */
+[data-scheme="dark"] {
+  /* Colors */
+  --body-background: #1a202c;
+  --accent-color: #4fd1c7;
+  --accent-color-darker: #38b2ac;
+  --accent-color-text: #1a202c;
+  --body-text-color: #e2e8f0;
+  --card-background: #2d3748;
+  --card-background-selected: #4a5568;
+  --card-text-color-main: #f7fafc;
+  --card-text-color-secondary: #cbd5e0;
+  --card-text-color-tertiary: #a0aec0;
+  --card-separator-color: #4a5568;
+  
+  /* Scrollbar */
+  --scrollbar-thumb: #4a5568;
+  --scrollbar-track: #2d3748;
+  
+  /* Code blocks */
+  --blockquote-background-color: #2d3748;
+  --blockquote-border-color: #4fd1c7;
+  --pre-background-color: #1a202c;
+  --pre-text-color: #e2e8f0;
+  --code-background-color: #4a5568;
+  --code-text-color: #fc8181;
+  
+  /* Tables */
+  --table-border-color: #4a5568;
+  --tr-even-background-color: #2d3748;
+  
+  /* Keyboard */
+  --kbd-border-color: #4a5568;
+  
+  /* Borders */
+  --heading-border-color: #4a5568;
+  
+  /* SVG filter for icons in dark mode */
+  --svg-filter: invert(1) brightness(0.8);
+}

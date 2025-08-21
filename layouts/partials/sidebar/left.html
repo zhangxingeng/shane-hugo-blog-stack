@@ -1,0 +1,115 @@
+<div class="bg-card-bg rounded-card p-6 shadow-l1 {{ if .Site.Params.sidebar.compact }}compact{{ end }} relative">
+    <!-- Mobile hamburger menu button -->
+    <button class="hamburger hamburger--spin lg:hidden absolute top-4 right-4 z-50 p-2 rounded-lg hover:bg-card-bg-selected transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent" type="button" id="toggle-menu" aria-label="{{ T `toggleMenu` }}" aria-expanded="false">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="mb-6">
+        {{ with .Site.Params.sidebar.avatar }}
+        {{ if (default true .enabled) }}
+        <figure class="text-center mb-6 relative">
+            <a href="{{ .Site.BaseURL | relLangURL }}" class="inline-block group">
+                {{ if not .local }}
+                <img src="{{ .src }}" width="120" height="120" class="site-logo w-24 h-24 lg:w-32 lg:h-32 mx-auto rounded-full object-cover border-4 border-card-separator group-hover:border-accent transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg" loading="lazy" alt="Avatar">
+                {{ else }}
+                {{ $avatar := resources.Get (.src) }}
+
+                {{ if $avatar }}
+                {{ if eq $avatar.MediaType.SubType "svg" }}
+                <!-- Handle SVG images without resizing -->
+                <img src="{{ $avatar.RelPermalink }}" class="site-logo w-24 h-24 lg:w-32 lg:h-32 mx-auto rounded-full object-cover border-4 border-card-separator group-hover:border-accent transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg" loading="lazy" alt="Avatar">
+                {{ else }}
+                <!-- Resize raster images -->
+                {{ $avatarResized := $avatar.Resize "300x" }}
+                <img src="{{ $avatarResized.RelPermalink }}" width="{{ $avatarResized.Width }}"
+                    height="{{ $avatarResized.Height }}" class="site-logo w-24 h-24 lg:w-32 lg:h-32 mx-auto rounded-full object-cover border-4 border-card-separator group-hover:border-accent transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg" loading="lazy" alt="Avatar">
+                {{ end }}
+                {{ else }}
+                {{ errorf "Failed loading avatar from %q" . }}
+                {{ end }}
+                {{ end }}
+            </a>
+            {{ with $.Site.Params.sidebar.emoji }}
+            <span class="emoji absolute -bottom-2 -right-2 text-2xl bg-card-bg rounded-full p-1 border-2 border-card-separator">{{ . }}</span>
+            {{ end }}
+        </figure>
+        {{ end }}
+        {{ end }}
+
+        <div class="text-center space-y-2">
+            <h1 class="text-xl lg:text-2xl font-bold text-card-text">
+                <a href="{{ .Site.BaseURL | relLangURL }}" class="hover:text-accent transition-colors duration-300 focus-ring">{{ .Site.Title }}</a>
+            </h1>
+            <h2 class="text-card-text-secondary text-sm lg:text-base leading-relaxed px-2">{{ .Site.Params.sidebar.subtitle }}</h2>
+        </div>
+    </header>
+
+    {{- with .Site.Menus.social -}}
+    <div class="flex justify-center gap-3 mb-8">
+        {{ range . }}
+        <a href='{{ .URL }}' class="flex items-center justify-center w-10 h-10 rounded-full bg-card-bg-selected text-card-text-secondary hover:bg-accent hover:text-accent-text transition-all duration-300 transform hover:scale-110 hover:shadow-md hover:rotate-6 focus-ring" {{ if eq (default true .Params.newTab) true }}target="_blank" {{ end }} {{ with .Name }}title="{{ . }}" {{ end }} rel="me">
+            {{ $icon := default "link" .Params.Icon }}
+            {{ with $icon }}
+            {{ partial "helper/icon" . }}
+            {{ end }}
+        </a>
+        {{ end }}
+    </div>
+    {{- end -}}
+
+    <nav class="hidden lg:!block" id="main-menu">
+        <ul class="list-none p-0 space-y-1 pb-4">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .)
+            ($currentPage.IsMenuCurrent "main" .)) }}
+            <li>
+                <a href='{{ .URL }}' class="flex items-center gap-3 px-4 py-3 rounded-lg group {{ if $active }}text-accent bg-accent/10 border-l-4 border-accent shadow-sm{{ else }}text-card-text-secondary hover:text-accent hover:bg-card-bg-selected border-l-4 border-transparent hover:border-accent/50 hover:shadow-sm hover:translate-x-1{{ end }} transition-all duration-300 focus-ring" {{ if eq .Params.newTab true }}target="_blank" {{ end }}>
+                    {{ $icon := default .Pre .Params.Icon }}
+                    {{ if .Pre }}
+                    {{ warnf "Menu item [%s] is using [pre] field to set icon, please use [params.icon] instead.\n" .URL }}
+                    {{ end }}
+                    <span class="flex-shrink-0 {{ if $active }}text-accent{{ else }}text-card-text-tertiary group-hover:text-accent{{ end }} transition-colors duration-300">
+                        {{ with $icon }}
+                        {{ partial "helper/icon" . }}
+                        {{ end }}
+                    </span>
+                    <span class="font-medium">{{- .Name -}}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+        
+        <!-- Bottom section with utilities -->
+        <div class="border-t border-card-separator pt-6 mt-6 space-y-3">
+            {{ $current := .Language.Lang }}
+            {{ $all := .AllTranslations }} {{/* includes this page */}}
+            {{ if gt (len $all) 1 }}
+            <div id="i18n-switch" class="flex items-center gap-3 px-4 py-3 text-card-text-secondary rounded-lg hover:bg-card-bg-selected hover:shadow-sm hover:translate-x-1 transition-all duration-300">
+                <span class="flex-shrink-0 text-card-text-tertiary">
+                    {{ partial "helper/icon" "language" }}
+                </span>
+                <select name="language" title="language" class="bg-transparent border-none text-card-text-secondary cursor-pointer flex-1 focus:outline-none focus:text-accent" onchange="window.location.href = this.value">
+                    {{ range $all }}
+                    <option value="{{ .RelPermalink }}" {{ if eq .Language.Lang $current }}selected{{ end }}>
+                        {{ .Language.LanguageName }}
+                    </option>
+                    {{ end }}
+                </select>
+            </div>
+            {{ end }}
+
+            {{ if (default false .Site.Params.colorScheme.toggle) }}
+            <button id="dark-mode-toggle" class="flex items-center gap-3 px-4 py-3 text-card-text-secondary cursor-pointer hover:text-accent hover:bg-card-bg-selected hover:shadow-sm hover:translate-x-1 rounded-lg transition-all duration-300 w-full text-left group focus-ring">
+                <span class="dark-mode-icon flex-shrink-0 text-card-text-tertiary group-hover:text-accent transition-colors duration-300">
+                    {{ partial "helper/icon" "toggle-left" }}
+                    {{ partial "helper/icon" "toggle-right" }}
+                </span>
+                <span class="font-medium">{{ T "darkMode" }}</span>
+            </button>
+            {{ end }}
+        </div>
+    </nav>
+</div>

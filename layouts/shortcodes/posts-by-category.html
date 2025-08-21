@@ -1,0 +1,19 @@
+{{- $categoryName := .Get 0 -}}
+{{- $categoryPage := .Site.GetPage (printf "categories/%s" $categoryName) -}}
+{{- if $categoryPage -}}
+    {{- $posts := $categoryPage.Pages -}}
+    {{- $notHidden := where $posts "Params.hidden" "!=" true -}}
+    {{- if $notHidden -}}
+        <div class="posts-by-category">
+            <div class="article-list--compact">
+                {{- range $notHidden -}}
+                    {{ partial "article-list/compact" . }}
+                {{- end -}}
+            </div>
+        </div>
+    {{- else -}}
+        <p class="no-posts">{{ printf "No posts found in category '%s'" $categoryName }}</p>
+    {{- end -}}
+{{- else -}}
+    <p class="no-posts">{{ printf "Category '%s' not found" $categoryName }}</p>
+{{- end -}} 

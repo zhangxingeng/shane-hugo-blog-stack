@@ -1,0 +1,89 @@
+{{ $image := partialCached "helper/image" (dict "Context" .context "Type" .Type) .context.RelPermalink .Type }}
+<article class="group bg-card-bg rounded-card overflow-hidden shadow-l1 hover:shadow-l3 transition-all duration-300 hover:-translate-y-2 transform {{ if $image.exists }}has-image{{ end }} border border-transparent hover:border-accent/20 h-full flex flex-col">
+    <a href="{{ .context.RelPermalink }}" class="h-full flex flex-col focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-body-bg" aria-label="Read article: {{ .context.Title }}">
+        
+        {{ if $image.exists }}
+            <div class="aspect-video overflow-hidden relative">
+                {{ if $image.resource }}
+                    {{- $imageRaw := $image.resource | resources.Fingerprint "md5" -}}
+                    {{- $Permalink := $imageRaw.RelPermalink -}}
+                    {{- $Width := $imageRaw.Width -}}
+                    {{- $Height := $imageRaw.Height -}}
+
+                    {{- if .context.Site.Params.imageProcessing.cover.enabled -}}
+                        {{- $thumbnail := $imageRaw.Fill .size -}}
+                        {{- $Permalink = $thumbnail.RelPermalink -}}
+                        {{- $Width = $thumbnail.Width -}}
+                        {{- $Height = $thumbnail.Height -}}
+                    {{- end -}}
+                    
+                    <img src="{{ $Permalink }}" 
+                        width="{{ $Width }}" 
+                        height="{{ $Height }}" 
+                        loading="lazy"
+                        alt="Featured image of post {{ .context.Title }}"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        {{ with .context.Slug }}data-key="{{ . }}" {{ end }}
+                        data-hash="{{ $imageRaw.Data.Integrity }}">
+                {{ else }}
+                    <img src="{{ $image.permalink }}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-key="{{ .context.Slug }}" data-hash="{{ $image.permalink }}"/>
+                {{ end }}
+                
+                <!-- Overlay gradient for better text readability -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+        {{ else }}
+            <!-- Fallback design for articles without images -->
+            <div class="aspect-video bg-gradient-to-br from-accent/10 to-accent/20 flex items-center justify-center relative overflow-hidden">
+                <svg class="w-16 h-16 text-accent/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                <div class="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent"></div>
+            </div>
+        {{ end }}
+
+        <div class="p-5 sm:p-6 lg:p-8 flex-1 flex flex-col">
+            <!-- Categories -->
+            {{ if .context.Params.categories }}
+            <div class="flex flex-wrap gap-2 mb-3">
+                {{ range (first 2 (.context.GetTerms "categories")) }}
+                    <span class="inline-block px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded-tag hover:bg-accent/20 transition-colors duration-200">
+                        {{ .LinkTitle }}
+                    </span>
+                {{ end }}
+            </div>
+            {{ end }}
+            
+            <h2 class="text-xl sm:text-2xl lg:text-xl font-bold text-card-text mb-4 group-hover:text-accent transition-colors duration-300 line-clamp-2 flex-1 leading-tight">
+                {{- .context.Title -}}
+            </h2>
+            
+            <!-- Description if available -->
+            {{ with .context.Params.description }}
+            <p class="text-base text-card-text-secondary mb-6 line-clamp-3 leading-relaxed">
+                {{ . }}
+            </p>
+            {{ end }}
+            
+            <!-- Footer with date and reading time -->
+            <footer class="flex items-center justify-between text-sm text-card-text-tertiary mt-auto pt-4 border-t border-card-separator/50">
+                <time datetime="{{ .context.Date.Format "2006-01-02" }}" class="flex items-center gap-1">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    {{ .context.Date.Format "Jan 2, 2006" }}
+                </time>
+                
+                {{ $showReadingTime := .context.Params.readingTime | default (.context.Site.Params.article.readingTime) }}
+                {{ if $showReadingTime }}
+                <span class="flex items-center gap-1">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    {{ .context.ReadingTime }} min read
+                </span>
+                {{ end }}
+            </footer>
+        </div>
+    </a>
+</article>

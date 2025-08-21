@@ -1,19 +1,68 @@
-MIT License
+# PROPRIETARY SOFTWARE LICENSE
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+ALL RIGHTS RESERVED
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Copyright (c) 2025 Xingeng Zhang (also known as Shane Zhang). All rights reserved worldwide.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+DEFINITIONS:
+For the purposes of this License Agreement, the following terms shall have the meanings set forth below:
+
+a) "Repository" means the collection of files, directories, and all content located in the same directory as this LICENSE file and all subdirectories thereof, including but not limited to all source code, object code, documentation, configuration files, data files, images, audio, video, and any other materials of any kind.
+
+b) "Work" means the Repository and all intellectual property contained therein, including but not limited to software programs, algorithms, methodologies, processes, know-how, trade secrets, copyrightable works, patentable inventions, and all derivative works thereof.
+
+c) "Owner" means Xingeng Zhang, his heirs, successors, assigns, and legal representatives.
+
+d) "Use" means any act of copying, reproducing, distributing, displaying, performing, modifying, adapting, translating, creating derivative works from, reverse engineering, decompiling, disassembling, or otherwise exploiting the Work in any manner.
+
+GRANT OF RIGHTS:
+NO RIGHTS ARE GRANTED. The Owner expressly reserves all rights, title, and interest in and to the Work, including but not limited to all copyrights, patent rights, trade secret rights, trademark rights, moral rights, and any other intellectual property rights recognized under the laws of any jurisdiction worldwide.
+
+RESTRICTIONS:
+
+1. PROHIBITION ON USE: No person or entity may Use the Work in any manner without the prior express written consent of the Owner.
+
+2. NO ACCESS RIGHTS: Access to the Repository does not grant any rights to Use the Work. Any access is solely for informational purposes and subject to these restrictions.
+
+3. NO DERIVATIVE WORKS: Creating any derivative works, modifications, adaptations, or improvements based on the Work is strictly prohibited without written authorization.
+
+4. NO REVERSE ENGINEERING: Reverse engineering, decompiling, disassembling, or attempting to derive source code from the Work is strictly prohibited.
+
+5. CONFIDENTIALITY: Any information contained in the Repository shall be treated as confidential and proprietary to the Owner.
+
+INTELLECTUAL PROPERTY PROTECTION:
+The Work contains valuable trade secrets, copyrighted materials, and other proprietary information of the Owner. The Work is protected by copyright laws, trade secret laws, patent laws, and international treaties. Unauthorized Use constitutes copyright infringement, trade secret misappropriation, and may constitute patent infringement.
+
+ENFORCEMENT:
+Any unauthorized Use of the Work may result in immediate legal action, including but not limited to:
+
+- Injunctive relief to prevent further violations
+- Monetary damages, including actual damages and profits
+- Statutory damages where applicable
+- Attorney's fees and costs of litigation
+- Criminal prosecution where applicable
+
+CONTACT INFORMATION:
+For licensing inquiries, permissions, or legal matters, contact:
+Xingeng Zhang
+Email: <zhangxingeng970221@gmail.com>
+
+NO IMPLIED RIGHTS:
+No rights are granted by implication, estoppel, or otherwise. Any use not expressly authorized herein is prohibited and constitutes a violation of this License and applicable laws.
+
+DISCLAIMER OF WARRANTIES:
+THE WORK IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THE OWNER MAKES NO REPRESENTATION OR WARRANTY REGARDING THE ACCURACY, RELIABILITY, OR COMPLETENESS OF THE WORK.
+
+LIMITATION OF LIABILITY:
+IN NO EVENT SHALL THE OWNER BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, OR BUSINESS INTERRUPTION, ARISING OUT OF OR RELATING TO THIS LICENSE OR THE USE OF THE WORK, REGARDLESS OF THE THEORY OF LIABILITY AND EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+SEVERABILITY:
+If any provision of this License is held to be invalid or unenforceable, the remainder of this License shall remain in full force and effect.
+
+GOVERNING LAW:
+This License shall be governed by and construed in accordance with the laws of the jurisdiction where the Owner resides, without regard to conflict of law principles. Any disputes shall be resolved in the courts of competent jurisdiction in such location.
+
+ENTIRE AGREEMENT:
+This License constitutes the entire agreement between the parties and supersedes all prior or contemporaneous agreements, whether written or oral, relating to the subject matter hereof.
+
+This License is effective as of the date of creation of the Work and shall remain in effect until terminated by the Owner.

@@ -1,0 +1,22 @@
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
+
+<section class="mb-section">
+    <h3 class="relative pl-4 text-2xl tracking-widest text-accent mb-6 before:content-[''] before:inline-block before:w-1 before:h-full before:bg-accent before:absolute before:left-0 before:top-0 before:rounded-sm">Work Experience</h3>
+    
+    {{ range $resume.experience.list }}
+    <div class="p-6 rounded-card bg-card-bg shadow-l1 transition-transform duration-300 ease-in-out mb-6 hover:-translate-y-1 hover:shadow-l2">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+            <h4 class="text-xl text-card-text mb-2">{{ .title }}</h4>
+            <div class="text-sm text-card-text-tertiary">{{ .company }} | {{ .dates }}</div>
+        </div>
+        <div class="text-lg text-card-text-secondary leading-article">
+            <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p>
+            <ul class="mt-4 pl-6 list-none">
+                {{ range .items }}
+                <li class="mb-3 relative text-card-text-secondary before:content-['•'] before:absolute before:left-[-1rem] before:text-accent">{{ with .details }}{{ . | markdownify }}{{ end }}</li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+    {{ end }}
+</section>

@@ -3,7 +3,6 @@ baseurl = "https://www.shanechang.com"
 languageCode = "en-us"
 title = "Shane's Personal Blog"
 copyright = "Shane Zhang (张欣耕)"
-theme = "stack"
 disableHugoGeneratorInject = true
 enableRobotsTXT = true
 # Theme i18n support
@@ -56,3 +55,22 @@ id = "G-9RZMBQK5TZ"
 excludeFiles =  ["playgrounds/*"]
 source = 'content'
 target = 'content'
+[[module.mounts]]
+source = 'assets'
+target = 'assets'
+[[module.mounts]]
+disableWatch = true
+source = 'hugo_stats.json'
+target = 'assets/notwatching/hugo_stats.json'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+  [[build.cachebusters]]
+    source = '(postcss|tailwind)\.config\.js'
+    target = 'css'
+
+  # Note: Hugo v0.128+ Tailwind uses hugo_stats.json; mount it below.

@@ -1,0 +1,14 @@
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
+
+<section class="mb-section">
+    <h3 class="relative pl-4 text-2xl tracking-widest text-accent mb-6 before:content-[''] before:inline-block before:w-1 before:h-full before:bg-accent before:absolute before:left-0 before:top-0 before:rounded-sm">Interests</h3>
+    
+    <div class="flex flex-wrap gap-4">
+        {{ range $resume.interests.list }}
+        <div class="flex items-center gap-2 py-3 px-5 rounded-tag bg-card-bg-selected text-card-text-secondary transition-all duration-300 ease-in-out text-sm hover:-translate-y-0.5 hover:shadow-l1">
+            <i class="fas fa-circle text-accent filter var(--svg-filter)"></i>
+            <span>{{ .name }}</span>
+        </div>
+        {{ end }}
+    </div>
+</section>

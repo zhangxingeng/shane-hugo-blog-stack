@@ -1,0 +1,11 @@
+<article class="bg-card-bg rounded-card shadow-l1 overflow-hidden mb-6 sm:mb-8 lg:mb-10 {{ if .Params.image }}has-image{{ end }}">
+    {{ partial "article/components/header" . }}
+
+    {{ partial "article/components/content" . }}
+
+    {{ partial "article/components/footer" . }}
+
+    {{ if or .Params.math .Site.Params.article.math }}
+        {{ partialCached "article/components/math.html" . }}
+    {{ end }}
+</article>

@@ -1,5 +1,10 @@
 {
     "recommendations": [
-        "davidanson.vscode-markdownlint"
+        "davidanson.vscode-markdownlint",
+        "tamasfe.even-better-toml",
+        "budparr.language-hugo-vscode",
+        "eliostruyf.vscode-front-matter",
+        "csstools.postcss",
+        "bradlc.vscode-tailwindcss"
     ]
 }

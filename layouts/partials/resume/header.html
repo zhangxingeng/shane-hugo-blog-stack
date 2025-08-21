@@ -1,0 +1,13 @@
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
+
+<div class="mb-section">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
+        {{ if $resume.profile.enable }}
+        {{ partial "resume/profile.html" . }}
+        {{ end }}
+
+        {{ if $resume.contact.enable }}
+        {{ partial "resume/contact.html" . }}
+        {{ end }}
+    </div>
+</div>

@@ -1,0 +1,251 @@
+/* Custom Utilities and Responsive Overrides */
+
+/* Line clamp utilities for text truncation */
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+/* Font size variations for tag cloud */
+.font_size_1 { font-size: 0.875rem; }
+.font_size_2 { font-size: 1rem; }
+.font_size_3 { font-size: 1.125rem; }
+.font_size_4 { font-size: 1.25rem; }
+.font_size_5 { font-size: 1.5rem; }
+
+/* Focus ring utility */
+.focus-ring:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  border-radius: 0.375rem;
+}
+
+/* Accessibility utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--accent-color);
+  color: var(--accent-color-text);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Smooth scrolling utility */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Container utilities for consistent spacing */
+.container-padding {
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+/* Card utilities */
+.card-spacing {
+  padding: var(--card-padding);
+}
+
+.section-spacing {
+  margin-bottom: var(--section-separation);
+}
+
+/* TOC Widget positioning */
+.toc-widget {
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+.toc-navigation {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+.toc-navigation::-webkit-scrollbar {
+  width: 4px;
+}
+
+.toc-navigation::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc-navigation::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 2px;
+}
+
+/* Enhanced tooltip styles */
+[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--card-background);
+  color: var(--card-text-color-main);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  box-shadow: var(--shadow-l2);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* Responsive Utilities */
+@media (max-width: 1023px) {
+  .hamburger {
+    display: block;
+    position: relative;
+    z-index: 50;
+  }
+  
+  /* Mobile sidebar overlay */
+  body.show-menu {
+    position: relative;
+  }
+  
+  body.show-menu::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 20;
+    pointer-events: none;
+  }
+  
+  .sidebar {
+    position: relative;
+    z-index: 30;
+  }
+  
+  /* Mobile article content adjustments */
+  .article-content {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .article-content h1,
+  .article-content h2,
+  .article-content h3,
+  .article-content h4,
+  .article-content h5,
+  .article-content h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .article-content p {
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Mobile table responsiveness */
+  .table-wrapper {
+    border-radius: 0.5rem;
+    border: 1px solid var(--table-border-color);
+  }
+  
+  .article-content table {
+    border: none;
+    font-size: 0.875rem;
+  }
+  
+  .article-content th,
+  .article-content td {
+    padding: 0.5rem 0.75rem;
+    white-space: nowrap;
+  }
+  
+  /* Mobile TOC adjustments */
+  .toc-widget {
+    position: relative;
+    top: auto;
+    max-height: none;
+  }
+  
+  .toc-navigation.expanded {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  
+  #toc-toggle[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+  
+  /* Mobile sidebar styling */
+  .sidebar .bg-card-bg {
+    border: 1px solid var(--card-separator-color);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+  
+  /* Ensure menu is always visible on desktop */
+  #main-menu {
+    display: block !important;
+  }
+}
+
+/* Copy as markdown button responsive styling */
+@media (max-width: 1172px) and (min-width: 1024px) {
+  .copy-as-markdown {
+    order: 3;
+    width: 100%;
+    margin-top: 0.5rem;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .copy-as-markdown button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  footer.flex {
+    flex-wrap: wrap;
+  }
+}

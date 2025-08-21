@@ -1,0 +1,59 @@
+{{ define "head" }}
+    {{ partial "resume/head.html" . }}
+{{ end }}
+
+{{ define "body-class" }}resume-page{{ end }}
+
+{{ define "main" }}
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
+<div class="resume-container mx-auto font-sans bg-body-bg text-body-text text-[62.5%] xl:w-[90%]">
+    <div class="container px-3 lg:px-5 resume-wrapper mx-auto bg-card-bg p-5 mb-5 my-5 shadow-lg text-4xl">
+        {{ partial "resume/header.html" . }}
+        
+        <hr>
+        
+        {{ if $resume.summary.enable }}
+        {{ partial "resume/summary.html" . }}
+        {{ end }}
+        
+        <hr>
+        
+        <div class="resume-body flex flex-wrap">
+            <div class="row flex flex-wrap -mx-4 w-full">
+                <div class="resume-main col-12 lg:w-8/12 xl:w-9/12 pr-0 lg:pr-5 flex-1 w-full px-4">
+                    {{ if $resume.experience.enable }}
+                    {{ partial "resume/experience.html" . }}
+                    {{ end }}
+                    
+                    {{ if $resume.projects.enable }}
+                    {{ partial "resume/projects.html" . }}
+                    {{ end }}
+                    
+                    {{ if $resume.information.enable }}
+                    {{ partial "resume/information.html" . }}
+                    {{ end }}
+                </div><!--//resume-main-->
+                
+                <div class="w-full px-4 lg:w-auto flex-1">
+                    {{ partial "resume/sidebar.html" . }}
+                </div>
+                
+            </div><!--//row-->
+        </div><!--//resume-body-->
+        
+        <hr>
+        
+        {{ if $resume.social.enable }}
+        {{ partial "resume/social.html" . }}
+        {{ end }}
+        
+        {{ partial "resume/footer.html" . }}
+    </div><!--//container-->
+</div>
+
+{{ partial "resume/scripts.html" . }}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{/* Resume page doesn't use right sidebar */}}
+{{ end }}

@@ -1,0 +1,26 @@
+{{ if gt .Paginator.TotalPages 1 }}
+    <nav class='flex justify-center items-center gap-2 mt-8'>
+        {{ $.Scratch.Set "hasPrevDots" false }}
+        {{ $.Scratch.Set "hasNextDots" false }}
+
+        {{ range .Paginator.Pagers }}
+            {{ if eq . $.Paginator }}
+                <span class='px-4 py-2 rounded-card bg-accent text-accent-text'>
+                    {{- .PageNumber -}}
+                </span>
+                {{ else if or (or (eq . $.Paginator.First) (eq . $.Paginator.Prev)) (or  (eq . $.Paginator.Next) (eq . $.Paginator.Last )) }}
+                    <a class='px-4 py-2 rounded-card bg-card-bg text-card-text hover:bg-card-bg-selected hover:text-accent transition-all duration-200' href='{{ .URL }}'>
+                        {{- .PageNumber -}}
+                    </a>
+                {{ else }}
+                    {{ if and (not ($.Scratch.Get "hasPrevDots")) (lt .PageNumber $.Paginator.PageNumber)  }}
+                        {{ $.Scratch.Set "hasPrevDots" true }}
+                        <span class='px-4 py-2 rounded-card bg-transparent hover:bg-transparent cursor-default'>&hellip;</span>
+                    {{ else if and (not ($.Scratch.Get "hasNextDots")) (gt .PageNumber $.Paginator.PageNumber) }}
+                        {{ $.Scratch.Set "hasNextDots" true }}
+                        <span class='px-4 py-2 rounded-card bg-transparent hover:bg-transparent cursor-default'>&hellip;</span>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+    </nav>
+{{ end }}

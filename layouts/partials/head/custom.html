@@ -1,0 +1,7 @@
+{{/* Additional markdown link headers for LLMs.txt support */}}
+{{ if .OutputFormats.Get "MARKDOWN" }}
+<link href="{{ with .OutputFormats.Get "MARKDOWN" }}{{ .Permalink }}{{ end }}" rel="alternate" type="text/markdown" title="{{ .Title }} - Markdown" />
+{{ end }}
+{{ if .OutputFormats.Get "LLMS" }}
+<link href="{{ with .OutputFormats.Get "LLMS" }}{{ .Permalink }}{{ end }}" rel="alternate" type="text/plain" title="{{ .Title }} - LLMs.txt" />
+{{ end }}

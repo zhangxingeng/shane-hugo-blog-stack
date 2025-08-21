@@ -1,0 +1,51 @@
+{{ define "body-class" }}
+    {{/* 
+        Set TOC-specific variables for the article page
+        Note: Don't override hasWidget here - let baseof.html handle it
+    */}}
+    {{- $TOCManuallyDisabled := eq .Params.toc false -}}
+    {{- $TOCGloballyEnabled := .Site.Params.article.toc.enabled | default true -}}
+    {{- $hasTOC := gt (len .TableOfContents) 0 -}}
+    {{- $minHeadings := .Site.Params.article.toc.minHeadings | default 1 -}}
+    {{- $headingCount := len (findRE "<h[1-6]" .TableOfContents) -}}
+    {{- $hasEnoughHeadings := ge $headingCount $minHeadings -}}
+    {{- $finalTOCEnabled := and (not $TOCManuallyDisabled) $TOCGloballyEnabled $hasTOC $hasEnoughHeadings -}}
+    {{- .Scratch.Set "TOCEnabled" $finalTOCEnabled -}}
+    
+    article-page
+{{ end }}
+
+{{ define "main" }}
+    {{ partial "article/article.html" . }}
+
+    {{ if .Params.links }}
+        {{ partial "article/components/links" . }}
+    {{ end }}
+
+    {{ partial "article/components/related-content" . }}
+     
+    {{ if not (eq .Params.comments false) }}
+        {{ partial "comments/include" . }}
+    {{ end }}
+
+    {{ partialCached "footer/footer" . }}
+
+    {{ partialCached "article/components/photoswipe" . }}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{/* Check if we have any widgets configured for the page scope */}}
+    {{ $hasPageWidgets := false }}
+    {{ range .Site.Params.widgets.page }}
+        {{ $hasPageWidgets = true }}
+    {{ end }}
+    
+
+    
+    {{ if $hasPageWidgets }}
+        <aside class="order-3 lg:order-last w-full lg:w-80 flex-shrink-0 hidden lg:block">
+            {{ partial "sidebar/right.html" (dict "Context" . "Scope" "page") }}
+        </aside>
+    {{ end }}
+{{ end }}
+

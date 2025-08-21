@@ -1,0 +1,24 @@
+{{/* Sidebar TOC Widget - Desktop only */}}
+{{ $TOCManuallyDisabled := eq .Context.Params.toc false }}
+{{ $TOCGloballyEnabled := .Context.Site.Params.article.toc.enabled | default true }}
+{{ $TOCEnabled := and (not $TOCManuallyDisabled) $TOCGloballyEnabled }}
+{{ $hasTOC := gt (len .Context.TableOfContents) 0 }}
+{{ $minHeadings := .Context.Site.Params.article.toc.minHeadings | default 1 }}
+{{ $headingCount := len (findRE "<li>" .Context.TableOfContents) }}
+{{ $hasEnoughHeadings := ge $headingCount $minHeadings }}
+{{ $showTOC := and $TOCEnabled $hasTOC $hasEnoughHeadings }}
+
+
+
+{{ if $showTOC }}
+    <section class="bg-card-bg rounded-card p-4 lg:p-6 shadow-l1 mb-6 lg:mb-8 toc-widget hidden lg:block border border-card-separator/30 hover:shadow-l2 transition-all duration-300 hover:border-accent/20 hover:bg-card-bg-selected/50 group animate-fade-in">
+        {{ partial "article/components/toc-core" (dict 
+            "context" .Context
+            "id_prefix" "sidebar-toc"
+            "show_toggle" false
+            "toggle_classes" ""
+            "wrapper_classes" ""
+            "content_classes" ""
+        ) }}
+    </section>
+{{ end }}

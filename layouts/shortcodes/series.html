@@ -1,0 +1,36 @@
+{{/* Series shortcode - displays all posts in a given series */}}
+{{ $seriesName := .Get 0 }}
+{{ if $seriesName }}
+    {{ $allPosts := .Site.RegularPages }}
+    {{ $seriesPosts := slice }}
+    
+    {{/* Find all posts that belong to this series */}}
+    {{ range $post := $allPosts }}
+        {{ if $post.Params.series }}
+            {{ range $post.Params.series }}
+                {{ if eq . $seriesName }}
+                    {{ $seriesPosts = $seriesPosts | append $post }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    
+    {{ if gt (len $seriesPosts) 0 }}
+        <div class="series-shortcode">
+            <ol>
+                {{ range $seriesPosts.ByDate }}
+                    <li>
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        {{ with .Description }}
+                            <p class="series-post-description">{{ . }}</p>
+                        {{ end }}
+                    </li>
+                {{ end }}
+            </ol>
+        </div>
+    {{ else }}
+        <p><em>No posts in this series yet.</em></p>
+    {{ end }}
+{{ else }}
+    <p><em>Series name not provided.</em></p>
+{{ end }} 

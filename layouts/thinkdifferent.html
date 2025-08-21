@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <style>
+        :root {
+            /* Light theme (default) */
+            --background-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #555555;
+            --border-color: #dddddd;
+            --highlight-color: #000000;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-color: #1d1d1f;
+                --text-color: #f5f5f7;
+                --accent-color: #a1a1a6;
+                --border-color: #444444;
+                --highlight-color: #ffffff;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 40px 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+            color: var(--highlight-color);
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--accent-color);
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content em {
+            display: block;
+            margin-top: 40px;
+            text-align: right;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: var(--accent-color);
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+
+        .video-container {
+            max-width: 100%;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .video-container .video-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .video-wrapper video {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .video-wrapper video {
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 0;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .content {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            .video-container {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <svg class="logo" viewBox="0 0 600 600" fill="currentColor">
+                <path id="d"
+                    d="m339.87,96.65c19.59-25.07,34.45-60.46,29.05-96.65-31.98,2.21-69.38,22.51-91.22,48.96-19.82,24.02-36.18,59.64-29.82,94.27,34.92,1.07,71.04-19.73,91.99-46.59Zm138.76,343.07c-10.55,1.91-17.86,6.1-26.6,2.87-8.75-3.23-10.31-16.74-11.27-21.05-.96-4.3-3.12-2.99-6.23-7.89-3.12-4.9-.72-9.57-.12-11.6.6-2.03-1.08-2.63-5.87-3.71-4.79-1.08-5.39-12.2-7.07-14.35-1.68-2.15-11.03,1.19-15.58-2.15-4.55-3.35-4.19-9.92-2.4-15.9,1.8-5.98,6.59-20.45,5.87-22.36-.72-1.91-8.71-13.82-12.29-18.83-3.58-5-3.01-6.96-1.1-6.86,1.91.1,2.97,2.37,2.97,2.37,3.12,4.54,11.74,17.94,14.14,16.26,2.4-1.67,1.92-6.7-3.36-11.96-5.27-5.26-5.99-16.5-6.47-26.79-.48-10.28-5.27-49.5,27.8-76.29,33.08-26.78,59.92-25.11,59.92-25.11l1.45-.22c-30.52-36.04-72.23-56.79-111.67-56.79-53.87,0-76.65,25.53-114.03,25.53s-67.83-25.49-114.45-25.49-94.45,27.74-125.32,75.15c-43.42,66.7-36.06,192.18,34.35,299.09,25.19,38.23,58.82,81.22,102.79,81.62,39.08.36,50.16-24.88,103.17-25.17,53.03-.3,63.07,25.45,102.14,25.09,43.96-.42,79.45-48.02,104.62-86.26,16.91-25.66,23.88-39.42,36.21-66.55-4.47-4.5-21.37-4.51-31.61-2.66Z"/>
+            </svg>
+            <h1>{{ .Title }}</h1>
+        </header>
+
+        <div class="hero">
+            <div class="content">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

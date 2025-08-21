@@ -1,0 +1,138 @@
+{{/* 
+    Core TOC Component - Reusable TOC content and navigation
+    
+    Parameters:
+    - context: The page context
+    - id_prefix: Unique prefix for IDs to avoid conflicts (e.g., "sidebar", "mobile")
+    - show_toggle: Whether to show the toggle button (boolean)
+    - toggle_classes: Additional classes for the toggle button
+    - wrapper_classes: Additional classes for the wrapper
+    - content_classes: Additional classes for the content area
+*/}}
+
+{{ $context := .context }}
+{{ $id_prefix := .id_prefix | default "toc" }}
+{{ $show_toggle := .show_toggle | default false }}
+{{ $toggle_classes := .toggle_classes | default "" }}
+{{ $wrapper_classes := .wrapper_classes | default "" }}
+{{ $content_classes := .content_classes | default "" }}
+
+{{/* Check if TOC should be displayed - use corrected heading count logic */}}
+{{ $TOCManuallyDisabled := eq $context.Params.toc false }}
+{{ $TOCGloballyEnabled := $context.Site.Params.article.toc.enabled | default true }}
+{{ $TOCEnabled := and (not $TOCManuallyDisabled) $TOCGloballyEnabled }}
+{{ $hasTOC := gt (len $context.TableOfContents) 0 }}
+{{ $minHeadings := $context.Site.Params.article.toc.minHeadings | default 1 }}
+{{ $headingCount := len (findRE "<li>" $context.TableOfContents) }}
+{{ $hasEnoughHeadings := ge $headingCount $minHeadings }}
+{{ $showTOC := and $TOCEnabled $hasTOC $hasEnoughHeadings }}
+
+{{/* Debug information - can be enabled for troubleshooting */}}
+{{- if $context.Site.Params.debug -}}
+<!-- TOC Debug: 
+     TOC Length: {{ len $context.TableOfContents }}
+     TOC Enabled: {{ $TOCEnabled }}
+     Has TOC: {{ $hasTOC }}
+     Heading Count: {{ $headingCount }}
+     Has Enough Headings: {{ $hasEnoughHeadings }}
+     Show TOC: {{ $showTOC }}
+-->
+{{- end -}}
+
+
+
+{{ if $showTOC }}
+<!-- TOC Header -->
+{{ if $show_toggle }}
+    {{ if eq $id_prefix "mobile-toc" }}
+    <!-- Mobile TOC Header with full button design -->
+    <button class="w-full flex items-center justify-between p-4 hover:bg-card-bg-selected transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-inset group hover-lift" 
+            id="{{ $id_prefix }}-toggle" 
+            aria-label="Toggle table of contents"
+            aria-expanded="false"
+            type="button"
+            role="button"
+            tabindex="0">
+        <div class="flex items-center gap-3">
+            <div class="text-accent flex-shrink-0 group-hover:scale-110 transition-transform duration-200">
+                {{ partial "helper/icon" "hash" }}
+            </div>
+            <div class="flex-1 text-left">
+                <h2 class="text-base sm:text-lg font-semibold text-card-text">{{ T "article.tableOfContents" }}</h2>
+                {{ $tocContent := $context.TableOfContents }}
+                {{ $sectionCount := len (findRE "<li>" $tocContent) }}
+                {{ if gt $sectionCount 0 }}
+                <p class="text-xs text-card-text-tertiary mt-0.5">
+                    {{ $sectionCount }} {{ if eq $sectionCount 1 }}section{{ else }}sections{{ end }}
+                </p>
+                {{ end }}
+            </div>
+        </div>
+        
+        <div class="flex items-center gap-2">
+            <span class="text-xs text-card-text-tertiary hidden sm:inline">Tap to expand</span>
+            <svg class="w-5 h-5 text-card-text-secondary transform transition-transform duration-300 group-hover:text-accent" 
+                 fill="none" 
+                 stroke="currentColor" 
+                 viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </div>
+    </button>
+    {{ else }}
+    <!-- Sidebar TOC Header with original clean design -->
+    <div class="flex items-center gap-3 mb-4 pb-3 border-b border-card-separator">
+        <div class="text-accent flex-shrink-0">
+            {{ partial "helper/icon" "hash" }}
+        </div>
+        <h2 class="text-lg lg:text-xl font-semibold text-card-text flex-grow">{{ T "article.tableOfContents" }}</h2>
+        <!-- Mobile toggle button for sidebar (legacy support) -->
+        <button class="lg:hidden p-2 rounded-lg hover:bg-card-bg-selected transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent {{ $toggle_classes }}" 
+                id="{{ $id_prefix }}-toggle" 
+                aria-label="Toggle table of contents"
+                aria-expanded="false">
+            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
+    </div>
+    {{ end }}
+{{ else }}
+<div class="flex items-center gap-3 mb-4 pb-3 border-b border-card-separator group-hover:border-accent/30 transition-colors duration-300">
+    <div class="text-accent flex-shrink-0 group-hover:scale-110 transition-transform duration-200">
+        {{ partial "helper/icon" "hash" }}
+    </div>
+    <h2 class="text-lg lg:text-xl font-semibold text-card-text flex-grow">{{ T "article.tableOfContents" }}</h2>
+    {{ if $context.Site.Params.article.toc.showSectionCount | default false }}
+    {{ $tocContent := $context.TableOfContents }}
+    {{ $sectionCount := len (findRE "<li>" $tocContent) }}
+    {{ if gt $sectionCount 0 }}
+    <span class="text-xs text-card-text-tertiary bg-card-bg-selected px-2 py-1 rounded-full">
+        {{ $sectionCount }} {{ if eq $sectionCount 1 }}section{{ else }}sections{{ end }}
+    </span>
+    {{ end }}
+    {{ end }}
+</div>
+{{ end }}
+
+<!-- TOC Content -->
+<div class="toc-content {{ $content_classes }}" id="{{ $id_prefix }}-content">
+    <nav class="toc-navigation {{ $wrapper_classes }}" 
+         aria-label="Table of contents"
+         id="{{ $id_prefix }}-navigation">
+        {{ if and $show_toggle (eq $id_prefix "mobile-toc") }}
+        <!-- Mobile TOC with padding and enhanced hierarchy -->
+        <div class="p-4 pt-0">
+            <div class="toc-hierarchy border-l-2 border-accent/20 pl-4 text-sm space-y-1">
+                {{ $context.TableOfContents }}
+            </div>
+        </div>
+        {{ else }}
+        <!-- Sidebar TOC with enhanced hierarchy -->
+        <div class="toc-hierarchy text-sm leading-relaxed">
+            {{ $context.TableOfContents }}
+        </div>
+        {{ end }}
+    </nav>
+</div>
+{{ end }}

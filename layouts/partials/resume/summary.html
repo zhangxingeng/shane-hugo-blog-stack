@@ -1,0 +1,20 @@
+{{ $resume := index site.Data .Site.Language.Lang "resume" }}
+
+<div class="mb-section text-lg leading-article text-card-text-secondary">
+    <div class="flex flex-col md:flex-row items-center gap-8">
+        {{ if $resume.profile.avatar }}
+        <div class="flex justify-center md:mr-10">
+            {{ $avatar := resources.Get $resume.profile.avatar }}
+            {{ if $avatar }}
+            <img class="max-w-[120px] rounded-full border-4 border-accent bg-card-bg shadow-l1" src="{{ $avatar.RelPermalink }}" alt="Profile image">
+            {{ else }}
+            <img class="max-w-[120px] rounded-full border-4 border-accent bg-card-bg shadow-l1" src="{{ .Site.BaseURL }}{{ $resume.profile.avatar }}" alt="Profile image">
+            {{ end }}
+        </div>
+        {{ end }}
+        
+        <div class="flex-1">
+            <p class="m-0 text-card-text-secondary leading-article">{{ $resume.summary.text | markdownify }}</p>
+        </div>
+    </div>
+</div>

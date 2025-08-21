@@ -1,0 +1,23 @@
+<script>
+  // Adds a class for users with JS disabled; swapped to 'js-enabled' when loaded
+  document.documentElement.classList.add('no-js');
+  window.addEventListener('load', function(){
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js-enabled');
+  });
+  
+  // Site parameters for JavaScript
+  window.siteParams = {
+    navigation: {
+      animationDuration: {{ .Site.Params.navigation.animationDuration | default 300 }},
+      smoothScroll: {{ .Site.Params.navigation.smoothScroll | default true }},
+      staggeredAnimations: {{ .Site.Params.navigation.staggeredAnimations | default true }}
+    },
+    ui: {
+      enhancedHovers: {{ .Site.Params.ui.enhancedHovers | default true }},
+      avatarHoverScale: {{ .Site.Params.ui.avatarHoverScale | default 1.05 }},
+      socialIconRotation: {{ .Site.Params.ui.socialIconRotation | default 6 }}
+    }
+  };
+</script>
+
