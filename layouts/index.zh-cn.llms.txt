@@ -29,9 +29,9 @@
 - **{{ .Name | title }}**（{{ .Count }}篇{{ if eq .Count 1 }}文章{{ else }}文章{{ end }}）
 {{- end }}
 
-## 归档
+## 所有文章
 
-按年份整理的所有文章：[归档]({{ $baseURL }}page/archives/llms.txt)
+在主站浏览全部 {{ len $posts }} 篇文章：{{ .Site.BaseURL }}
 
 ---
 

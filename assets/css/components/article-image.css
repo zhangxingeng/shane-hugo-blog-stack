@@ -1,0 +1,31 @@
+/* Article image styles for post listings */
+.article-image {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--card-border-radius);
+  margin-bottom: 1rem;
+}
+
+.article-image a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.article-image a:hover img {
+  transform: scale(1.02);
+}
+
+/* Ensure images are responsive */
+.article-image img[width][height] {
+  width: 100%;
+  height: auto;
+}

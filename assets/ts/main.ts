@@ -11,6 +11,7 @@ import { setupScrollspy } from 'ts/scrollspy';
 import { setupSmoothAnchors } from "ts/smoothAnchors";
 import { setupTOC } from 'ts/toc';
 import Search from 'ts/search';
+import { initCodeCopyButtons, initCopyAsMarkdown } from 'ts/copyCode';
 
 let Stack = {
     init: () => {
@@ -28,9 +29,10 @@ let Stack = {
         }
 
         /**
-         * Initialize copy as markdown functionality
+         * Initialize copy functionality
          */
-        Stack.initCopyAsMarkdown();
+        initCopyAsMarkdown();
+        initCodeCopyButtons();
 
         /**
          * Add linear gradient background to tile style article
@@ -65,48 +67,13 @@ let Stack = {
         }
 
 
-        /**
-         * Add copy button to code block
-        */
-        const highlights = document.querySelectorAll('.article-content div.highlight');
-        const copyText = `Copy`,
-            copiedText = `Copied!`;
 
-        highlights.forEach(highlight => {
-            const copyButton = document.createElement('button');
-            copyButton.innerHTML = copyText;
-            copyButton.classList.add('copyCodeButton');
-            highlight.appendChild(copyButton);
-
-            const codeBlock = highlight.querySelector('code[data-lang]');
-            if (!codeBlock) return;
-
-            copyButton.addEventListener('click', () => {
-                navigator.clipboard.writeText(codeBlock.textContent)
-                    .then(() => {
-                        copyButton.textContent = copiedText;
-
-                        setTimeout(() => {
-                            copyButton.textContent = copyText;
-                        }, 1000);
-                    })
-                    .catch(err => {
-                        alert(err)
-                        console.log('Something went wrong', err);
-                    });
-            });
-        });
 
         new StackColorScheme(document.getElementById('dark-mode-toggle'));
         
         /**
-         * Initialize search functionality
+         * Search functionality auto-initializes via its own event listeners
          */
-        // The Search class has its own initialization, but we need to ensure it's included in the bundle
-        if (Search) {
-            // Search will auto-initialize via its own event listeners
-            console.log('Search functionality loaded');
-        }
         
         /**
          * Initialize back to top button
@@ -124,60 +91,14 @@ let Stack = {
         Stack.initRelatedArticles();
     },
 
-    initCopyAsMarkdown: () => {
-        const copyButtons = document.querySelectorAll('.copy-as-markdown button');
-        
-        // Check for llms.txt format first, then fallback to markdown
-        let llmsLink = document.querySelector('link[type="text/plain"]') as HTMLLinkElement;
-        const markdownLink = document.querySelector('link[type="text/markdown"]') as HTMLLinkElement;
-        
-        // If no plain text link, try to construct llms.txt URL
-        if (!llmsLink && markdownLink) {
-            const currentUrl = new URL(window.location.href);
-            const pathname = currentUrl.pathname;
-            const llmsUrl = pathname.charAt(pathname.length - 1) === '/' 
-                ? pathname + 'llms.txt'
-                : pathname + '/llms.txt';
-            llmsLink = { href: llmsUrl } as HTMLLinkElement;
-        }
-        
-        const preferredLink = llmsLink || markdownLink;
-        if (preferredLink) {
-            document.body.classList.add('has-markdown');
-        }
-        
-        copyButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                
-                fetch(preferredLink.href)
-                    .then(response => response.text())
-                    .then(content => navigator.clipboard.writeText(content))
-                    .then(() => {
-                        // Show feedback using i18n translations
-                        const span = button.querySelector('span') as HTMLElement;
-                        const originalText = button.getAttribute('data-copy-text') || span.textContent;
-                        const copiedText = button.getAttribute('data-copied-text') || 'Copied!';
-                        span.textContent = copiedText;
-                        
-                        setTimeout(() => {
-                            span.textContent = originalText;
-                        }, 2000);
-                    })
-                    .catch(err => {
-                        console.error('Failed to copy content:', err);
-                        alert('Failed to copy content. Please try again.');
-                    });
-            });
-        });
-    },
+
 
     initBackToTop: () => {
         const backToTopButton = document.getElementById('back-to-top');
         if (!backToTopButton) return;
 
         // Get threshold from data attribute or default to 300
-        const threshold = parseInt(backToTopButton.getAttribute('data-threshold') || '300');
+        const threshold = parseInt(backToTopButton.getAttribute('data-threshold') ?? '300');
 
         // Show/hide button based on scroll position
         const toggleVisibility = () => {
@@ -339,8 +260,8 @@ let Stack = {
                 
                 if (!isExpanded) {
                     // Show hidden articles
-                    hiddenArticles.forEach((article, index) => {
-                        const articleIndex = parseInt(article.getAttribute('data-article-index') || '0');
+                    Array.from(hiddenArticles).forEach((article) => {
+                        const articleIndex = parseInt(article.getAttribute('data-article-index') ?? '0');
                         if (articleIndex >= 3) {
                             article.classList.remove('hidden');
                             // Animate in with delay
@@ -350,13 +271,13 @@ let Stack = {
                         }
                     });
                     
-                    btnText.textContent = 'Show Less Articles';
-                    btnIcon.style.transform = 'rotate(180deg)';
+                    if (btnText) btnText.textContent = 'Show Less Articles';
+                    if (btnIcon) btnIcon.style.transform = 'rotate(180deg)';
                     isExpanded = true;
                 } else {
                     // Hide articles beyond first 3
-                    hiddenArticles.forEach(article => {
-                        const articleIndex = parseInt(article.getAttribute('data-article-index') || '0');
+                    Array.from(hiddenArticles).forEach(article => {
+                        const articleIndex = parseInt(article.getAttribute('data-article-index') ?? '0');
                         if (articleIndex >= 3) {
                             article.classList.add('opacity-0');
                             setTimeout(() => {
@@ -365,8 +286,8 @@ let Stack = {
                         }
                     });
                     
-                    btnText.textContent = 'Show More Articles';
-                    btnIcon.style.transform = 'rotate(0deg)';
+                    if (btnText) btnText.textContent = 'Show More Articles';
+                    if (btnIcon) btnIcon.style.transform = 'rotate(0deg)';
                     isExpanded = false;
                 }
             };

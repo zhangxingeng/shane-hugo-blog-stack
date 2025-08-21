@@ -5,3 +5,4 @@ resources
 **/.env
 assets/jsconfig.json
 node_modules/
+**/*:Zone.Identifier

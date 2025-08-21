@@ -1,12 +1,16 @@
 {{ $resume := index site.Data .Site.Language.Lang "resume" }}
-<div class="lg:sticky top-5 border-l border-card-separator">
-    <div class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+<div class="lg:sticky top-8">
+    <div class="resume-aside space-y-8 pl-0 lg:pl-8 lg:border-l lg:border-card-separator pb-4">
         {{ if $resume.education.enable }}
         {{ partial "resume/education.html" . }}
         {{ end }}
 
-        {{ if $resume.awards.enable }}
-        {{ partial "resume/awards.html" . }}
+        {{ if $resume.certification.enable }}
+        {{ partial "resume/certification.html" . }}
+        {{ end }}
+
+        {{ if $resume.teaching.enable }}
+        {{ partial "resume/teaching.html" . }}
         {{ end }}
 
         {{ if $resume.skills.enable }}

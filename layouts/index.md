@@ -32,9 +32,9 @@ You can find [more information about the author on the about page]({{ $baseURL }
 - **{{ .Name | title }}** ({{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }})
 {{- end }}
 
-## Archive
+## All Posts
 
-All posts organized by year: [Archive]({{ $baseURL }}page/archives/index.md)
+Browse all {{ len $posts }} posts on the main site: {{ .Site.BaseURL }}
 
 ---
 

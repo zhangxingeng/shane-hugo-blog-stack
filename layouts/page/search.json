@@ -9,15 +9,55 @@
 
     {{- $image := partialCached "helper/image" (dict "Context" . "Type" "articleList") .RelPermalink "articleList" -}}
     {{- if $image.exists -}}
-        {{- $imagePermalink := "" -}}
-        {{- if and $image.resource (default true .Page.Site.Params.imageProcessing.cover.enabled) -}}
-            {{- $thumbnail := $image.resource.Fill "120x120" -}}
-            {{- $imagePermalink = (absURL $thumbnail.Permalink) -}}
+        {{- $imageData := dict -}}
+        {{- if $image.resource -}}
+            {{- $imagePermalink := $image.resource.RelPermalink -}}
+            {{- $Width := $image.resource.Width -}}
+            {{- $Height := $image.resource.Height -}}
+            {{- $Srcset := "" -}}
+            
+            {{- if (default true .Page.Site.Params.imageProcessing.cover.enabled) -}}
+                {{- $thumbnail := $image.resource.Resize "800x" -}}
+                {{- $thumbnailRetina := $image.resource.Resize "1600x" -}}
+                {{- $Srcset = printf "%s 800w, %s 1600w" $thumbnail.RelPermalink $thumbnailRetina.RelPermalink -}}
+                {{- $imagePermalink = $thumbnail.RelPermalink -}}
+                {{- $Width = $thumbnail.Width -}}
+                {{- $Height = $thumbnail.Height -}}
+            {{- end -}}
+            
+            {{- $imageData = dict "src" $imagePermalink "srcset" $Srcset "width" $Width "height" $Height -}}
         {{- else -}}
-            {{- $imagePermalink = $image.permalink -}}
+            {{- $imageData = dict "src" $image.permalink -}}
         {{- end -}}
         
-        {{- $data = merge $data (dict "image" (absURL $imagePermalink)) -}}
+        {{- $data = merge $data (dict "image" $imageData) -}}
+    {{- end -}}
+
+    {{- $categories := slice -}}
+    {{- range (.GetTerms "categories") -}}
+        {{- $categories = $categories | append (dict "name" .LinkTitle "url" .RelPermalink) -}}
+    {{- end -}}
+    {{- if $categories -}}
+        {{- $data = merge $data (dict "categories" $categories) -}}
+    {{- end -}}
+
+    {{- $showReadingTime := .Params.readingTime | default (.Site.Params.article.readingTime) -}}
+    {{- if $showReadingTime -}}
+        {{- $data = merge $data (dict "readingTime" .ReadingTime) -}}
+    {{- end -}}
+
+    {{- $isListPage := or .IsHome .IsSection (eq .Kind "taxonomy") (eq .Kind "term") -}}
+    {{- $showCopyButton := and (not $isListPage) (or (.OutputFormats.Get "LLMS") (.OutputFormats.Get "MARKDOWN")) -}}
+    {{- if $showCopyButton -}}
+        {{- $data = merge $data (dict "hasMarkdown" true) -}}
+    {{- end -}}
+
+    {{- if .IsTranslated -}}
+        {{- $translations := slice -}}
+        {{- range .Translations -}}
+            {{- $translations = $translations | append (dict "name" .Language.LanguageName "url" .Permalink) -}}
+        {{- end -}}
+        {{- $data = merge $data (dict "translations" $translations) -}}
     {{- end -}}
 
     {{- $result = $result | append $data -}}

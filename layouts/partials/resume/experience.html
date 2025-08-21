@@ -1,7 +1,7 @@
 {{ $resume := index site.Data .Site.Language.Lang "resume" }}
 
-<section class="mb-section">
-    <h3 class="relative pl-4 text-2xl tracking-widest text-accent mb-6 before:content-[''] before:inline-block before:w-1 before:h-full before:bg-accent before:absolute before:left-0 before:top-0 before:rounded-sm">Work Experience</h3>
+<section class="mb-12">
+    <h3 class="relative pl-5 text-3xl font-bold tracking-wide text-accent mb-8 before:content-[''] before:inline-block before:w-1 before:h-full before:bg-accent before:absolute before:left-0 before:top-0 before:rounded-sm">Work Experience</h3>
     
     {{ range $resume.experience.list }}
     <div class="p-6 rounded-card bg-card-bg shadow-l1 transition-transform duration-300 ease-in-out mb-6 hover:-translate-y-1 hover:shadow-l2">

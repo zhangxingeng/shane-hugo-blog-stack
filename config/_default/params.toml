@@ -66,13 +66,9 @@ limit = 5
 enabled = true
 
 ## Widgets
-[[widgets.homepage]]
-type = "search"
 
 [[widgets.homepage]]
-type = "archives"
-[widgets.homepage.params]
-limit = 8
+type = "search"
 
 [[widgets.homepage]]
 type = "categories"

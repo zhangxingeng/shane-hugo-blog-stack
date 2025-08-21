@@ -1,7 +1,7 @@
 {{ $resume := index site.Data .Site.Language.Lang "resume" }}
 
-<section class="mb-section">
-    <h3 class="relative pl-4 text-2xl tracking-widest text-accent mb-6 before:content-[''] before:inline-block before:w-1 before:h-full before:bg-accent before:absolute before:left-0 before:top-0 before:rounded-sm">Information</h3>
+<section class="mb-12">
+    <h3 class="relative pl-5 text-3xl font-bold tracking-wide text-accent mb-8 before:content-[''] before:inline-block before:w-1 before:h-full before:bg-accent before:absolute before:left-0 before:top-0 before:rounded-sm">Publications</h3>
     
     {{ range $resume.information.list }}
     <div class="p-6 rounded-card bg-card-bg shadow-l1 mb-6">

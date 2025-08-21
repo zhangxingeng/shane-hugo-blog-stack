@@ -1,12 +1,12 @@
 {{ $resume := index site.Data .Site.Language.Lang "resume" }}
-<section class="mb-section">
-    <h3 class="relative pl-4 text-2xl tracking-widest text-accent mb-6 before:content-[''] before:inline-block before:w-1 before:h-full before:bg-accent before:absolute before:left-0 before:top-0 before:rounded-sm">Languages</h3>
+<section class="mb-8">
+    <h3 class="relative pl-5 text-xl font-bold tracking-wide text-accent mb-6 before:content-[''] before:inline-block before:w-1 before:h-full before:bg-accent before:absolute before:left-0 before:top-0 before:rounded-sm">Languages</h3>
     
-    <ul class="list-none p-0 m-0 text-lg mb-6">
+    <ul class="list-none p-0 m-0 mb-6 space-y-2">
         {{ range $resume.languages.list }}
-        <li class="flex items-center gap-2 mb-3">
-            <span class="font-semibold text-card-text-secondary">{{ .name }}</span>
-            <span class="text-card-text-tertiary text-sm">({{ .level }})</span>
+        <li class="flex flex-col gap-1">
+            <span class="font-semibold text-card-text text-base">{{ .name }}</span>
+            <span class="text-card-text-tertiary text-sm">{{ .level }}</span>
         </li>
         {{ end }}
     </ul>

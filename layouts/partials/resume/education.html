@@ -1,14 +1,17 @@
 {{ $resume := index site.Data .Site.Language.Lang "resume" }}
 
-<section class="mb-section">
-    <h3 class="relative pl-4 text-2xl tracking-widest text-accent mb-6 before:content-[''] before:inline-block before:w-1 before:h-full before:bg-accent before:absolute before:left-0 before:top-0 before:rounded-sm">Education</h3>
+<section class="mb-8">
+    <h3 class="relative pl-5 text-xl font-bold tracking-wide text-accent mb-6 before:content-[''] before:inline-block before:w-1 before:h-full before:bg-accent before:absolute before:left-0 before:top-0 before:rounded-sm">Education</h3>
     
-    <ul class="list-none p-0 m-0 text-lg mb-6">
+    <ul class="list-none p-0 m-0 mb-6">
         {{ range $resume.education.list }}
-        <li class="relative pl-8 mb-8 before:content-[''] before:absolute before:left-0 before:top-2 before:h-3 before:w-3 before:rounded-full before:bg-accent after:content-[''] after:absolute after:left-[5px] after:top-4 after:bottom-[-2rem] after:w-0.5 after:bg-card-separator last:after:hidden">
-            <div class="font-bold text-card-text text-lg mb-2">{{ .degree }}</div>
-            <div class="text-sm text-card-text-tertiary">{{ .university }}</div>
-            <div class="text-sm text-card-text-tertiary">{{ .dates }}</div>
+        <li class="relative pl-8 mb-6 before:content-[''] before:absolute before:left-0 before:top-1 before:h-3 before:w-3 before:rounded-full before:bg-accent after:content-[''] after:absolute after:left-[5px] after:top-4 after:bottom-[-1.5rem] after:w-0.5 after:bg-card-separator last:after:hidden">
+            <div class="font-bold text-card-text text-base mb-1">{{ .degree }}</div>
+            <div class="text-sm text-card-text-secondary mb-1">{{ .university }}</div>
+            <div class="text-xs text-card-text-tertiary">{{ .dates }}</div>
+            {{ if .gpa }}
+            <div class="text-xs text-card-text-tertiary mt-1">{{ .gpa }}</div>
+            {{ end }}
         </li>
         {{ end }}
     </ul>

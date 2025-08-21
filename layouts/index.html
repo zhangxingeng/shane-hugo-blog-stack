@@ -9,4 +9,13 @@
 
     {{- partial "pagination.html" . -}}
     {{- partial "footer/footer" . -}}
+
+    {{/* Load search script and data for inline search functionality */}}
+    <script>
+        window.searchResultTitleTemplate = "{{ T `search.resultTitle` | default `Found #PAGES_COUNT results in #TIME_SECONDS seconds` }}"
+    </script>
+
+    {{- $opts := dict "minify" hugo.IsProduction "JSXFactory" "createElement" "target" "es2020" -}}
+    {{- $searchScript := resources.Get "ts/search.ts" | js.Build $opts -}}
+    <script type="text/javascript" src="{{ $searchScript.RelPermalink }}" defer></script>
 {{ end }}

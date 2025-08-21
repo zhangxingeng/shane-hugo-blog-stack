@@ -50,13 +50,6 @@ notFound:
         other: This page does not exist
 
 widget:
-    archives:
-        title:
-            other: Archives
-
-        more:
-            other: More
-
     tagCloud:
         title:
             other: Tags
