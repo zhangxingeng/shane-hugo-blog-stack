@@ -1,10 +1,13 @@
-<section class="article-content text-base sm:text-lg leading-relaxed max-w-none p-4 sm:p-6 lg:p-8 overflow-hidden min-w-0">
+<section class="article-content text-base sm:text-lg leading-relaxed max-w-none p-4 sm:p-6 lg:p-8 overflow-hidden min-w-0 animate-fade-in">
     {{/* Mobile TOC - show at top of content on mobile, hidden on desktop */}}
     {{ partial "article/components/mobile-toc" . }}
     
-    <!-- Refer to https://discourse.gohugo.io/t/responsive-tables-in-markdown/10639/5 -->
-    {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
-    {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
+    <!-- Enhanced content wrapper with better typography -->
+    <div class="prose prose-lg max-w-none">
+        <!-- Refer to https://discourse.gohugo.io/t/responsive-tables-in-markdown/10639/5 -->
+        {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
+        {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
+    </div>
     
     {{/* Add series navigation after content */}}
     {{ partial "article/components/series" . }}

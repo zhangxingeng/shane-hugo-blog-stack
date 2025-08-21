@@ -20,31 +20,44 @@
 
         {{/* The container is wider when there's any activated widget */}}
         {{ $hasWidget := false }}
-        {{ range .Site.Params.widgets.homepage }}
-            {{ $hasWidget = true }}
-        {{ end }}
-        {{ range .Site.Params.widgets.page }}
-            {{ $hasWidget = true }}
+        {{ if .Site.Params.widgets }}
+            {{ if .Site.Params.widgets.homepage }}
+                {{ range .Site.Params.widgets.homepage }}
+                    {{ $hasWidget = true }}
+                {{ end }}
+            {{ end }}
+            {{ if .Site.Params.widgets.page }}
+                {{ range .Site.Params.widgets.page }}
+                    {{ $hasWidget = true }}
+                {{ end }}
+            {{ end }}
         {{ end }}
         {{ .Scratch.Set "hasWidget" $hasWidget }}
         <div class="mx-auto min-h-screen flex flex-col lg:flex-row items-start px-4 sm:px-6 lg:px-8 gap-4 sm:gap-6 lg:gap-8 pt-4 sm:pt-6 lg:pt-8
                     {{ if $hasWidget }}
-                      max-w-full sm:max-w-4xl lg:max-w-6xl xl:max-w-7xl 
+                      max-w-full sm:max-w-5xl lg:max-w-7xl xl:max-w-screen-2xl 
                     {{ else }}
-                      max-w-full sm:max-w-3xl lg:max-w-4xl xl:max-w-5xl
+                      max-w-full sm:max-w-4xl lg:max-w-6xl xl:max-w-7xl
                     {{ end }}
                     transition-all duration-300">
             {{- block "left-sidebar" . -}}
-                <aside class="order-first lg:order-1 flex-shrink-0 w-full lg:w-80 sidebar z-20">
+                {{ $leftSidebarWidth := .Site.Params.layout.sidebarWidth | default 20 }}
+                {{ $leftSidebarWidthNoWidgets := .Site.Params.layout.leftSidebarWidthNoWidgets | default 25 }}
+                {{ $hasWidgetLocal := .Scratch.Get "hasWidget" }}
+                <aside class="order-first lg:order-1 flex-shrink-0 w-full {{ if $hasWidgetLocal }}lg:w-[{{ $leftSidebarWidth }}%]{{ else }}lg:w-[{{ $leftSidebarWidthNoWidgets }}%]{{ end }} sidebar z-20 transition-all duration-300">
                     {{ partial "sidebar/left.html" . }}
                 </aside>
             {{- end -}}
-            <main class="order-2 min-w-0 flex-grow flex flex-col gap-4 sm:gap-6 lg:gap-8 lg:pt-4 animate-fade-in">
+            {{ $mainContentWidth := .Site.Params.layout.mainContentWidth | default 60 }}
+            {{ $mainContentWidthNoWidgets := .Site.Params.layout.mainContentWidthNoWidgets | default 75 }}
+            {{ $hasWidgetLocal := .Scratch.Get "hasWidget" }}
+            <main class="order-2 min-w-0 {{ if $hasWidgetLocal }}lg:w-[{{ $mainContentWidth }}%]{{ else }}lg:w-[{{ $mainContentWidthNoWidgets }}%]{{ end }} flex flex-col gap-4 sm:gap-6 lg:gap-8 lg:pt-4 animate-fade-in transition-all duration-300">
                 {{- block "main" . }}{{- end }}
             </main>
             {{- block "right-sidebar" . -}}
                 {{ if .Scratch.Get "hasWidget" }}
-                    <aside class="order-3 lg:order-last w-full lg:w-80 flex-shrink-0 hidden lg:block">
+                    {{ $rightSidebarWidth := .Site.Params.layout.sidebarWidth | default 20 }}
+                    <aside class="order-3 lg:order-last w-full lg:w-[{{ $rightSidebarWidth }}%] flex-shrink-0 hidden lg:block transition-all duration-300">
                         {{ if .IsHome }}
                             {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
                         {{ else }}

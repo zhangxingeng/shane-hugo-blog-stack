@@ -117,6 +117,25 @@ enhancedHovers = true
 avatarHoverScale = 1.05
 # Social icon rotation on hover (in degrees)
 socialIconRotation = 6
+# Enable smooth animations and transitions
+smoothAnimations = true
+# Enable gradient accents on hover
+gradientAccents = true
+
+# Layout configuration
+[layout]
+# Main content width when widgets are present (percentage)
+mainContentWidth = 60
+# Sidebar width when widgets are present (percentage each)
+sidebarWidth = 20
+# Main content width when no widgets (percentage)
+mainContentWidthNoWidgets = 75
+# Left sidebar width when no widgets (percentage)
+leftSidebarWidthNoWidgets = 25
+# Enable enhanced layout animations
+enableAnimations = true
+# Enable backdrop blur effects
+enableBackdropBlur = true
 
 # Responsive design settings
 [ui.responsive]

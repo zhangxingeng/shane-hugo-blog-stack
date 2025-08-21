@@ -11,14 +11,21 @@
 
 
 {{ if $showTOC }}
-    <section class="bg-card-bg rounded-card p-4 lg:p-6 shadow-l1 mb-6 lg:mb-8 toc-widget hidden lg:block border border-card-separator/30 hover:shadow-l2 transition-all duration-300 hover:border-accent/20 hover:bg-card-bg-selected/50 group animate-fade-in">
-        {{ partial "article/components/toc-core" (dict 
-            "context" .Context
-            "id_prefix" "sidebar-toc"
-            "show_toggle" false
-            "toggle_classes" ""
-            "wrapper_classes" ""
-            "content_classes" ""
-        ) }}
+    <section class="bg-card-bg rounded-card p-4 lg:p-6 shadow-l1 mb-6 lg:mb-8 toc-widget hidden lg:block border border-card-separator/30 hover:shadow-l3 transition-all duration-400 hover:border-accent/30 hover:bg-card-bg-selected/50 group animate-fade-in hover-lift backdrop-blur-sm">
+        <!-- Enhanced TOC header with gradient accent -->
+        <div class="relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-accent/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
+            {{ partial "article/components/toc-core" (dict 
+                "context" .Context
+                "id_prefix" "sidebar-toc"
+                "show_toggle" false
+                "toggle_classes" ""
+                "wrapper_classes" "relative z-10"
+                "content_classes" "max-h-[75vh] overflow-y-auto scrollbar-thin scrollbar-thumb-card-separator scrollbar-track-transparent"
+            ) }}
+        </div>
+        
+        <!-- Subtle bottom gradient for scroll indication -->
+        <div class="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-card-bg to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
     </section>
 {{ end }}
