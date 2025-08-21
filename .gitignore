@@ -5,4 +5,5 @@ resources
 **/.env
 assets/jsconfig.json
 node_modules/
+old_theme_files/
 **/*:Zone.Identifier
