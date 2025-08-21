@@ -1,4 +1,7 @@
 ---
+outputs:
+    - html
+    - json
 menu:
     main:
         name: Home
