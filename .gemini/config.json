@@ -1,0 +1,19 @@
+{
+    "preferredEditor": "cursor",
+    "mcpServers": {
+        "shane-file-system": {
+            "command": "/home/shane/file_system_mcp/file_system_mcp/.venv/bin/python",
+            "args": [
+                "/home/shane/file_system_mcp/file_system_mcp/server.py"
+            ],
+            "cwd": "/home/shane/file_system_mcp/file_system_mcp",
+            "env": {}
+        },
+        "browsermcp": {
+            "command": "npx",
+            "args": [
+                "@browsermcp/mcp@latest"
+            ]
+        }
+    }
+}

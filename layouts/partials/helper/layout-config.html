@@ -1,0 +1,63 @@
+{{/* 
+    Layout Configuration Helper
+    
+    Simplified layout system with fixed sidebar widths.
+    Usage: {{ $layout := partial "helper/layout-config" . }}
+    
+    Returns:
+    - hasWidget: boolean - whether widgets should be displayed
+    - isWideContainer: boolean - whether to use wide container
+    - containerMaxWidth: string - container CSS classes
+*/}}
+
+{{/* Initialize values */}}
+{{ $hasWidget := false }}
+{{ $isWideContainer := false }}
+
+{{/* Check for widgets */}}
+{{ if .Site.Params.widgets }}
+    {{ if .IsHome }}
+        {{ range .Site.Params.widgets.homepage }}
+            {{ $hasWidget = true }}
+        {{ end }}
+    {{ else }}
+        {{ range .Site.Params.widgets.page }}
+            {{ $hasWidget = true }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{/* Handle widget overrides */}}
+{{ if .Scratch.Get "disableWidgets" }}
+    {{ $hasWidget = false }}
+{{ end }}
+
+{{/* Check for wide container requests */}}
+{{ if .Scratch.Get "wideContainer" }}
+    {{ $isWideContainer = true }}
+{{ end }}
+
+{{/* Auto-enable wide container for specific page types */}}
+{{ if .Site.Params.layout.wide.enabled }}
+    {{ range .Site.Params.layout.wide.widePages }}
+        {{ if eq . $.Page.Type }}
+            {{ $isWideContainer = true }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{/* Calculate container classes */}}
+{{ $containerMaxWidth := "" }}
+{{ if $isWideContainer }}
+    {{ $containerMaxWidth = printf "max-w-%s" (.Site.Params.layout.wide.widePageMaxWidth | default "full") }}
+    {{ else }}
+    {{/* Use a unified container width regardless of right widgets to keep left column ratio consistent */}}
+    {{ $containerMaxWidth = printf "max-w-%s xl:max-w-%s" "5xl" (.Site.Params.layout.wide.withWidgetsMaxWidth | default "screen-2xl") }}
+{{ end }}
+
+{{/* Return simplified layout configuration */}}
+{{ return dict 
+    "hasWidget" $hasWidget
+    "isWideContainer" $isWideContainer
+    "containerMaxWidth" $containerMaxWidth
+}}
