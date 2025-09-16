@@ -8,6 +8,7 @@ import { setupSmoothAnchors } from "ts/smoothAnchors";
 import { setupTOC } from 'ts/toc';
 import Search from 'ts/search';
 import { initCodeCopyButtons, initCopyAsMarkdown } from 'ts/copyCode';
+import DynamicLayoutManager from 'ts/dynamicLayout';
 
 let Stack = {
     init: () => {
@@ -85,6 +86,11 @@ let Stack = {
          * Initialize related articles functionality
          */
         Stack.initRelatedArticles();
+
+        /**
+         * Initialize dynamic layout management
+         */
+        Stack.initDynamicLayout();
     },
 
 
@@ -291,7 +297,36 @@ let Stack = {
             // Make function globally accessible
             (window as any).toggleRelatedArticles = toggleRelatedArticles;
         }
-    }
+    },
+
+    initDynamicLayout: () => {
+        // Initialize dynamic layout expansion when sidebars scroll out of view
+        const isLargeScreen = window.matchMedia && window.matchMedia('(min-width: 1024px)').matches;
+
+        if (isLargeScreen) {
+            Stack.layoutManager = new DynamicLayoutManager();
+        }
+
+        // Re-initialize on window resize for responsive behavior
+        let resizeTimeout: NodeJS.Timeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                if (Stack.layoutManager) {
+                    Stack.layoutManager.destroy();
+                    Stack.layoutManager = null;
+                }
+
+                const isLargeScreenResize = window.matchMedia && window.matchMedia('(min-width: 1024px)').matches;
+
+                if (isLargeScreenResize) {
+                    Stack.layoutManager = new DynamicLayoutManager();
+                }
+            }, 250);
+        });
+    },
+
+    layoutManager: null as DynamicLayoutManager | null
 }
 
 window.addEventListener('load', () => {

@@ -166,3 +166,26 @@
   /* SVG filter for icons in dark mode */
   --svg-filter: invert(1) brightness(0.8);
 }
+
+/* Animation Variables - following SOLID principle with single responsibility */
+:root {
+  /* Timing functions for consistent motion design */
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-linear: linear;
+
+  /* Duration scale for consistent timing */
+  --duration-fast: 0.15s;
+  --duration-normal: 0.3s;
+  --duration-slow: 0.6s;
+
+  /* Hover effect scales */
+  --scale-hover-subtle: 1.02;
+  --scale-hover-normal: 1.05;
+  --scale-hover-strong: 1.1;
+
+  /* Transform utilities */
+  --lift-subtle: translateY(-2px);
+  --lift-normal: translateY(-4px);
+  --lift-strong: translateY(-8px);
+}

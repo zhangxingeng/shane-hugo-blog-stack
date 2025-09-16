@@ -20,8 +20,10 @@
                     {{ with ($.Resources.GetMatch (printf "%s" (. | safeURL))) }}
                         {{ $permalink = .RelPermalink }}
                     {{ end }}
-                    <div class="article-image">
-                        <img src="{{ $permalink }}" loading="lazy">
+                    <div class="block overflow-hidden rounded-card mb-4">
+                        <img src="{{ $permalink }}"
+                             loading="lazy"
+                             class="w-full h-auto block object-cover transition-transform duration-300 hover:scale-[1.02]">
                     </div>
                 {{ end }}
             </a>

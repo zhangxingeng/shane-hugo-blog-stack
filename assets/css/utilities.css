@@ -81,6 +81,29 @@
   margin-bottom: var(--section-separation);
 }
 
+/* Layout Alignment Fixes */
+#main-layout {
+  align-items: stretch;
+}
+
+@media (min-width: 1024px) {
+  #left-sidebar,
+  #main-content,
+  #right-sidebar {
+    align-self: flex-start;
+  }
+
+  /* Ensure visual alignment by accounting for sidebar padding */
+  #main-content {
+    margin-top: 0;
+  }
+
+  /* Right sidebar widgets should align with main content top */
+  #right-sidebar .space-y-8 > section:first-child {
+    margin-top: 0;
+  }
+}
+
 /* TOC Widget positioning */
 .toc-widget {
   position: sticky;
@@ -238,31 +261,53 @@
   }
 }
 
-/* Enhanced hover effects - only keep what's actually needed */
+/* Enhanced hover effects - using CSS variables for consistency */
 .hover-lift {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform var(--duration-fast) var(--ease-smooth),
+              box-shadow var(--duration-fast) var(--ease-smooth);
 }
 
 .hover-lift:hover {
-  transform: translateY(-2px);
+  transform: var(--lift-subtle);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Text gradient utilities */
+/* Modular hover effect variants */
+.hover-lift-normal:hover {
+  transform: var(--lift-normal);
+}
+
+.hover-lift-strong:hover {
+  transform: var(--lift-strong);
+}
+
+.hover-scale:hover {
+  transform: scale(var(--scale-hover-normal));
+}
+
+.hover-scale-subtle:hover {
+  transform: scale(var(--scale-hover-subtle));
+}
+
+.hover-scale-strong:hover {
+  transform: scale(var(--scale-hover-strong));
+}
+
+/* Text gradient utilities - unified system following DRY principle */
 .text-gradient {
-  background: linear-gradient(135deg, var(--card-text-color-main), var(--accent-color));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  background: linear-gradient(135deg, var(--card-text-color-main), var(--accent-color));
 }
 
 .text-gradient-accent {
-  background: linear-gradient(135deg, var(--accent-color), var(--accent-color-darker));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-color-darker));
 }
 
 /* Fallback for browsers that don't support background-clip: text */

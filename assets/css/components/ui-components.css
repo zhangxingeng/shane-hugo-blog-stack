@@ -154,18 +154,4 @@ details[open] summary::before {
   opacity: 0.3;
 }
 
-/* Gradient text support for older browsers */
-.gradient-text {
-  background: linear-gradient(135deg, var(--card-text-color-main), var(--accent-color));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-}
-
-/* Fallback for browsers that don't support background-clip: text */
-@supports not (-webkit-background-clip: text) {
-  .gradient-text {
-    color: var(--accent-color);
-  }
-}
+/* Gradient text is now unified in utilities.css as .text-gradient */

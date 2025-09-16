@@ -6,53 +6,49 @@
 
 {{ define "main" }}
 {{ $resume := index site.Data .Site.Language.Lang "resume" }}
-<div class="resume-container mx-auto font-sans bg-body-bg text-body-text min-h-screen">
-    <div class="container max-w-6xl px-6 lg:px-8 resume-wrapper mx-auto bg-card-bg py-8 lg:py-12 my-8 rounded-card shadow-l2">
-        {{ partial "resume/header.html" . }}
-        
-        <div class="border-t border-card-separator my-8"></div>
-        
-        {{ if $resume.summary.enable }}
-        {{ partial "resume/summary.html" . }}
-        {{ end }}
-        
-        <div class="border-t border-card-separator my-8"></div>
-        
-        <div class="resume-body flex flex-col lg:flex-row gap-12">
-                <div class="resume-main flex-1 lg:w-2/3 xl:w-3/4">
-                    {{ if $resume.experience.enable }}
-                    {{ partial "resume/experience.html" . }}
-                    {{ end }}
-                    
-                    {{ if $resume.projects.enable }}
-                    {{ partial "resume/projects.html" . }}
-                    {{ end }}
-                    
-                    {{ if $resume.information.enable }}
-                    {{ partial "resume/information.html" . }}
-                    {{ end }}
-                </div><!--//resume-main-->
-                
-                <div class="resume-sidebar w-full lg:w-1/3 xl:w-1/4">
-                    {{ partial "resume/sidebar.html" . }}
-                </div>
-        </div><!--//resume-body-->
-        
-        <div class="border-t border-card-separator my-8"></div>
-        
-        {{ if $resume.social.enable }}
-        {{ partial "resume/social.html" . }}
-        {{ end }}
-        
-        {{ partial "resume/footer.html" . }}
-    </div><!--//container-->
+{{/* Override widget detection for resume pages since they don't use right sidebar */}}
+{{ .Scratch.Set "hasWidget" false }}
+<div class="resume-container bg-card-bg py-8 lg:py-12 rounded-card shadow-l2">
+    {{ partial "resume/header.html" . }}
+
+    <div class="border-t border-card-separator my-8"></div>
+
+    {{ if $resume.summary.enable }}
+    {{ partial "resume/summary.html" . }}
+    {{ end }}
+
+    <div class="border-t border-card-separator my-8"></div>
+
+    <div class="resume-body flex flex-col lg:flex-row gap-12">
+        <div class="resume-main flex-1 lg:w-2/3 xl:w-3/4">
+            {{ if $resume.experience.enable }}
+            {{ partial "resume/experience.html" . }}
+            {{ end }}
+
+            {{ if $resume.projects.enable }}
+            {{ partial "resume/projects.html" . }}
+            {{ end }}
+
+            {{ if $resume.information.enable }}
+            {{ partial "resume/information.html" . }}
+            {{ end }}
+        </div>
+
+        <div class="resume-sidebar w-full lg:w-1/3 xl:w-1/4">
+            {{ partial "resume/sidebar.html" . }}
+        </div>
+    </div>
+
+    <div class="border-t border-card-separator my-8"></div>
+
+    {{ if $resume.social.enable }}
+    {{ partial "resume/social.html" . }}
+    {{ end }}
+
+    {{ partial "resume/footer.html" . }}
 </div>
 
 {{ partial "resume/scripts.html" . }}
-{{ end }}
-
-{{ define "left-sidebar" }}
-    {{/* Resume page doesn't use left sidebar */}}
 {{ end }}
 
 {{ define "right-sidebar" }}

@@ -313,3 +313,92 @@ img[loading="lazy"].loaded {
     background-position: calc(200px + 100%) 0;
   }
 }
+
+/* Dynamic Layout Management Animations - slower, smoother transitions */
+.layout-expanded {
+  animation: expandLayout 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+.sidebar-collapsed {
+  animation: collapseSidebar 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+.sidebar-collapsed .toc-widget,
+.sidebar-collapsed .bg-card-bg {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Enhanced container expansion for better immersion */
+.layout-expanded-container {
+  max-width: 100vw !important;
+  padding-left: max(1rem, env(safe-area-inset-left)) !important;
+  padding-right: max(1rem, env(safe-area-inset-right)) !important;
+  transition: all 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Smooth transitions for layout changes - using consistent variables */
+main, aside, .min-h-screen > div {
+  transition: width var(--duration-slow) var(--ease-smooth),
+              opacity var(--duration-normal) ease,
+              transform var(--duration-slow) var(--ease-smooth),
+              max-width var(--duration-slow) var(--ease-smooth);
+  will-change: width, opacity, transform;
+}
+
+/* Special handling for content that needs to reflow smoothly */
+.layout-expanded .article-content,
+.layout-expanded .resume-container,
+.layout-expanded .post-listing {
+  max-width: none !important;
+  transition: max-width 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Improved text readability during layout expansion */
+.layout-expanded .article-content p,
+.layout-expanded .resume-container p {
+  max-width: 80ch; /* Optimal reading width */
+  transition: max-width 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes expandLayout {
+  0% {
+    width: var(--original-width, 60%);
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+  100% {
+    width: 100% !important;
+    transform: scale(1);
+  }
+}
+
+@keyframes collapseSidebar {
+  0% {
+    width: var(--original-width, 20%);
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(-10px);
+  }
+  100% {
+    width: 0% !important;
+    opacity: 0 !important;
+    transform: translateX(-20px);
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .layout-expanded,
+  .sidebar-collapsed,
+  .layout-expanded-container,
+  main, aside, .min-h-screen > div {
+    animation: none !important;
+    transition: none !important;
+  }
+}

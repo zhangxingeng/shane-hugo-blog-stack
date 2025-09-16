@@ -9,7 +9,6 @@
 /* Import component-specific CSS files */
 @import "components/hamburger.css";
 @import "components/article-content.css";
-@import "components/article-image.css";
 @import "components/toc.css";
 @import "components/ui-components.css";
 @import "components/search-results.css";
