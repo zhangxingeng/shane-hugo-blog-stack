@@ -83,6 +83,18 @@ limit = 15
 [[widgets.page]]
 type = "toc"
 
+[[widgets.resume]]
+type = "resume-contact"
+
+[[widgets.resume]]
+type = "resume-skills"
+
+[[widgets.resume]]
+type = "resume-languages"
+
+[[widgets.resume]]
+type = "resume-interests"
+
 [opengraph.twitter]
 site = ""
 card = "summary_large_image"

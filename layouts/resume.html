@@ -6,8 +6,8 @@
 
 {{ define "main" }}
 {{ $resume := index site.Data .Site.Language.Lang "resume" }}
-{{/* Override widget detection for resume pages since they don't use right sidebar */}}
-{{ .Scratch.Set "hasWidget" false }}
+{{/* Enable widgets for resume pages to utilize right sidebar */}}
+{{ .Scratch.Set "hasWidget" true }}
 <div class="resume-container bg-card-bg py-8 lg:py-12 rounded-card shadow-l2">
     {{ partial "resume/header.html" . }}
 
@@ -19,8 +19,8 @@
 
     <div class="border-t border-card-separator my-8"></div>
 
-    <div class="resume-body flex flex-col lg:flex-row gap-12">
-        <div class="resume-main flex-1 lg:w-2/3 xl:w-3/4">
+    <div class="resume-body">
+        <div class="resume-main space-y-8">
             {{ if $resume.experience.enable }}
             {{ partial "resume/experience.html" . }}
             {{ end }}
@@ -29,13 +29,21 @@
             {{ partial "resume/projects.html" . }}
             {{ end }}
 
+            {{ if $resume.education.enable }}
+            {{ partial "resume/education.html" . }}
+            {{ end }}
+
+            {{ if $resume.certification.enable }}
+            {{ partial "resume/certification.html" . }}
+            {{ end }}
+
+            {{ if $resume.teaching.enable }}
+            {{ partial "resume/teaching.html" . }}
+            {{ end }}
+
             {{ if $resume.information.enable }}
             {{ partial "resume/information.html" . }}
             {{ end }}
-        </div>
-
-        <div class="resume-sidebar w-full lg:w-1/3 xl:w-1/4">
-            {{ partial "resume/sidebar.html" . }}
         </div>
     </div>
 
@@ -52,5 +60,10 @@
 {{ end }}
 
 {{ define "right-sidebar" }}
-    {{/* Resume page doesn't use right sidebar */}}
+    {{ if .Scratch.Get "hasWidget" }}
+        {{ $rightSidebarWidth := .Site.Params.layout.sidebarWidth | default 20 }}
+        <aside class="order-3 lg:order-last w-full lg:w-[{{ $rightSidebarWidth }}%] flex-shrink-0 hidden lg:block transition-all duration-[1200ms]" id="right-sidebar">
+            {{ partial "sidebar/right.html" (dict "Context" . "Scope" "resume") }}
+        </aside>
+    {{ end }}
 {{ end }}

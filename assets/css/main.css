@@ -12,6 +12,7 @@
 @import "components/toc.css";
 @import "components/ui-components.css";
 @import "components/search-results.css";
+@import "components/sidebar-transitions.css";
 
 /* 
  * Main CSS Entry Point

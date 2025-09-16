@@ -1,0 +1,91 @@
+/* 
+ * Sidebar Collapse and Transition Effects
+ *
+ * This file handles the visual states of the sidebars when they are
+ * collapsed or expanded by the dynamicLayout.ts script.
+ */
+
+/* Base transition for sidebars */
+#left-sidebar,
+#right-sidebar {
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.4s ease-in-out;
+    will-change: transform, opacity;
+}
+
+/* Styles for collapsed sidebars on large screens */
+@media (min-width: 1024px) {
+    .sidebar-collapsed-left,
+    .sidebar-collapsed-right {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        opacity: 0.4; /* Increased from 0.2 to be less "ghostly" */
+        pointer-events: none;
+        z-index: 30; /* Above main content, below modals */
+    }
+
+    .sidebar-collapsed-left {
+        left: 0; /* Anchor to the left side of the viewport */
+        /* Hides 95% of the sidebar to the left */
+        transform: translateX(-95%);
+    }
+
+    .sidebar-collapsed-right {
+        right: 0; /* Anchor to the right side of the viewport */
+        /* Hides 95% of the sidebar to the right */
+        transform: translateX(95%);
+    }
+
+    /* Slight reveal and full opacity on hover */
+    .sidebar-collapsed-left:hover,
+    .sidebar-collapsed-right:hover {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+}
+
+/* 
+ * Main Content Expansion
+ *
+ * When a sidebar is collapsed, the main content area should expand
+ * to fill the newly available space for a seamless experience.
+ */
+#main-content {
+    /* Add a transition for smooth width adjustments */
+    transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@media (min-width: 1024px) {
+    /* When only the right sidebar is collapsed, main content takes its space */
+    #main-layout.right-sidebar-collapsed:not(.left-sidebar-collapsed) #main-content {
+        width: 80%; /* Assumes 60% main + 20% right sidebar */
+    }
+
+    /* When only the left sidebar is collapsed, main content takes its space */
+    #main-layout.left-sidebar-collapsed:not(.right-sidebar-collapsed) #main-content {
+        width: 80%; /* Assumes 60% main + 20% left sidebar */
+    }
+
+    /* When both sidebars are collapsed, main content takes all the space */
+    #main-layout.left-sidebar-collapsed.right-sidebar-collapsed #main-content {
+        width: 100%;
+    }
+}
+
+/* 
+ * On mobile and tablet sizes, the dynamic layout is disabled via JavaScript.
+ * These styles ensure that even if the classes are applied, they have no effect,
+ * preventing any visual bugs.
+ */
+@media (max-width: 1023px) {
+    .sidebar-collapsed-left,
+    .sidebar-collapsed-right {
+        transform: none !important;
+        opacity: 1 !important;
+        position: relative !important;
+        height: auto !important;
+        pointer-events: auto !important;
+    }
+}
