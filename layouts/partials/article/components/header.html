@@ -1,8 +1,8 @@
-<header class="mb-6">
+<header class="flex flex-col">
     {{- $image := partialCached "helper/image" (dict "Context" . "Type" "article") .RelPermalink "article" -}}
     {{ if $image.exists }}
-        <div class="block overflow-hidden rounded-card mb-4">
-            <a href="{{ .RelPermalink }}" class="block w-full">
+        <div class="card-image-wrapper">
+            <a href="{{ .RelPermalink }}" class="block w-full h-full">
                 {{ if $image.resource }}
                     {{- $Permalink := $image.resource.RelPermalink -}}
                     {{- $Width := $image.resource.Width -}}
@@ -24,16 +24,18 @@
                         height="{{ $Height }}"
                         loading="lazy"
                         alt="Featured image of post {{ .Title }}"
-                        class="w-full h-auto block object-cover transition-transform duration-300 hover:scale-[1.02]" />
+                        class="w-full h-full block object-cover transition-transform duration-300 group-hover:scale-[1.02]" />
                 {{ else }}
                     <img src="{{ $image.permalink }}"
                          loading="lazy"
                          alt="Featured image of post {{ .Title }}"
-                         class="w-full h-auto block object-cover transition-transform duration-300 hover:scale-[1.02]" />
+                         class="w-full h-full block object-cover transition-transform duration-300 group-hover:scale-[1.02]" />
                 {{ end }}
             </a>
         </div>
     {{ end }}
 
-    {{ partialCached "article/components/details" . .RelPermalink }}
+    <div class="card-details">
+        {{ partialCached "article/components/details" . .RelPermalink }}
+    </div>
 </header>
