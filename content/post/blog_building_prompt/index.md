@@ -2,7 +2,7 @@
 title: "Blog Writing Guide"
 description: "A comprehensive guide to writing blog posts that feels engaging, clear, and genuinely helpful"
 slug: blog-writing-guide
-date: 2025-09-11
+date: 2025-09-16
 image: cover.webp
 categories:
     - Writing
@@ -47,6 +47,10 @@ Write as if you're having a genuine, intriguing conversation with someone sittin
 2. **Clarity Before Cleverness:** It's better to be crystal clear than impressively complex. Your goal isn't to show how smart you are—it's to make your reader smarter.
 3. **Examples Are Your Best Friends:** Abstract concepts need concrete examples—lots of them. Our brains are pattern-matching machines: one example is a data point, two show a pattern, three prove a rule.
 4. **Strategic Conciseness:** Conciseness means no wasted words, not fewer ideas. A 5000-word post that flows smoothly beats a confusing 500-word summary.
+
+### Another Trick about engagement
+
+- People love reading stories. so maybe if it fits you can invent personas and write an engaging story based on the topic of this post -- this way readers learn new things and ideas without even realizing it.
 
 ### The Curse of Knowledge Antidote
 

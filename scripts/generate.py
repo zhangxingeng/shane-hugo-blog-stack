@@ -132,7 +132,9 @@ def generate_image(
 
     ## The original blog post this image will be used on:
     <blog_post>
-    {original_blog}
+    {original_blog[:10000]}
+    ...
+    {original_blog[-10000:]}
     </blog_post>
 
     ## Additional instructions: 

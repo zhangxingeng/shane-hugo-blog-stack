@@ -3,8 +3,8 @@
     command = "pnpm install && pnpm run build"
 
 [build.environment]
-    HUGO_VERSION = "0.148.2"
-    GO_VERSION = "1.23.2"
+    HUGO_VERSION = "0.150.0"
+    GO_VERSION = "1.25.1"
     HUGO_EXTENDED = "true"
     NODE_VERSION = "22"
     HUGO_ENV = "production"
