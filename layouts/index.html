@@ -1,8 +1,11 @@
+{{ define "body-class" }}homepage{{ end }}
+
 {{ define "main" }}
     {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
     {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
     {{ $filtered := ($pages | intersect $notHidden) }}
     {{ $pag := .Paginate ($filtered) }}
+
 
     {{/* Use the modular post listing component with search functionality */}}
     {{ partial "post-listing.html" (dict "Context" . "Pages" $pag.Pages "SearchMode" true) }}

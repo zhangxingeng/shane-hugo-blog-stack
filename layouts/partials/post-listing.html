@@ -13,10 +13,10 @@ Parameters:
 
 <div class="post-listing {{ if $searchMode }}search-results{{ end }}" {{ if $searchMode }}id="search-results"{{ end }}>
     {{- if $searchMode -}}
-        <div class="search-result--title text-lg font-semibold text-card-text mb-4" id="search-result-title"></div>
+        <div class="search-result--title text-lg font-semibold text-card-text mb-4 hidden" id="search-result-title"></div>
     {{- end -}}
-    
-    <section class="space-y-8 post-list" id="post-list">
+
+    <section class="space-y-6 sm:space-y-8 post-list" id="post-list">
         {{ range $index, $element := $pages }}
             {{ partial "article-list/default" . }}
         {{ end }}

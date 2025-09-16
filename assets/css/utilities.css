@@ -1,5 +1,22 @@
 /* Custom Utilities and Responsive Overrides */
 
+/* Main content spacing - only add gap between multiple content children (exclude debug elements) */
+#main-content > *:not([id*="debug"]) + *:not([id*="debug"]) {
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  #main-content > *:not([id*="debug"]) + *:not([id*="debug"]) {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #main-content > *:not([id*="debug"]) + *:not([id*="debug"]) {
+    margin-top: 2rem;
+  }
+}
+
 /* Line clamp utilities for text truncation */
 .line-clamp-1 {
   overflow: hidden;

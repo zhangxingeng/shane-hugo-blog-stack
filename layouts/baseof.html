@@ -39,7 +39,7 @@
                     {{ else }}
                       max-w-full sm:max-w-4xl lg:max-w-6xl xl:max-w-7xl
                     {{ end }}
-                    transition-all duration-300" id="main-layout">
+                    transition-all duration-300 items-start" id="main-layout">
             {{- block "left-sidebar" . -}}
                 {{ $leftSidebarWidth := .Site.Params.layout.sidebarWidth | default 20 }}
                 {{ $leftSidebarWidthNoWidgets := .Site.Params.layout.leftSidebarWidthNoWidgets | default 25 }}
@@ -51,7 +51,7 @@
             {{ $mainContentWidth := .Site.Params.layout.mainContentWidth | default 60 }}
             {{ $mainContentWidthNoWidgets := .Site.Params.layout.mainContentWidthNoWidgets | default 75 }}
             {{ $hasWidgetLocal := .Scratch.Get "hasWidget" }}
-            <main class="order-2 min-w-0 {{ if $hasWidgetLocal }}lg:w-[{{ $mainContentWidth }}%]{{ else }}lg:flex-1{{ end }} flex flex-col gap-4 sm:gap-6 lg:gap-8 animate-fade-in transition-all duration-[1200ms]" id="main-content">
+            <main class="order-2 min-w-0 {{ if $hasWidgetLocal }}lg:w-[{{ $mainContentWidth }}%]{{ else }}lg:flex-1{{ end }} flex flex-col animate-fade-in transition-all duration-[1200ms]" id="main-content">
                 {{- block "main" . }}{{- end }}
             </main>
             {{- block "right-sidebar" . -}}
