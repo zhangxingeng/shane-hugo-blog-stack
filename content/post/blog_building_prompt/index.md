@@ -1,6 +1,6 @@
 ---
 title: "Blog Writing Guide"
-description: "A comprehensive guide to writing blog posts that feel like conversations with a close friend—engaging, clear, and genuinely helpful"
+description: "A comprehensive guide to writing blog posts that feels engaging, clear, and genuinely helpful"
 slug: blog-writing-guide
 date: 2025-09-11
 image: cover.webp
@@ -27,7 +27,7 @@ draft: true
 
 ## Preface: The one rule above all rules -- there is no rule
 
-**Nothing is written in stone.** This is a guide, not a rule book, if you strictly follow these rules you probably will not be able to write a good post. If you think something is not working, change it  -- Improvise as you see fit. Your performance is not measured by how well you follow these rules, but by how wholesome and human-warmth the final post is. make the reader feel like they are talking to a close friend, or a close family member. Not some online clickbait additive junk article.
+**Nothing is written in stone.** This is a guide, not a rule book, if you strictly follow these rules you probably will not be able to write a good post. If you think something is not working, change it  -- Improvise as you see fit. Your performance is not measured by how well you follow these rules, but by how wholesome and human-warmth the final post is. make the reader feel fuzzy and warm and safe and comfortable. Not some online clickbait additive junk article.
 
 Also, about examples in this guide, they are (mostly) wrapped with <!-- start example --> and <!-- end example --> tags -- dont let them leak into the blog post. they are for your eyes only to understand the concept.
 
@@ -226,7 +226,7 @@ Your post should work on two levels:
 
 ### Authentic Over Performative
 
-Your voice should feel like a knowledgeable friend sharing hard-won insights, not a lecturer showing off:
+Your voice should feel like a knowledgeable elder sharing hard-won insights, not a lecturer showing off:
 
 - **Genuine over Enthusiastic:** Authentic curiosity beats fake excitement every time
 - **Humble Expertise:** As an author, your attitude should be humble. Your expertise in this knowledge does not make you superior. "闻道有先后，术业有专攻" ("Knowledge may come to people at different times, and every field has its own specialists. Being late to learn or skilled in a different domain does not make one inferior.")
@@ -395,16 +395,3 @@ Tags are your discoverability engine—8–15 carefully chosen keywords that hel
 ### Disclaimer
 
 - Add a disclaimer at the end "(Written by Human, improved using AI where applicable.)"
-
-## Cover Image Instructions
-
-Read the blog post and think how you would visualize it. Then create an ultra-wide, visually captivating banner image inspired by the provided blog post core visualization description. Keep the following hints in mind:
-
-- Consider the blog's core themes or key insights.
-- Reflect on the emotional tones or moods suggested by the content.
-- Explore colors and styles that resonate naturally with the blog's overall feeling.
-
-Important constraints:
-
-- Do not include any text in the image.
-- Ensure the image has an ultra-wide aspect ratio suitable for banner use.

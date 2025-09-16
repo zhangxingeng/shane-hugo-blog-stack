@@ -1,2 +1,3 @@
 - `cd` to root
 - `./scripts/.venv/bin/python ./scripts/translate.py`
+- `./scripts/.venv/bin/python ./scripts/generate.py`
