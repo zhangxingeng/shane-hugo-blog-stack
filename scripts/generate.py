@@ -130,21 +130,10 @@ def generate_image(
     {imagination_result}
     </imagination>
 
-    ## The original blog post this image will be used on:
-    <blog_post>
-    {original_blog[:10000]}
-    ...
-    {original_blog[-10000:]}
-    </blog_post>
-
     ## Additional instructions: 
     <additional_instructions>
     {custom_instructions}
     </additional_instructions>
-
-    Style: 
-    - an image that is visually appealing to the potential readers of this blog post. 
-    - No text should appear in the image.
     """
     try:
         response = client.images.generate(
