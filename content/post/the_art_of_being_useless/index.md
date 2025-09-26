@@ -14,8 +14,6 @@ tags:
     - work-life meaning
 ---
 
-## Main Story: The Bigger Story
-
 Jack Thompson first felt truly alive at seven years old.
 
 The summer heat pressed down on their suburban backyard like a heavy blanket, but under the old maple tree, the shade was cool and perfect. He crouched in the dirt with a stick, scratching lines into the earth—a robin, head tilted, eyes bright with curiosity. He paused, studying those eyes he'd drawn. Something was missing.
