@@ -1,7 +1,7 @@
 ---
 title: "怎么才能更没用"
 description: "当AI取代了他的工作，林小明才发现最大的失败竟是通往真实成功的路。一个关于选择意义而非金钱，用技术服务人类创造力的东方智慧故事。"
-slug: programmer-awakening-ai-era-story
+slug: the-art-of-being-useless
 date: 2025-09-26
 image: cover.webp
 categories:

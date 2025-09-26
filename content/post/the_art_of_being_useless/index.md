@@ -1,7 +1,7 @@
 ---
 title: "The Art of Being Useless"
 description: "When AI replaced his coding job, Jack Thompson discovered that his greatest failure was actually his path to authentic success. A story about choosing meaning over money and building technology that serves human creativity."
-slug: from-code-to-canvas-programmer-true-purpose
+slug: the-art-of-being-useless
 date: 2025-09-26
 image: cover.webp
 categories:
